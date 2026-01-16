@@ -1,7 +1,7 @@
 // Site-wide constants
 
 export const SITE_NAME = 'CalorieData'
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://caloriedata.io'
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://nutritiondata.motesmass.workers.dev'
 export const SITE_DESCRIPTION = 'Free nutrition data for 300,000+ foods. Find calories, macros, and compare any foods instantly.'
 
 export const USDA_API_KEY = process.env.USDA_API_KEY || ''
