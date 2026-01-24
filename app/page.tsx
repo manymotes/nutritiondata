@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { SITE_NAME, FOOD_CATEGORIES, POPULAR_FOODS } from '@/lib/constants'
+import { SITE_NAME, SITE_URL, SITE_DESCRIPTION, FOOD_CATEGORIES, POPULAR_FOODS } from '@/lib/constants'
 import { getFoodData } from '@/lib/data'
 
 export default function HomePage() {
@@ -124,6 +124,67 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Food Lists */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Curated Food Lists
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <Link
+              href="/lists/low-calorie-foods"
+              className="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow text-center"
+            >
+              <div className="text-3xl mb-2">🥬</div>
+              <h3 className="font-semibold text-gray-900">Low Calorie Foods</h3>
+            </Link>
+            <Link
+              href="/lists/high-protein-foods"
+              className="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow text-center"
+            >
+              <div className="text-3xl mb-2">💪</div>
+              <h3 className="font-semibold text-gray-900">High Protein Foods</h3>
+            </Link>
+            <Link
+              href="/lists/low-carb-foods"
+              className="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow text-center"
+            >
+              <div className="text-3xl mb-2">🥑</div>
+              <h3 className="font-semibold text-gray-900">Low Carb Foods</h3>
+            </Link>
+            <Link
+              href="/lists/weight-loss-foods"
+              className="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow text-center"
+            >
+              <div className="text-3xl mb-2">⚖️</div>
+              <h3 className="font-semibold text-gray-900">Weight Loss Foods</h3>
+            </Link>
+            <Link
+              href="/lists/high-fiber-foods"
+              className="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow text-center"
+            >
+              <div className="text-3xl mb-2">🌾</div>
+              <h3 className="font-semibold text-gray-900">High Fiber Foods</h3>
+            </Link>
+            <Link
+              href="/lists/low-fat-foods"
+              className="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow text-center"
+            >
+              <div className="text-3xl mb-2">❤️</div>
+              <h3 className="font-semibold text-gray-900">Low Fat Foods</h3>
+            </Link>
+          </div>
+          <div className="text-center">
+            <Link
+              href="/lists"
+              className="text-primary-600 hover:text-primary-700 font-medium"
+            >
+              View all lists →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Features */}
       <section className="py-16 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -180,6 +241,41 @@ export default function HomePage() {
           </p>
         </div>
       </section>
+
+      {/* Schema.org structured data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebSite',
+            name: SITE_NAME,
+            url: SITE_URL,
+            description: SITE_DESCRIPTION,
+            potentialAction: {
+              '@type': 'SearchAction',
+              target: {
+                '@type': 'EntryPoint',
+                urlTemplate: `${SITE_URL}/calories-in/{search_term_string}/`,
+              },
+              'query-input': 'required name=search_term_string',
+            },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Organization',
+            name: SITE_NAME,
+            url: SITE_URL,
+            description: SITE_DESCRIPTION,
+            sameAs: [],
+          }),
+        }}
+      />
     </div>
   )
 }

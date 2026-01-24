@@ -29,7 +29,7 @@ export async function generateStaticParams() {
     }
   }
 
-  return comparisons.slice(0, 100) // Limit for build time
+  return comparisons
 }
 
 // Generate metadata

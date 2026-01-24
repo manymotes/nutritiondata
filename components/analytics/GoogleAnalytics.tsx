@@ -1,10 +1,11 @@
 'use client'
 
 import Script from 'next/script'
-
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID
+import { siteConfig } from '@/lib/config'
 
 export function GoogleAnalytics() {
+  const GA_ID = siteConfig.googleAnalyticsId
+
   if (!GA_ID) return null
 
   return (
