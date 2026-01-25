@@ -29,6 +29,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `Calories in ${food.name} - ${calories} kcal per 100g`,
     description: `${food.name} has ${calories} calories per 100g. Get full nutrition facts including protein (${food.nutritionPer100g.protein}g), carbs (${food.nutritionPer100g.carbs}g), and fat (${food.nutritionPer100g.fat}g). Compare with similar foods.`,
+    alternates: {
+      canonical: `https://caloriedata.org/calories-in/${params.slug}`,
+    },
     openGraph: {
       title: `Calories in ${food.name}`,
       description: `${calories} calories per 100g. Full nutrition facts and comparisons.`,

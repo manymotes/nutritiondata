@@ -1,0 +1,20 @@
+name = "nutritiondata"
+compatibility_date = "2026-01-16"
+
+# Custom domains
+routes = [
+  { pattern = "caloriedata.org", custom_domain = true },
+  { pattern = "www.caloriedata.org", custom_domain = true }
+]
+
+# Static assets from the /out directory (static export)
+[assets]
+directory = "./out"
+
+# Environment variables
+[vars]
+NEXT_PUBLIC_SITE_URL = "https://caloriedata.org"
+
+# Preview environment
+[env.preview]
+name = "nutritiondata-preview"

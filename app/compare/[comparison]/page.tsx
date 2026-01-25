@@ -50,6 +50,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `${food1.name} vs ${food2.name} - Calories & Nutrition Comparison`,
     description: `Compare ${food1.name} (${cal1} cal) vs ${food2.name} (${cal2} cal). ${lower} has ${diff} fewer calories per 100g. See full nutrition comparison.`,
+    alternates: {
+      canonical: `https://caloriedata.org/compare/${params.comparison}`,
+    },
     openGraph: {
       title: `${food1.name} vs ${food2.name} Nutrition`,
       description: `Which is healthier? Compare calories, protein, carbs, and more.`,
