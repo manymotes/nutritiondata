@@ -16,9 +16,10 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
+  keywords: ['calories', 'nutrition', 'food database', 'nutritional information', 'macros', 'diet', 'weight loss', 'nutrition facts', 'calorie counter', 'food calories'],
   metadataBase: new URL(SITE_URL),
   alternates: {
-    canonical: './',
+    canonical: SITE_URL,
   },
   verification: {
     google: 'dUWF37Rv6F-YRfhwVa2Q5SoGbgyEuQ-t2MEMxI_w7Y4',
@@ -28,6 +29,7 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     title: SITE_NAME,
     description: SITE_DESCRIPTION,
+    images: ['/og-image.png'],
   },
   twitter: {
     card: 'summary_large_image',
