@@ -1,0 +1,32 @@
+{
+  "fdcId": "2112065",
+  "slug": "monster-energy-drink",
+  "name": "MONSTER ENERGY DRINK",
+  "category": "beverages",
+  "description": "MONSTER ENERGY DRINK from Monster Energy Company",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 240,
+      "label": "8.0 OZA"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 42,
+    "protein": 0,
+    "carbs": 10,
+    "fat": 0,
+    "fiber": 0,
+    "sugar": 9.58,
+    "sodium": 17
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:33.866Z"
+}

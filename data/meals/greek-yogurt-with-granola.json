@@ -1,0 +1,56 @@
+{
+  "fdcId": "meal-15",
+  "slug": "greek-yogurt-with-granola",
+  "name": "Greek Yogurt with Granola",
+  "category": "meals",
+  "mealType": "snack",
+  "description": "Greek Yogurt with Granola - A delicious and nutritious snack option.",
+  "servings": 1,
+  "prepTime": 2,
+  "cookTime": 0,
+  "ingredients": [
+    {
+      "name": "Greek Yogurt",
+      "amount": 150,
+      "unit": "g",
+      "grams": 150,
+      "slug": "greek-yogurt"
+    },
+    {
+      "name": "Granola",
+      "amount": 30,
+      "unit": "g",
+      "grams": 30,
+      "slug": "granola"
+    },
+    {
+      "name": "Honey",
+      "amount": 10,
+      "unit": "g",
+      "grams": 10,
+      "slug": "honey"
+    }
+  ],
+  "instructions": [
+    "Pour yogurt into bowl",
+    "Top with granola",
+    "Drizzle with honey",
+    "Mix and enjoy"
+  ],
+  "nutrition": {
+    "calories": 200,
+    "protein": 15,
+    "carbs": 28,
+    "fat": 3,
+    "fiber": 1,
+    "sugar": 14,
+    "sodium": 30
+  },
+  "healthBenefits": [
+    "High protein",
+    "Good for digestion",
+    "Satisfying snack"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:47:51.202Z"
+}

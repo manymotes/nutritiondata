@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000091",
+  "slug": "cake",
+  "name": "Cake",
+  "category": "desserts",
+  "description": "Cake - high in carbohydrates",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 387,
+    "protein": 3,
+    "carbs": 47,
+    "fat": 20,
+    "fiber": 0.6,
+    "sugar": 38,
+    "sodium": 356,
+    "cholesterol": 0,
+    "saturatedFat": 5.5
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.606Z"
+}

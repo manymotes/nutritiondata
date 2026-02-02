@@ -1,0 +1,72 @@
+{
+  "fdcId": "meal-11",
+  "slug": "stir-fried-tofu-and-vegetables",
+  "name": "Stir-Fried Tofu and Vegetables",
+  "category": "meals",
+  "mealType": "dinner",
+  "description": "Stir-Fried Tofu and Vegetables - A delicious and nutritious dinner option.",
+  "servings": 1,
+  "prepTime": 15,
+  "cookTime": 10,
+  "ingredients": [
+    {
+      "name": "Tofu",
+      "amount": 150,
+      "unit": "g",
+      "grams": 150,
+      "slug": "tofu"
+    },
+    {
+      "name": "Broccoli",
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "slug": "broccoli"
+    },
+    {
+      "name": "Bell Pepper",
+      "amount": 75,
+      "unit": "g",
+      "grams": 75,
+      "slug": "bell-pepper"
+    },
+    {
+      "name": "Soy Sauce",
+      "amount": 15,
+      "unit": "ml",
+      "grams": 15,
+      "slug": "soy-sauce"
+    },
+    {
+      "name": "Sesame Oil",
+      "amount": 10,
+      "unit": "ml",
+      "grams": 10,
+      "slug": "sesame-oil"
+    }
+  ],
+  "instructions": [
+    "Press and cube tofu",
+    "Heat sesame oil in wok or large pan",
+    "Stir-fry tofu until golden on all sides",
+    "Add vegetables and cook until tender-crisp",
+    "Add soy sauce and toss to coat",
+    "Serve immediately"
+  ],
+  "nutrition": {
+    "calories": 320,
+    "protein": 22,
+    "carbs": 20,
+    "fat": 16,
+    "fiber": 4,
+    "sugar": 3,
+    "sodium": 580
+  },
+  "healthBenefits": [
+    "Plant-based protein",
+    "Low in saturated fat",
+    "Nutrient-dense vegetables"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:47:51.201Z"
+}

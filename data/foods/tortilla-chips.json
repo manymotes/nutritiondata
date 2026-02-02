@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000073",
+  "slug": "tortilla-chips",
+  "name": "Tortilla Chips",
+  "category": "snacks",
+  "description": "Tortilla Chips - high in healthy fats",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 460,
+    "protein": 5,
+    "carbs": 52,
+    "fat": 25,
+    "fiber": 3.6,
+    "sugar": 0.3,
+    "sodium": 405,
+    "cholesterol": 0,
+    "saturatedFat": 3.6
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.603Z"
+}

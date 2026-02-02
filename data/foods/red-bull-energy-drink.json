@@ -1,0 +1,32 @@
+{
+  "fdcId": "541366",
+  "slug": "red-bull-energy-drink",
+  "name": "RED BULL, ENERGY DRINK",
+  "category": "beverages",
+  "description": "RED BULL, ENERGY DRINK from Red Bull North America, Inc.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 355,
+      "label": "12 OZA"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 45,
+    "protein": 0.28,
+    "carbs": 11.3,
+    "fat": 0,
+    "fiber": 0,
+    "sugar": 10.7,
+    "sodium": 28
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:32.870Z"
+}

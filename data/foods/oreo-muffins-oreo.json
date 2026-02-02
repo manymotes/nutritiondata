@@ -1,0 +1,35 @@
+{
+  "fdcId": "2670884",
+  "slug": "oreo-muffins-oreo",
+  "name": "OREO MUFFINS, OREO",
+  "category": "desserts",
+  "description": "OREO MUFFINS, OREO",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 57,
+      "label": "1 muffin"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 404,
+    "protein": 3.51,
+    "carbs": 49.1,
+    "fat": 22.8,
+    "fiber": 1.8,
+    "sugar": 28.1,
+    "sodium": 368,
+    "potassium": 158,
+    "cholesterol": 35,
+    "saturatedFat": 6.14
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:17.619Z"
+}

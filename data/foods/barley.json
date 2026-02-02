@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000036",
+  "slug": "barley",
+  "name": "Barley",
+  "category": "grains",
+  "description": "Barley - high in carbohydrates",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 354,
+    "protein": 3.6,
+    "carbs": 73,
+    "fat": 1.5,
+    "fiber": 17.3,
+    "sugar": 0.8,
+    "sodium": 12,
+    "cholesterol": 0,
+    "saturatedFat": 0.2
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.599Z"
+}

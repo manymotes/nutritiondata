@@ -1,0 +1,63 @@
+{
+  "fdcId": "meal-2",
+  "slug": "greek-yogurt-parfait",
+  "name": "Greek Yogurt Parfait",
+  "category": "meals",
+  "mealType": "breakfast",
+  "description": "Greek Yogurt Parfait - A delicious and nutritious breakfast option.",
+  "servings": 1,
+  "prepTime": 5,
+  "cookTime": 0,
+  "ingredients": [
+    {
+      "name": "Greek Yogurt",
+      "amount": 200,
+      "unit": "g",
+      "grams": 200,
+      "slug": "greek-yogurt"
+    },
+    {
+      "name": "Granola",
+      "amount": 40,
+      "unit": "g",
+      "grams": 40,
+      "slug": "granola"
+    },
+    {
+      "name": "Strawberries",
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "slug": "strawberries"
+    },
+    {
+      "name": "Almonds",
+      "amount": 20,
+      "unit": "g",
+      "grams": 20,
+      "slug": "almonds"
+    }
+  ],
+  "instructions": [
+    "Layer yogurt in a bowl",
+    "Add granola on top",
+    "Add fresh strawberries",
+    "Sprinkle almonds and serve"
+  ],
+  "nutrition": {
+    "calories": 310,
+    "protein": 22,
+    "carbs": 38,
+    "fat": 8,
+    "fiber": 4,
+    "sugar": 18,
+    "sodium": 45
+  },
+  "healthBenefits": [
+    "High in protein",
+    "Supports digestive health",
+    "Calcium-rich"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:47:51.198Z"
+}

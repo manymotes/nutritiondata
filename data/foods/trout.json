@@ -1,0 +1,28 @@
+{
+  "fdcId": "200009",
+  "slug": "trout",
+  "name": "Trout",
+  "category": "proteins",
+  "description": "Trout - rich in protein. Good nutrition source for a healthy diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 141,
+    "protein": 19,
+    "carbs": 0,
+    "fat": 6,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 60,
+    "cholesterol": 0,
+    "saturatedFat": 1.5
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:44:51.158Z"
+}

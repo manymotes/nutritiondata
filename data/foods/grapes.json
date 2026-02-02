@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000016",
+  "slug": "grapes",
+  "name": "Grapes",
+  "category": "fruits",
+  "description": "Grapes - high in nutrients",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 67,
+    "protein": 0.7,
+    "carbs": 17,
+    "fat": 0.6,
+    "fiber": 0.9,
+    "sugar": 16,
+    "sodium": 3,
+    "cholesterol": 0,
+    "saturatedFat": 0.2
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.597Z"
+}

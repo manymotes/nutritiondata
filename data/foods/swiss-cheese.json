@@ -1,0 +1,28 @@
+{
+  "fdcId": "200068",
+  "slug": "swiss-cheese",
+  "name": "Swiss Cheese",
+  "category": "dairy",
+  "description": "Swiss Cheese - rich in protein. Good nutrition source for a healthy diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 380,
+    "protein": 27,
+    "carbs": 1.6,
+    "fat": 30,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 888,
+    "cholesterol": 0,
+    "saturatedFat": 19.3
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:44:51.171Z"
+}

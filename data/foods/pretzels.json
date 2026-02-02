@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000074",
+  "slug": "pretzels",
+  "name": "Pretzels",
+  "category": "snacks",
+  "description": "Pretzels - high in carbohydrates",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 379,
+    "protein": 8,
+    "carbs": 74,
+    "fat": 3.9,
+    "fiber": 2,
+    "sugar": 4,
+    "sodium": 961,
+    "cholesterol": 0,
+    "saturatedFat": 0.8
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.603Z"
+}

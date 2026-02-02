@@ -1,0 +1,28 @@
+{
+  "fdcId": "300008",
+  "slug": "dal",
+  "name": "Dal",
+  "category": "grains",
+  "description": "Dal - A nutritious food source with good amounts of dietary fiber. Part of a healthy, balanced diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 84,
+    "protein": 8.9,
+    "carbs": 15,
+    "fat": 0.8,
+    "fiber": 5.8,
+    "sugar": 0.7,
+    "sodium": 2,
+    "cholesterol": 0,
+    "saturatedFat": 0.2
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:46:37.270Z"
+}

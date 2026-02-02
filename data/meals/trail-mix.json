@@ -1,0 +1,63 @@
+{
+  "fdcId": "meal-16",
+  "slug": "trail-mix",
+  "name": "Trail Mix",
+  "category": "meals",
+  "mealType": "snack",
+  "description": "Trail Mix - A delicious and nutritious snack option.",
+  "servings": 1,
+  "prepTime": 0,
+  "cookTime": 0,
+  "ingredients": [
+    {
+      "name": "Almonds",
+      "amount": 25,
+      "unit": "g",
+      "grams": 25,
+      "slug": "almonds"
+    },
+    {
+      "name": "Cashews",
+      "amount": 25,
+      "unit": "g",
+      "grams": 25,
+      "slug": "cashews"
+    },
+    {
+      "name": "Raisins",
+      "amount": 20,
+      "unit": "g",
+      "grams": 20,
+      "slug": "raisins"
+    },
+    {
+      "name": "Dark Chocolate Chips",
+      "amount": 15,
+      "unit": "g",
+      "grams": 15,
+      "slug": "dark-chocolate-chips"
+    }
+  ],
+  "instructions": [
+    "Combine all ingredients in a bowl",
+    "Mix well",
+    "Portion into snack bags or containers",
+    "Enjoy as needed"
+  ],
+  "nutrition": {
+    "calories": 230,
+    "protein": 6,
+    "carbs": 25,
+    "fat": 12,
+    "fiber": 2,
+    "sugar": 16,
+    "sodium": 35
+  },
+  "healthBenefits": [
+    "Portable energy",
+    "Healthy fats",
+    "Antioxidants from chocolate"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:47:51.203Z"
+}

@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000034",
+  "slug": "whole-wheat-bread",
+  "name": "Whole Wheat Bread",
+  "category": "grains",
+  "description": "Whole Wheat Bread - high in carbohydrates",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 247,
+    "protein": 3.6,
+    "carbs": 41,
+    "fat": 3.6,
+    "fiber": 6.8,
+    "sugar": 3.8,
+    "sodium": 421,
+    "cholesterol": 0,
+    "saturatedFat": 0.6
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.599Z"
+}

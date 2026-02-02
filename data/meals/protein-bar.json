@@ -1,0 +1,40 @@
+{
+  "fdcId": "meal-111",
+  "slug": "protein-bar",
+  "name": "Protein Bar",
+  "category": "meals",
+  "mealType": "snack",
+  "description": "Protein Bar - A delicious and nutritious snack option.",
+  "servings": 1,
+  "prepTime": 0,
+  "cookTime": 0,
+  "ingredients": [
+    {
+      "name": "Protein Bar",
+      "amount": 1,
+      "unit": "bar",
+      "grams": 65,
+      "slug": "protein-bar"
+    }
+  ],
+  "instructions": [
+    "Remove from packaging",
+    "Enjoy as convenient snack"
+  ],
+  "nutrition": {
+    "calories": 200,
+    "protein": 20,
+    "carbs": 22,
+    "fat": 5,
+    "fiber": 3,
+    "sugar": 1,
+    "sodium": 150
+  },
+  "healthBenefits": [
+    "Convenient",
+    "Quick energy",
+    "Portable"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:48:42.303Z"
+}

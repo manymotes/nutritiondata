@@ -1,0 +1,34 @@
+{
+  "fdcId": "1142682",
+  "slug": "mango-low-fat-greek-yogurt-mango",
+  "name": "MANGO LOW-FAT GREEK YOGURT, MANGO",
+  "category": "dairy",
+  "description": "MANGO LOW-FAT GREEK YOGURT, MANGO from CHOBANI",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 150,
+      "label": "150 GRM"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 87,
+    "protein": 7.33,
+    "carbs": 0,
+    "fat": 1.67,
+    "fiber": 0.7,
+    "sugar": 9.33,
+    "sodium": 43,
+    "potassium": 93,
+    "cholesterol": 10
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:21.145Z"
+}

@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000033",
+  "slug": "oats",
+  "name": "Oats",
+  "category": "grains",
+  "description": "Oats - high in carbohydrates",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 389,
+    "protein": 10,
+    "carbs": 66,
+    "fat": 6.9,
+    "fiber": 10.6,
+    "sugar": 0,
+    "sodium": 30,
+    "cholesterol": 0,
+    "saturatedFat": 1.4
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.599Z"
+}

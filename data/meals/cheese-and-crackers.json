@@ -1,0 +1,48 @@
+{
+  "fdcId": "meal-109",
+  "slug": "cheese-and-crackers",
+  "name": "Cheese and Crackers",
+  "category": "meals",
+  "mealType": "snack",
+  "description": "Cheese and Crackers - A delicious and nutritious snack option.",
+  "servings": 1,
+  "prepTime": 2,
+  "cookTime": 0,
+  "ingredients": [
+    {
+      "name": "Cheddar Cheese",
+      "amount": 40,
+      "unit": "g",
+      "grams": 40,
+      "slug": "cheddar-cheese"
+    },
+    {
+      "name": "Whole Grain Crackers",
+      "amount": 30,
+      "unit": "g",
+      "grams": 30,
+      "slug": "whole-grain-crackers"
+    }
+  ],
+  "instructions": [
+    "Slice or cut cheese",
+    "Arrange on plate with crackers",
+    "Enjoy"
+  ],
+  "nutrition": {
+    "calories": 220,
+    "protein": 12,
+    "carbs": 18,
+    "fat": 10,
+    "fiber": 2,
+    "sugar": 1,
+    "sodium": 380
+  },
+  "healthBenefits": [
+    "Quick snack",
+    "Protein and calcium",
+    "Satisfying"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:48:42.303Z"
+}

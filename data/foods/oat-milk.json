@@ -1,0 +1,28 @@
+{
+  "fdcId": "200084",
+  "slug": "oat-milk",
+  "name": "Oat Milk",
+  "category": "beverages",
+  "description": "Oat Milk - rich in essential nutrients. Good nutrition source for a healthy diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 49,
+    "protein": 2.7,
+    "carbs": 4.3,
+    "fat": 1.5,
+    "fiber": 0.6,
+    "sugar": 2,
+    "sodium": 27,
+    "cholesterol": 0,
+    "saturatedFat": 0.2
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:44:51.175Z"
+}

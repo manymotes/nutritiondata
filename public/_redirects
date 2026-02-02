@@ -1,0 +1,3 @@
+# Force HTTPS redirect
+http://caloriedata.org/* https://caloriedata.org/:splat 301!
+http://www.caloriedata.org/* https://www.caloriedata.org/:splat 301!

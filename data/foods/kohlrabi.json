@@ -1,0 +1,28 @@
+{
+  "fdcId": "300036",
+  "slug": "kohlrabi",
+  "name": "Kohlrabi",
+  "category": "vegetables",
+  "description": "Kohlrabi - A nutritious food source with good amounts of essential vitamins and minerals. Part of a healthy, balanced diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 27,
+    "protein": 1.7,
+    "carbs": 6,
+    "fat": 0.1,
+    "fiber": 1.4,
+    "sugar": 2.8,
+    "sodium": 27,
+    "cholesterol": 0,
+    "saturatedFat": 0
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:46:37.279Z"
+}

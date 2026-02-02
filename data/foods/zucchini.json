@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000027",
+  "slug": "zucchini",
+  "name": "Zucchini",
+  "category": "vegetables",
+  "description": "Zucchini - high in nutrients",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 21,
+    "protein": 1.5,
+    "carbs": 4,
+    "fat": 0.4,
+    "fiber": 1,
+    "sugar": 1.2,
+    "sodium": 10,
+    "cholesterol": 0,
+    "saturatedFat": 0.1
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.598Z"
+}

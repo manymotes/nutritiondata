@@ -1,0 +1,48 @@
+{
+  "fdcId": "meal-14",
+  "slug": "apple-with-almond-butter",
+  "name": "Apple with Almond Butter",
+  "category": "meals",
+  "mealType": "snack",
+  "description": "Apple with Almond Butter - A delicious and nutritious snack option.",
+  "servings": 1,
+  "prepTime": 2,
+  "cookTime": 0,
+  "ingredients": [
+    {
+      "name": "Apple",
+      "amount": 1,
+      "unit": "medium",
+      "grams": 182,
+      "slug": "apple"
+    },
+    {
+      "name": "Almond Butter",
+      "amount": 25,
+      "unit": "g",
+      "grams": 25,
+      "slug": "almond-butter"
+    }
+  ],
+  "instructions": [
+    "Slice apple",
+    "Serve with almond butter on the side",
+    "Dip slices in almond butter and enjoy"
+  ],
+  "nutrition": {
+    "calories": 240,
+    "protein": 7,
+    "carbs": 26,
+    "fat": 10,
+    "fiber": 5,
+    "sugar": 18,
+    "sodium": 95
+  },
+  "healthBenefits": [
+    "Natural sugars",
+    "Protein and healthy fats",
+    "Sustained energy"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:47:51.202Z"
+}

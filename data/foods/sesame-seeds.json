@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000058",
+  "slug": "sesame-seeds",
+  "name": "Sesame Seeds",
+  "category": "nuts-seeds",
+  "description": "Sesame Seeds - high in protein",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 563,
+    "protein": 17,
+    "carbs": 23,
+    "fat": 50,
+    "fiber": 11.8,
+    "sugar": 0.3,
+    "sodium": 11,
+    "cholesterol": 0,
+    "saturatedFat": 7
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.601Z"
+}

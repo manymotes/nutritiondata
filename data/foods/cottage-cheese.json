@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000043",
+  "slug": "cottage-cheese",
+  "name": "Cottage Cheese",
+  "category": "dairy",
+  "description": "Cottage Cheese - high in nutrients",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 98,
+    "protein": 11,
+    "carbs": 3.7,
+    "fat": 5,
+    "fiber": 0,
+    "sugar": 3.3,
+    "sodium": 390,
+    "cholesterol": 0,
+    "saturatedFat": 3
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.600Z"
+}

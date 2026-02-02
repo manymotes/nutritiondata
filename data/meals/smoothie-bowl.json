@@ -1,0 +1,70 @@
+{
+  "fdcId": "meal-200",
+  "slug": "smoothie-bowl",
+  "name": "Smoothie Bowl",
+  "category": "meals",
+  "mealType": "breakfast",
+  "description": "Smoothie Bowl - A delicious and nutritious breakfast option.",
+  "servings": 1,
+  "prepTime": 8,
+  "cookTime": 0,
+  "ingredients": [
+    {
+      "name": "Greek Yogurt",
+      "amount": 150,
+      "unit": "g",
+      "grams": 150,
+      "slug": "greek-yogurt"
+    },
+    {
+      "name": "Frozen Berries",
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "slug": "frozen-berries"
+    },
+    {
+      "name": "Banana",
+      "amount": 1,
+      "unit": "medium",
+      "grams": 118,
+      "slug": "banana"
+    },
+    {
+      "name": "Granola",
+      "amount": 30,
+      "unit": "g",
+      "grams": 30,
+      "slug": "granola"
+    },
+    {
+      "name": "Coconut Flakes",
+      "amount": 15,
+      "unit": "g",
+      "grams": 15,
+      "slug": "coconut-flakes"
+    }
+  ],
+  "instructions": [
+    "Blend yogurt, frozen berries, and banana until thick",
+    "Pour into bowl",
+    "Top with granola and coconut flakes",
+    "Serve immediately"
+  ],
+  "nutrition": {
+    "calories": 340,
+    "protein": 18,
+    "carbs": 48,
+    "fat": 6,
+    "fiber": 5,
+    "sugar": 24,
+    "sodium": 50
+  },
+  "healthBenefits": [
+    "Thick creamy texture",
+    "High protein",
+    "Customizable toppings"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:49:21.680Z"
+}

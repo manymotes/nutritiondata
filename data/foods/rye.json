@@ -1,0 +1,28 @@
+{
+  "fdcId": "200048",
+  "slug": "rye",
+  "name": "Rye",
+  "category": "grains",
+  "description": "Rye - rich in carbohydrates. Good nutrition source for a healthy diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 338,
+    "protein": 10,
+    "carbs": 76,
+    "fat": 2.4,
+    "fiber": 15.1,
+    "sugar": 0.9,
+    "sodium": 2,
+    "cholesterol": 0,
+    "saturatedFat": 0.4
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:44:51.166Z"
+}

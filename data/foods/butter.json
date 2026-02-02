@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000044",
+  "slug": "butter",
+  "name": "Butter",
+  "category": "dairy",
+  "description": "Butter - high in healthy fats",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 717,
+    "protein": 0.9,
+    "carbs": 0.1,
+    "fat": 81,
+    "fiber": 0,
+    "sugar": 0.1,
+    "sodium": 11,
+    "cholesterol": 0,
+    "saturatedFat": 51
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.600Z"
+}

@@ -1,0 +1,28 @@
+{
+  "fdcId": "200014",
+  "slug": "mussels",
+  "name": "Mussels",
+  "category": "proteins",
+  "description": "Mussels - rich in essential nutrients. Good nutrition source for a healthy diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 86,
+    "protein": 12,
+    "carbs": 3.7,
+    "fat": 2.2,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 317,
+    "cholesterol": 0,
+    "saturatedFat": 0.4
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:44:51.159Z"
+}

@@ -1,0 +1,28 @@
+{
+  "fdcId": "200029",
+  "slug": "raspberry",
+  "name": "Raspberry",
+  "category": "fruits",
+  "description": "Raspberry - rich in essential nutrients. Good nutrition source for a healthy diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 52,
+    "protein": 1.2,
+    "carbs": 12,
+    "fat": 0.7,
+    "fiber": 6.5,
+    "sugar": 4.4,
+    "sodium": 1,
+    "cholesterol": 0,
+    "saturatedFat": 0.2
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:44:51.161Z"
+}

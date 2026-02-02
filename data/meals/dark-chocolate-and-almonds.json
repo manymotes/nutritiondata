@@ -1,0 +1,47 @@
+{
+  "fdcId": "meal-120",
+  "slug": "dark-chocolate-and-almonds",
+  "name": "Dark Chocolate and Almonds",
+  "category": "meals",
+  "mealType": "snack",
+  "description": "Dark Chocolate and Almonds - A delicious and nutritious snack option.",
+  "servings": 1,
+  "prepTime": 0,
+  "cookTime": 0,
+  "ingredients": [
+    {
+      "name": "Dark Chocolate",
+      "amount": 20,
+      "unit": "g",
+      "grams": 20,
+      "slug": "dark-chocolate"
+    },
+    {
+      "name": "Almonds",
+      "amount": 30,
+      "unit": "g",
+      "grams": 30,
+      "slug": "almonds"
+    }
+  ],
+  "instructions": [
+    "Combine dark chocolate pieces and almonds",
+    "Enjoy as satisfying snack"
+  ],
+  "nutrition": {
+    "calories": 240,
+    "protein": 7,
+    "carbs": 20,
+    "fat": 16,
+    "fiber": 4,
+    "sugar": 12,
+    "sodium": 5
+  },
+  "healthBenefits": [
+    "Antioxidants",
+    "Healthy fats",
+    "Mood boosting"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:48:42.305Z"
+}

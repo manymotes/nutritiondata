@@ -1,0 +1,35 @@
+{
+  "fdcId": "2741746",
+  "slug": "cinnamon-toast-crunch-cereal",
+  "name": "Cinnamon Toast Crunch Cereal",
+  "category": "grains",
+  "description": "Cinnamon Toast Crunch Cereal from GENERAL MILLS SALES INC.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 99,
+      "label": "Per pouch"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 404,
+    "protein": 6.06,
+    "carbs": 79.8,
+    "fat": 9.09,
+    "fiber": 7.1,
+    "sugar": 30.3,
+    "sodium": 566,
+    "potassium": 202,
+    "cholesterol": 0,
+    "saturatedFat": 1.01
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:08.438Z"
+}

@@ -1,0 +1,28 @@
+{
+  "fdcId": "300011",
+  "slug": "beef-jerky",
+  "name": "Beef Jerky",
+  "category": "proteins",
+  "description": "Beef Jerky - A nutritious food source with good amounts of protein. Part of a healthy, balanced diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 145,
+    "protein": 33,
+    "carbs": 11,
+    "fat": 3,
+    "fiber": 0,
+    "sugar": 6,
+    "sodium": 1540,
+    "cholesterol": 0,
+    "saturatedFat": 1.2
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:46:37.271Z"
+}

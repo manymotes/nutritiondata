@@ -1,0 +1,71 @@
+{
+  "fdcId": "meal-12",
+  "slug": "lean-ground-turkey-tacos",
+  "name": "Lean Ground Turkey Tacos",
+  "category": "meals",
+  "mealType": "dinner",
+  "description": "Lean Ground Turkey Tacos - A delicious and nutritious dinner option.",
+  "servings": 2,
+  "prepTime": 5,
+  "cookTime": 10,
+  "ingredients": [
+    {
+      "name": "Ground Turkey",
+      "amount": 200,
+      "unit": "g",
+      "grams": 200,
+      "slug": "ground-turkey"
+    },
+    {
+      "name": "Corn Tortillas",
+      "amount": 4,
+      "unit": "pieces",
+      "grams": 120,
+      "slug": "corn-tortillas"
+    },
+    {
+      "name": "Lettuce",
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "slug": "lettuce"
+    },
+    {
+      "name": "Tomato",
+      "amount": 1,
+      "unit": "medium",
+      "grams": 150,
+      "slug": "tomato"
+    },
+    {
+      "name": "Salsa",
+      "amount": 60,
+      "unit": "ml",
+      "grams": 60,
+      "slug": "salsa"
+    }
+  ],
+  "instructions": [
+    "Brown ground turkey in a skillet",
+    "Add taco seasoning and simmer",
+    "Warm tortillas on griddle",
+    "Assemble tacos with lettuce, tomato, and turkey",
+    "Top with salsa and serve"
+  ],
+  "nutrition": {
+    "calories": 340,
+    "protein": 35,
+    "carbs": 28,
+    "fat": 8,
+    "fiber": 4,
+    "sugar": 3,
+    "sodium": 480
+  },
+  "healthBenefits": [
+    "Lean protein",
+    "Low in fat",
+    "Easy to customize"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:47:51.201Z"
+}

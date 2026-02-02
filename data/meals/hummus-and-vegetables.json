@@ -1,0 +1,63 @@
+{
+  "fdcId": "meal-13",
+  "slug": "hummus-and-vegetables",
+  "name": "Hummus and Vegetables",
+  "category": "meals",
+  "mealType": "snack",
+  "description": "Hummus and Vegetables - A delicious and nutritious snack option.",
+  "servings": 1,
+  "prepTime": 5,
+  "cookTime": 0,
+  "ingredients": [
+    {
+      "name": "Hummus",
+      "amount": 60,
+      "unit": "g",
+      "grams": 60,
+      "slug": "hummus"
+    },
+    {
+      "name": "Carrot Sticks",
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "slug": "carrot"
+    },
+    {
+      "name": "Celery Sticks",
+      "amount": 75,
+      "unit": "g",
+      "grams": 75,
+      "slug": "celery"
+    },
+    {
+      "name": "Bell Pepper",
+      "amount": 75,
+      "unit": "g",
+      "grams": 75,
+      "slug": "bell-pepper"
+    }
+  ],
+  "instructions": [
+    "Cut vegetables into sticks",
+    "Place hummus in small bowl",
+    "Arrange vegetables around hummus",
+    "Dip and enjoy"
+  ],
+  "nutrition": {
+    "calories": 180,
+    "protein": 8,
+    "carbs": 20,
+    "fat": 7,
+    "fiber": 5,
+    "sugar": 6,
+    "sodium": 280
+  },
+  "healthBenefits": [
+    "Healthy fats",
+    "High fiber",
+    "Low calorie snack"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:47:51.202Z"
+}

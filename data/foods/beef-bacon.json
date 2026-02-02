@@ -1,0 +1,28 @@
+{
+  "fdcId": "300015",
+  "slug": "beef-bacon",
+  "name": "Beef Bacon",
+  "category": "proteins",
+  "description": "Beef Bacon - A nutritious food source with good amounts of protein. Part of a healthy, balanced diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 217,
+    "protein": 21,
+    "carbs": 0,
+    "fat": 14,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 1080,
+    "cholesterol": 0,
+    "saturatedFat": 5.9
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:46:37.273Z"
+}

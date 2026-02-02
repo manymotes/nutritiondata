@@ -1,0 +1,63 @@
+{
+  "fdcId": "meal-17",
+  "slug": "protein-smoothie",
+  "name": "Protein Smoothie",
+  "category": "meals",
+  "mealType": "snack",
+  "description": "Protein Smoothie - A delicious and nutritious snack option.",
+  "servings": 1,
+  "prepTime": 5,
+  "cookTime": 0,
+  "ingredients": [
+    {
+      "name": "Protein Powder",
+      "amount": 25,
+      "unit": "g",
+      "grams": 25,
+      "slug": "protein-powder"
+    },
+    {
+      "name": "Banana",
+      "amount": 1,
+      "unit": "medium",
+      "grams": 118,
+      "slug": "banana"
+    },
+    {
+      "name": "Almond Milk",
+      "amount": 250,
+      "unit": "ml",
+      "grams": 250,
+      "slug": "almond-milk"
+    },
+    {
+      "name": "Spinach",
+      "amount": 30,
+      "unit": "g",
+      "grams": 30,
+      "slug": "spinach"
+    }
+  ],
+  "instructions": [
+    "Add almond milk to blender",
+    "Add protein powder, banana, and spinach",
+    "Blend until smooth",
+    "Serve immediately"
+  ],
+  "nutrition": {
+    "calories": 220,
+    "protein": 28,
+    "carbs": 20,
+    "fat": 3,
+    "fiber": 3,
+    "sugar": 10,
+    "sodium": 150
+  },
+  "healthBenefits": [
+    "High protein",
+    "Quick meal",
+    "Vegetable packed"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:47:51.203Z"
+}

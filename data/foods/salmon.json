@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000002",
+  "slug": "salmon",
+  "name": "Salmon",
+  "category": "proteins",
+  "description": "Salmon - high in protein",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 208,
+    "protein": 25,
+    "carbs": 0,
+    "fat": 13,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 75,
+    "cholesterol": 0,
+    "saturatedFat": 2.9
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.596Z"
+}

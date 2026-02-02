@@ -1,0 +1,28 @@
+{
+  "fdcId": "200023",
+  "slug": "kiwifruit",
+  "name": "Kiwifruit",
+  "category": "fruits",
+  "description": "Kiwifruit - rich in essential nutrients. Good nutrition source for a healthy diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 61,
+    "protein": 1.1,
+    "carbs": 15,
+    "fat": 0.5,
+    "fiber": 3,
+    "sugar": 6,
+    "sodium": 3,
+    "cholesterol": 0,
+    "saturatedFat": 0.1
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:44:51.160Z"
+}

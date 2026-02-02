@@ -1,0 +1,63 @@
+{
+  "fdcId": "meal-102",
+  "slug": "chia-seed-pudding",
+  "name": "Chia Seed Pudding",
+  "category": "meals",
+  "mealType": "breakfast",
+  "description": "Chia Seed Pudding - A delicious and nutritious breakfast option.",
+  "servings": 1,
+  "prepTime": 10,
+  "cookTime": 0,
+  "ingredients": [
+    {
+      "name": "Chia Seeds",
+      "amount": 30,
+      "unit": "g",
+      "grams": 30,
+      "slug": "chia-seeds"
+    },
+    {
+      "name": "Almond Milk",
+      "amount": 240,
+      "unit": "ml",
+      "grams": 240,
+      "slug": "almond-milk"
+    },
+    {
+      "name": "Maple Syrup",
+      "amount": 15,
+      "unit": "ml",
+      "grams": 15,
+      "slug": "maple-syrup"
+    },
+    {
+      "name": "Blueberries",
+      "amount": 50,
+      "unit": "g",
+      "grams": 50,
+      "slug": "blueberries"
+    }
+  ],
+  "instructions": [
+    "Mix chia seeds with almond milk",
+    "Add maple syrup",
+    "Let sit for 30 minutes or overnight",
+    "Top with blueberries before serving"
+  ],
+  "nutrition": {
+    "calories": 240,
+    "protein": 7,
+    "carbs": 22,
+    "fat": 13,
+    "fiber": 10,
+    "sugar": 10,
+    "sodium": 180
+  },
+  "healthBenefits": [
+    "Omega-3 rich",
+    "High fiber",
+    "Make-ahead friendly"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:48:42.301Z"
+}

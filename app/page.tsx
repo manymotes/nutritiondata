@@ -1,6 +1,30 @@
 import Link from 'next/link'
+import Script from 'next/script'
 import { SITE_NAME, SITE_URL, SITE_DESCRIPTION, FOOD_CATEGORIES, POPULAR_FOODS } from '@/lib/constants'
 import { getFoodData } from '@/lib/data'
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: SITE_NAME,
+  description: SITE_DESCRIPTION,
+  url: SITE_URL,
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: `${SITE_URL}/search?q={search_term_string}`,
+    'query-input': 'required name=search_term_string',
+  },
+}
+
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: SITE_NAME,
+  url: SITE_URL,
+  logo: `${SITE_URL}/icon.svg`,
+  description: SITE_DESCRIPTION,
+  sameAs: [],
+}
 
 export default function HomePage() {
   // Get nutrition data for popular foods
@@ -13,8 +37,19 @@ export default function HomePage() {
   })
 
   return (
-    <div>
-      {/* Hero Section */}
+    <>
+      <Script
+        id="website-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
+      <Script
+        id="organization-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      <div>
+        {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary-600 to-primary-800 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -241,41 +276,7 @@ export default function HomePage() {
           </p>
         </div>
       </section>
-
-      {/* Schema.org structured data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'WebSite',
-            name: SITE_NAME,
-            url: SITE_URL,
-            description: SITE_DESCRIPTION,
-            potentialAction: {
-              '@type': 'SearchAction',
-              target: {
-                '@type': 'EntryPoint',
-                urlTemplate: `${SITE_URL}/calories-in/{search_term_string}/`,
-              },
-              'query-input': 'required name=search_term_string',
-            },
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Organization',
-            name: SITE_NAME,
-            url: SITE_URL,
-            description: SITE_DESCRIPTION,
-            sameAs: [],
-          }),
-        }}
-      />
     </div>
+    </>
   )
 }

@@ -1,0 +1,34 @@
+{
+  "fdcId": "1593486",
+  "slug": "cheetos-salsa-queso-crunchy-cheese-flavored-snacks",
+  "name": "CHEETOS SALSA QUESO CRUNCHY, CHEESE FLAVORED SNACKS",
+  "category": "snacks",
+  "description": "CHEETOS SALSA QUESO CRUNCHY, CHEESE FLAVORED SNACKS from Frito-Lay Company",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 28,
+      "label": "1 ONZ"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 571,
+    "protein": 7.14,
+    "carbs": 57.1,
+    "fat": 35.7,
+    "fiber": 3.6,
+    "sugar": 3.57,
+    "sodium": 786,
+    "cholesterol": 0,
+    "saturatedFat": 5.36
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:12.800Z"
+}

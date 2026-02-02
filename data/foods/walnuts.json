@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000052",
+  "slug": "walnuts",
+  "name": "Walnuts",
+  "category": "nuts-seeds",
+  "description": "Walnuts - high in healthy fats",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 654,
+    "protein": 9,
+    "carbs": 14,
+    "fat": 65,
+    "fiber": 6.7,
+    "sugar": 2.6,
+    "sodium": 2,
+    "cholesterol": 0,
+    "saturatedFat": 6.1
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.600Z"
+}

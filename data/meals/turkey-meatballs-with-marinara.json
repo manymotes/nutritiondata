@@ -1,0 +1,71 @@
+{
+  "fdcId": "meal-115",
+  "slug": "turkey-meatballs-with-marinara",
+  "name": "Turkey Meatballs with Marinara",
+  "category": "meals",
+  "mealType": "dinner",
+  "description": "Turkey Meatballs with Marinara - A delicious and nutritious dinner option.",
+  "servings": 2,
+  "prepTime": 10,
+  "cookTime": 20,
+  "ingredients": [
+    {
+      "name": "Ground Turkey",
+      "amount": 250,
+      "unit": "g",
+      "grams": 250,
+      "slug": "ground-turkey"
+    },
+    {
+      "name": "Breadcrumbs",
+      "amount": 25,
+      "unit": "g",
+      "grams": 25,
+      "slug": "breadcrumbs"
+    },
+    {
+      "name": "Egg",
+      "amount": 1,
+      "unit": "large",
+      "grams": 50,
+      "slug": "egg"
+    },
+    {
+      "name": "Marinara Sauce",
+      "amount": 200,
+      "unit": "ml",
+      "grams": 200,
+      "slug": "marinara-sauce"
+    },
+    {
+      "name": "Zucchini Noodles",
+      "amount": 150,
+      "unit": "g",
+      "grams": 150,
+      "slug": "zucchini-noodles"
+    }
+  ],
+  "instructions": [
+    "Mix ground turkey, breadcrumbs, and egg",
+    "Form into balls and place on baking sheet",
+    "Bake at 400F for 15-20 minutes",
+    "Heat marinara sauce",
+    "Serve meatballs over zucchini noodles with sauce"
+  ],
+  "nutrition": {
+    "calories": 280,
+    "protein": 32,
+    "carbs": 18,
+    "fat": 9,
+    "fiber": 3,
+    "sugar": 4,
+    "sodium": 520
+  },
+  "healthBenefits": [
+    "Low carb option",
+    "High protein",
+    "Freezer-friendly"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:48:42.304Z"
+}

@@ -1,0 +1,35 @@
+{
+  "fdcId": "2509629",
+  "slug": "chobani-meze-dip-three-pepper-salsa",
+  "name": "CHOBANI, MEZE DIP THREE-PEPPER SALSA",
+  "category": "dairy",
+  "description": "CHOBANI, MEZE DIP THREE-PEPPER SALSA from Chobani, Inc.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 28,
+      "label": "2 Tbsp"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 89,
+    "protein": 10.7,
+    "carbs": 7.14,
+    "fat": 3.57,
+    "fiber": 0,
+    "sugar": 3.57,
+    "sodium": 464,
+    "potassium": 125,
+    "cholesterol": 18,
+    "saturatedFat": 1.79
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:21.130Z"
+}

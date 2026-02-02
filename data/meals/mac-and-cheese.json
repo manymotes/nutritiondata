@@ -1,0 +1,71 @@
+{
+  "fdcId": "meal-205",
+  "slug": "mac-and-cheese",
+  "name": "Mac and Cheese",
+  "category": "meals",
+  "mealType": "lunch",
+  "description": "Mac and Cheese - A delicious and nutritious lunch option.",
+  "servings": 2,
+  "prepTime": 5,
+  "cookTime": 20,
+  "ingredients": [
+    {
+      "name": "Whole Wheat Pasta",
+      "amount": 150,
+      "unit": "g",
+      "grams": 150,
+      "slug": "whole-wheat-pasta"
+    },
+    {
+      "name": "Cheddar Cheese",
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "slug": "cheddar-cheese"
+    },
+    {
+      "name": "Butter",
+      "amount": 20,
+      "unit": "g",
+      "grams": 20,
+      "slug": "butter"
+    },
+    {
+      "name": "Milk",
+      "amount": 200,
+      "unit": "ml",
+      "grams": 200,
+      "slug": "milk"
+    },
+    {
+      "name": "Breadcrumbs",
+      "amount": 30,
+      "unit": "g",
+      "grams": 30,
+      "slug": "breadcrumbs"
+    }
+  ],
+  "instructions": [
+    "Cook pasta according to package",
+    "Make cheese sauce with butter, milk, and cheese",
+    "Toss pasta with sauce",
+    "Top with breadcrumbs and bake at 350F for 10 minutes",
+    "Serve hot"
+  ],
+  "nutrition": {
+    "calories": 420,
+    "protein": 18,
+    "carbs": 52,
+    "fat": 14,
+    "fiber": 7,
+    "sugar": 4,
+    "sodium": 480
+  },
+  "healthBenefits": [
+    "Comfort food",
+    "Family favorite",
+    "Kid-approved"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:49:21.684Z"
+}

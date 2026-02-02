@@ -1,0 +1,28 @@
+{
+  "fdcId": "200067",
+  "slug": "parmesan",
+  "name": "Parmesan",
+  "category": "dairy",
+  "description": "Parmesan - rich in protein. Good nutrition source for a healthy diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 431,
+    "protein": 38,
+    "carbs": 4.1,
+    "fat": 29,
+    "fiber": 0,
+    "sugar": 0.7,
+    "sodium": 1529,
+    "cholesterol": 0,
+    "saturatedFat": 18.3
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:44:51.171Z"
+}

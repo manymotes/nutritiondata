@@ -1,0 +1,28 @@
+{
+  "fdcId": "200044",
+  "slug": "soybean",
+  "name": "Soybean",
+  "category": "vegetables",
+  "description": "Soybean - rich in essential nutrients. Good nutrition source for a healthy diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 95,
+    "protein": 11,
+    "carbs": 12,
+    "fat": 5,
+    "fiber": 2.5,
+    "sugar": 0.7,
+    "sodium": 1,
+    "cholesterol": 0,
+    "saturatedFat": 0.7
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:44:51.165Z"
+}

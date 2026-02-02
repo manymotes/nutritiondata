@@ -1,0 +1,35 @@
+{
+  "fdcId": "1907513",
+  "slug": "kind-fruit-nut-bar-almonds-apricots-in-yogurt",
+  "name": "KIND, FRUIT & NUT BAR, ALMONDS & APRICOTS IN YOGURT",
+  "category": "snacks",
+  "description": "KIND, FRUIT & NUT BAR, ALMONDS & APRICOTS IN YOGURT from KIND Inc.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 40,
+      "label": "1 BAR"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 475,
+    "protein": 7.5,
+    "carbs": 57.5,
+    "fat": 27.5,
+    "fiber": 6.2,
+    "sugar": 40,
+    "sodium": 62,
+    "potassium": 425,
+    "cholesterol": 0,
+    "saturatedFat": 12.5
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:28.478Z"
+}

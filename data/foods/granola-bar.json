@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000076",
+  "slug": "granola-bar",
+  "name": "Granola Bar",
+  "category": "snacks",
+  "description": "Granola Bar - high in nutrients",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 193,
+    "protein": 4,
+    "carbs": 28,
+    "fat": 8,
+    "fiber": 2,
+    "sugar": 12,
+    "sodium": 178,
+    "cholesterol": 0,
+    "saturatedFat": 1.2
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.603Z"
+}

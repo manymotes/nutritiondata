@@ -1,0 +1,35 @@
+{
+  "fdcId": "2507892",
+  "slug": "clif-bar-clif-mojo-trail-mix-bar-wild-blueberry-almond-wild-blueberry-almond",
+  "name": "CLIF BAR, CLIF MOJO, TRAIL MIX BAR, WILD BLUEBERRY ALMOND, WILD BLUEBERRY ALMOND",
+  "category": "snacks",
+  "description": "CLIF BAR, CLIF MOJO, TRAIL MIX BAR, WILD BLUEBERRY ALMOND, WILD BLUEBERRY ALMOND from Clif Bar and Company",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 40,
+      "label": "1 BAR"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 400,
+    "protein": 10,
+    "carbs": 57.5,
+    "fat": 20,
+    "fiber": 10,
+    "sugar": 30,
+    "sodium": 275,
+    "potassium": 525,
+    "cholesterol": 0,
+    "saturatedFat": 2.5
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:27.738Z"
+}

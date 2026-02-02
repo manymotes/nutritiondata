@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000078",
+  "slug": "crackers",
+  "name": "Crackers",
+  "category": "snacks",
+  "description": "Crackers - high in carbohydrates",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 421,
+    "protein": 6,
+    "carbs": 71,
+    "fat": 11,
+    "fiber": 2,
+    "sugar": 1.5,
+    "sodium": 735,
+    "cholesterol": 0,
+    "saturatedFat": 2
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.604Z"
+}

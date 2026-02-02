@@ -1,0 +1,34 @@
+{
+  "fdcId": "690916",
+  "slug": "caffe-latte-iced-espresso-beverage-caffe-latte",
+  "name": "CAFFE LATTE ICED ESPRESSO BEVERAGE, CAFFE LATTE",
+  "category": "fast-food",
+  "description": "CAFFE LATTE ICED ESPRESSO BEVERAGE, CAFFE LATTE from STARBUCKS, INC",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 414,
+      "label": "1 BOTTLE"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 53,
+    "protein": 1.93,
+    "carbs": 8.94,
+    "fat": 1.09,
+    "fiber": 0,
+    "sugar": 8.21,
+    "sodium": 27,
+    "cholesterol": 4,
+    "saturatedFat": 0.72
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:46:32.016Z"
+}

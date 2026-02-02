@@ -1,0 +1,34 @@
+{
+  "fdcId": "2046371",
+  "slug": "starbucks-peppermint-cookie-chocolate-bites",
+  "name": "STARBUCKS, PEPPERMINT COOKIE CHOCOLATE BITES",
+  "category": "fast-food",
+  "description": "STARBUCKS, PEPPERMINT COOKIE CHOCOLATE BITES from Starbucks Coffee Company",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 40,
+      "label": "22 PIECES"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 475,
+    "protein": 5,
+    "carbs": 60,
+    "fat": 27.5,
+    "fiber": 2.5,
+    "sugar": 42.5,
+    "sodium": 275,
+    "cholesterol": 12,
+    "saturatedFat": 15
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:46:32.002Z"
+}

@@ -1,0 +1,35 @@
+{
+  "fdcId": "2745355",
+  "slug": "honey-nut-cheerios-breakfast-cereal",
+  "name": "Honey Nut Cheerios Breakfast Cereal",
+  "category": "grains",
+  "description": "Honey Nut Cheerios Breakfast Cereal from GENERAL MILLS SALES INC.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 37,
+      "label": "37"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 378,
+    "protein": 8.11,
+    "carbs": 81.1,
+    "fat": 5.41,
+    "fiber": 8.1,
+    "sugar": 32.4,
+    "sodium": 568,
+    "potassium": 405,
+    "cholesterol": 0,
+    "saturatedFat": 0
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:09.337Z"
+}

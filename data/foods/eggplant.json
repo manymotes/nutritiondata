@@ -1,0 +1,28 @@
+{
+  "fdcId": "200032",
+  "slug": "eggplant",
+  "name": "Eggplant",
+  "category": "vegetables",
+  "description": "Eggplant - rich in essential nutrients. Good nutrition source for a healthy diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 25,
+    "protein": 0.98,
+    "carbs": 6,
+    "fat": 0.2,
+    "fiber": 3,
+    "sugar": 2.4,
+    "sodium": 2,
+    "cholesterol": 0,
+    "saturatedFat": 0
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:44:51.163Z"
+}

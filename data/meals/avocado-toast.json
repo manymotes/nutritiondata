@@ -1,0 +1,64 @@
+{
+  "fdcId": "meal-4",
+  "slug": "avocado-toast",
+  "name": "Avocado Toast",
+  "category": "meals",
+  "mealType": "breakfast",
+  "description": "Avocado Toast - A delicious and nutritious breakfast option.",
+  "servings": 1,
+  "prepTime": 5,
+  "cookTime": 3,
+  "ingredients": [
+    {
+      "name": "Whole Grain Bread",
+      "amount": 2,
+      "unit": "slices",
+      "grams": 60,
+      "slug": "whole-grain-bread"
+    },
+    {
+      "name": "Avocado",
+      "amount": 1,
+      "unit": "medium",
+      "grams": 150,
+      "slug": "avocado"
+    },
+    {
+      "name": "Lemon Juice",
+      "amount": 15,
+      "unit": "ml",
+      "grams": 15,
+      "slug": "lemon-juice"
+    },
+    {
+      "name": "Red Pepper Flakes",
+      "amount": 2,
+      "unit": "g",
+      "grams": 2,
+      "slug": "red-pepper-flakes"
+    }
+  ],
+  "instructions": [
+    "Toast bread until crispy",
+    "Slice avocado in half and remove pit",
+    "Scoop onto toast and spread",
+    "Squeeze lemon juice on top",
+    "Sprinkle with red pepper flakes and serve"
+  ],
+  "nutrition": {
+    "calories": 380,
+    "protein": 12,
+    "carbs": 38,
+    "fat": 18,
+    "fiber": 9,
+    "sugar": 2,
+    "sodium": 320
+  },
+  "healthBenefits": [
+    "Healthy monounsaturated fats",
+    "High in fiber",
+    "Supports heart health"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:47:51.199Z"
+}

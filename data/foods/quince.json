@@ -1,0 +1,28 @@
+{
+  "fdcId": "300027",
+  "slug": "quince",
+  "name": "Quince",
+  "category": "fruits",
+  "description": "Quince - A nutritious food source with good amounts of essential vitamins and minerals. Part of a healthy, balanced diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 57,
+    "protein": 0.4,
+    "carbs": 15,
+    "fat": 0.1,
+    "fiber": 1.9,
+    "sugar": 7.3,
+    "sodium": 4,
+    "cholesterol": 0,
+    "saturatedFat": 0
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:46:37.277Z"
+}

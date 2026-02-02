@@ -1,0 +1,35 @@
+{
+  "fdcId": "1462106",
+  "slug": "blueberry-cheerios-cereal",
+  "name": "Blueberry Cheerios Cereal",
+  "category": "grains",
+  "description": "Blueberry Cheerios Cereal from GENERAL MILLS SALES INC.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 150,
+      "label": "3/4 cup with 1/2 cup skim milk"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 407,
+    "protein": 7.41,
+    "carbs": 77.8,
+    "fat": 5.56,
+    "fiber": 7.4,
+    "sugar": 29.6,
+    "sodium": 463,
+    "potassium": 259,
+    "cholesterol": 0,
+    "saturatedFat": 0
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:00.995Z"
+}

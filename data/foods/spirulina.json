@@ -1,0 +1,28 @@
+{
+  "fdcId": "300033",
+  "slug": "spirulina",
+  "name": "Spirulina",
+  "category": "vegetables",
+  "description": "Spirulina - A nutritious food source with good amounts of protein. Part of a healthy, balanced diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 290,
+    "protein": 57,
+    "carbs": 24,
+    "fat": 7,
+    "fiber": 3.6,
+    "sugar": 2,
+    "sodium": 1048,
+    "cholesterol": 0,
+    "saturatedFat": 2.5
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:46:37.278Z"
+}

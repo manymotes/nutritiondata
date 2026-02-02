@@ -1,0 +1,47 @@
+{
+  "fdcId": "meal-110",
+  "slug": "string-cheese-and-almonds",
+  "name": "String Cheese and Almonds",
+  "category": "meals",
+  "mealType": "snack",
+  "description": "String Cheese and Almonds - A delicious and nutritious snack option.",
+  "servings": 1,
+  "prepTime": 1,
+  "cookTime": 0,
+  "ingredients": [
+    {
+      "name": "String Cheese",
+      "amount": 28,
+      "unit": "g",
+      "grams": 28,
+      "slug": "string-cheese"
+    },
+    {
+      "name": "Almonds",
+      "amount": 30,
+      "unit": "g",
+      "grams": 30,
+      "slug": "almonds"
+    }
+  ],
+  "instructions": [
+    "Pack string cheese and almonds in container",
+    "Eat as on-the-go snack"
+  ],
+  "nutrition": {
+    "calories": 220,
+    "protein": 10,
+    "carbs": 6,
+    "fat": 17,
+    "fiber": 3,
+    "sugar": 0,
+    "sodium": 280
+  },
+  "healthBenefits": [
+    "Portable",
+    "High protein",
+    "Good healthy fats"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:48:42.303Z"
+}

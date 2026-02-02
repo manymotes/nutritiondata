@@ -1,0 +1,28 @@
+{
+  "fdcId": "200010",
+  "slug": "octopus",
+  "name": "Octopus",
+  "category": "proteins",
+  "description": "Octopus - rich in protein. Good nutrition source for a healthy diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 82,
+    "protein": 30,
+    "carbs": 2.2,
+    "fat": 0.9,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 577,
+    "cholesterol": 0,
+    "saturatedFat": 0.2
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:44:51.158Z"
+}

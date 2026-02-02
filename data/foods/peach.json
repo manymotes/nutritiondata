@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000106",
+  "slug": "peach",
+  "name": "Peach",
+  "category": "fruits",
+  "description": "Peach - high in nutrients",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 39,
+    "protein": 0.9,
+    "carbs": 10,
+    "fat": 0.3,
+    "fiber": 1.5,
+    "sugar": 7,
+    "sodium": 0,
+    "cholesterol": 0,
+    "saturatedFat": 0
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.610Z"
+}

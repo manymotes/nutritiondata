@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000054",
+  "slug": "sunflower-seeds",
+  "name": "Sunflower Seeds",
+  "category": "nuts-seeds",
+  "description": "Sunflower Seeds - high in healthy fats",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 584,
+    "protein": 9,
+    "carbs": 20,
+    "fat": 51,
+    "fiber": 8.6,
+    "sugar": 2.6,
+    "sodium": 9,
+    "cholesterol": 0,
+    "saturatedFat": 4.5
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.600Z"
+}

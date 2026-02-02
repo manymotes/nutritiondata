@@ -1,0 +1,35 @@
+{
+  "fdcId": "1879658",
+  "slug": "quest-protein-chips-sea-salt-sea-salt",
+  "name": "QUEST, PROTEIN CHIPS, SEA SALT, SEA SALT",
+  "category": "snacks",
+  "description": "QUEST, PROTEIN CHIPS, SEA SALT, SEA SALT from Quest Nutrition, LLC",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 32,
+      "label": "1.125 ONZ"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 375,
+    "protein": 65.6,
+    "carbs": 15.6,
+    "fat": 4.69,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 594,
+    "potassium": 203,
+    "cholesterol": 31,
+    "saturatedFat": 0
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:26.744Z"
+}

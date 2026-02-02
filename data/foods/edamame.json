@@ -1,0 +1,28 @@
+{
+  "fdcId": "200090",
+  "slug": "edamame",
+  "name": "Edamame",
+  "category": "proteins",
+  "description": "Edamame - rich in essential nutrients. Good nutrition source for a healthy diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 111,
+    "protein": 11,
+    "carbs": 10,
+    "fat": 5,
+    "fiber": 2.2,
+    "sugar": 2,
+    "sodium": 1,
+    "cholesterol": 0,
+    "saturatedFat": 0.6
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:44:51.176Z"
+}

@@ -1,0 +1,28 @@
+{
+  "fdcId": "200019",
+  "slug": "passion-fruit",
+  "name": "Passion Fruit",
+  "category": "fruits",
+  "description": "Passion Fruit - rich in essential nutrients. Good nutrition source for a healthy diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 97,
+    "protein": 2.2,
+    "carbs": 23,
+    "fat": 0.7,
+    "fiber": 10,
+    "sugar": 11,
+    "sodium": 28,
+    "cholesterol": 0,
+    "saturatedFat": 0.1
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:44:51.160Z"
+}

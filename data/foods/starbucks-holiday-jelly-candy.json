@@ -1,0 +1,34 @@
+{
+  "fdcId": "2042954",
+  "slug": "starbucks-holiday-jelly-candy",
+  "name": "STARBUCKS, HOLIDAY JELLY CANDY",
+  "category": "fast-food",
+  "description": "STARBUCKS, HOLIDAY JELLY CANDY from Starbucks Coffee Company",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 40,
+      "label": "30 Pieces"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 375,
+    "protein": 0,
+    "carbs": 90,
+    "fat": 0,
+    "fiber": 0,
+    "sugar": 67.5,
+    "sodium": 75,
+    "cholesterol": 0,
+    "saturatedFat": 0
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:46:31.993Z"
+}

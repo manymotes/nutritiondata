@@ -1,0 +1,34 @@
+{
+  "fdcId": "572107",
+  "slug": "vanilla-fig-with-cream-cold-brew-premium-coffee-drink",
+  "name": "VANILLA & FIG WITH CREAM COLD BREW PREMIUM COFFEE DRINK",
+  "category": "fast-food",
+  "description": "VANILLA & FIG WITH CREAM COLD BREW PREMIUM COFFEE DRINK from STARBUCKS, INC",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 325,
+      "label": "11 OZA"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 46,
+    "protein": 1.54,
+    "carbs": 7.38,
+    "fat": 1.23,
+    "fiber": 0,
+    "sugar": 6.77,
+    "sodium": 22,
+    "cholesterol": 5,
+    "saturatedFat": 0.77
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:46:32.021Z"
+}

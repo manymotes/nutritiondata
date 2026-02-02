@@ -1,0 +1,40 @@
+{
+  "fdcId": "meal-119",
+  "slug": "mixed-nuts",
+  "name": "Mixed Nuts",
+  "category": "meals",
+  "mealType": "snack",
+  "description": "Mixed Nuts - A delicious and nutritious snack option.",
+  "servings": 1,
+  "prepTime": 0,
+  "cookTime": 0,
+  "ingredients": [
+    {
+      "name": "Unsalted Mixed Nuts",
+      "amount": 30,
+      "unit": "g",
+      "grams": 30,
+      "slug": "unsalted-mixed-nuts"
+    }
+  ],
+  "instructions": [
+    "Portion nuts into small container",
+    "Enjoy as snack"
+  ],
+  "nutrition": {
+    "calories": 180,
+    "protein": 5,
+    "carbs": 7,
+    "fat": 16,
+    "fiber": 4,
+    "sugar": 1,
+    "sodium": 0
+  },
+  "healthBenefits": [
+    "Heart healthy",
+    "Portable",
+    "Sustained energy"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:48:42.305Z"
+}

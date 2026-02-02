@@ -1,0 +1,35 @@
+{
+  "fdcId": "2739365",
+  "slug": "cheerios-cereal-pouch",
+  "name": "Cheerios Cereal Pouch",
+  "category": "grains",
+  "description": "Cheerios Cereal Pouch from GENERAL MILLS SALES INC.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 39,
+      "label": "39"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 359,
+    "protein": 12.8,
+    "carbs": 74.4,
+    "fat": 6.41,
+    "fiber": 10.3,
+    "sugar": 5.13,
+    "sodium": 487,
+    "potassium": 641,
+    "cholesterol": 0,
+    "saturatedFat": 1.28
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:00.996Z"
+}

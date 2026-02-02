@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000004",
+  "slug": "turkey-breast",
+  "name": "Turkey Breast",
+  "category": "proteins",
+  "description": "Turkey Breast - high in protein",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 135,
+    "protein": 29,
+    "carbs": 0,
+    "fat": 1.6,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 53,
+    "cholesterol": 0,
+    "saturatedFat": 0.5
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.596Z"
+}

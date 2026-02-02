@@ -1,0 +1,34 @@
+{
+  "fdcId": "1855004",
+  "slug": "amys-organic-non-dairy-cakes-orange-orange",
+  "name": "AMY'S, ORGANIC NON-DAIRY CAKES, ORANGE, ORANGE",
+  "category": "fast-food",
+  "description": "AMY'S, ORGANIC NON-DAIRY CAKES, ORANGE, ORANGE from Amy's Kitchen Inc.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 55,
+      "label": "1 SLICE"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 327,
+    "protein": 3.64,
+    "carbs": 50.9,
+    "fat": 10.9,
+    "fiber": 0,
+    "sugar": 29.1,
+    "sodium": 382,
+    "cholesterol": 0,
+    "saturatedFat": 0
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:40.502Z"
+}

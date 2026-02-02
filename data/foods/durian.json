@@ -1,0 +1,28 @@
+{
+  "fdcId": "300022",
+  "slug": "durian",
+  "name": "Durian",
+  "category": "fruits",
+  "description": "Durian - A nutritious food source with good amounts of essential vitamins and minerals. Part of a healthy, balanced diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 147,
+    "protein": 1.5,
+    "carbs": 27,
+    "fat": 5.3,
+    "fiber": 3.8,
+    "sugar": 10,
+    "sodium": 2,
+    "cholesterol": 0,
+    "saturatedFat": 1.7
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:46:37.274Z"
+}

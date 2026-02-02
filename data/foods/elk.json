@@ -1,0 +1,28 @@
+{
+  "fdcId": "200003",
+  "slug": "elk",
+  "name": "Elk",
+  "category": "proteins",
+  "description": "Elk - rich in protein. Good nutrition source for a healthy diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 126,
+    "protein": 26,
+    "carbs": 0,
+    "fat": 3,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 60,
+    "cholesterol": 0,
+    "saturatedFat": 1.2
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:44:51.156Z"
+}

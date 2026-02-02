@@ -1,0 +1,35 @@
+{
+  "fdcId": "2551684",
+  "slug": "mini-caramel-chilled-coffee-drink",
+  "name": "MINI CARAMEL CHILLED COFFEE DRINK",
+  "category": "fast-food",
+  "description": "MINI CARAMEL CHILLED COFFEE DRINK",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 192,
+      "label": "1 serving (192MLT)"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 73,
+    "protein": 2.6,
+    "carbs": 13.5,
+    "fat": 1.04,
+    "fiber": 0,
+    "sugar": 11.5,
+    "sodium": 36,
+    "potassium": 164,
+    "cholesterol": 5,
+    "saturatedFat": 0.78
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:46:32.023Z"
+}

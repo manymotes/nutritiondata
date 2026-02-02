@@ -1,0 +1,64 @@
+{
+  "fdcId": "meal-108",
+  "slug": "zucchini-noodles-with-pesto",
+  "name": "Zucchini Noodles with Pesto",
+  "category": "meals",
+  "mealType": "dinner",
+  "description": "Zucchini Noodles with Pesto - A delicious and nutritious dinner option.",
+  "servings": 1,
+  "prepTime": 10,
+  "cookTime": 5,
+  "ingredients": [
+    {
+      "name": "Zucchini",
+      "amount": 200,
+      "unit": "g",
+      "grams": 200,
+      "slug": "zucchini"
+    },
+    {
+      "name": "Pesto Sauce",
+      "amount": 40,
+      "unit": "g",
+      "grams": 40,
+      "slug": "pesto-sauce"
+    },
+    {
+      "name": "Cherry Tomatoes",
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "slug": "cherry-tomatoes"
+    },
+    {
+      "name": "Pine Nuts",
+      "amount": 20,
+      "unit": "g",
+      "grams": 20,
+      "slug": "pine-nuts"
+    }
+  ],
+  "instructions": [
+    "Use spiralizer to create zucchini noodles",
+    "Lightly sauté noodles for 2-3 minutes",
+    "Toss with pesto sauce",
+    "Top with cherry tomatoes and pine nuts",
+    "Serve immediately"
+  ],
+  "nutrition": {
+    "calories": 240,
+    "protein": 12,
+    "carbs": 18,
+    "fat": 14,
+    "fiber": 4,
+    "sugar": 4,
+    "sodium": 380
+  },
+  "healthBenefits": [
+    "Low carb option",
+    "Vegetable-based",
+    "Light and fresh"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:48:42.303Z"
+}

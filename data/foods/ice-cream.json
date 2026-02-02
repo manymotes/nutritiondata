@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000090",
+  "slug": "ice-cream",
+  "name": "Ice Cream",
+  "category": "desserts",
+  "description": "Ice Cream - high in nutrients",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 207,
+    "protein": 3.5,
+    "carbs": 24,
+    "fat": 11,
+    "fiber": 0,
+    "sugar": 21,
+    "sodium": 52,
+    "cholesterol": 0,
+    "saturatedFat": 7
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.606Z"
+}

@@ -1,0 +1,28 @@
+{
+  "fdcId": "200089",
+  "slug": "natto",
+  "name": "Natto",
+  "category": "proteins",
+  "description": "Natto - rich in protein. Good nutrition source for a healthy diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 176,
+    "protein": 17,
+    "carbs": 12,
+    "fat": 9,
+    "fiber": 5,
+    "sugar": 0,
+    "sodium": 876,
+    "cholesterol": 0,
+    "saturatedFat": 1.3
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:44:51.176Z"
+}

@@ -1,0 +1,34 @@
+{
+  "fdcId": "2653860",
+  "slug": "candy-monster-cookies-candy-monster",
+  "name": "CANDY MONSTER COOKIES, CANDY MONSTER",
+  "category": "beverages",
+  "description": "CANDY MONSTER COOKIES, CANDY MONSTER",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 38,
+      "label": "1 cookie"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 447,
+    "protein": 5.26,
+    "carbs": 60.5,
+    "fat": 18.4,
+    "fiber": 2.6,
+    "sugar": 39.5,
+    "sodium": 329,
+    "cholesterol": 26,
+    "saturatedFat": 7.89
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:33.869Z"
+}

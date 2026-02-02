@@ -1,0 +1,63 @@
+{
+  "fdcId": "meal-1",
+  "slug": "oatmeal-with-berries-and-honey",
+  "name": "Oatmeal with Berries and Honey",
+  "category": "meals",
+  "mealType": "breakfast",
+  "description": "Oatmeal with Berries and Honey - A delicious and nutritious breakfast option.",
+  "servings": 1,
+  "prepTime": 5,
+  "cookTime": 5,
+  "ingredients": [
+    {
+      "name": "Rolled Oats",
+      "amount": 50,
+      "unit": "g",
+      "grams": 50,
+      "slug": "rolled-oats"
+    },
+    {
+      "name": "Whole Milk",
+      "amount": 200,
+      "unit": "ml",
+      "grams": 200,
+      "slug": "whole-milk"
+    },
+    {
+      "name": "Blueberries",
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "slug": "blueberries"
+    },
+    {
+      "name": "Honey",
+      "amount": 15,
+      "unit": "g",
+      "grams": 15,
+      "slug": "honey"
+    }
+  ],
+  "instructions": [
+    "Combine oats and milk in a bowl",
+    "Microwave for 2-3 minutes or cook on stovetop",
+    "Stir and add berries",
+    "Drizzle with honey and serve"
+  ],
+  "nutrition": {
+    "calories": 320,
+    "protein": 12,
+    "carbs": 52,
+    "fat": 6,
+    "fiber": 6,
+    "sugar": 22,
+    "sodium": 95
+  },
+  "healthBenefits": [
+    "High in fiber",
+    "Good source of antioxidants",
+    "Sustained energy release"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:47:51.196Z"
+}

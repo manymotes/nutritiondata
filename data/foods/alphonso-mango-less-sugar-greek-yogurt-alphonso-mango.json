@@ -1,0 +1,35 @@
+{
+  "fdcId": "2624322",
+  "slug": "alphonso-mango-less-sugar-greek-yogurt-alphonso-mango",
+  "name": "ALPHONSO MANGO LESS SUGAR GREEK YOGURT, ALPHONSO MANGO",
+  "category": "dairy",
+  "description": "ALPHONSO MANGO LESS SUGAR GREEK YOGURT, ALPHONSO MANGO from Chobani, Inc.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 150,
+      "label": "1 Container (150g)"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 80,
+    "protein": 8,
+    "carbs": 7.33,
+    "fat": 1.67,
+    "fiber": 0.7,
+    "sugar": 6,
+    "sodium": 37,
+    "potassium": 133,
+    "cholesterol": 10,
+    "saturatedFat": 1
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:21.161Z"
+}

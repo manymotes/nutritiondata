@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000081",
+  "slug": "cheeseburger",
+  "name": "Cheeseburger",
+  "category": "fast-food",
+  "description": "Cheeseburger - high in nutrients",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 280,
+    "protein": 15,
+    "carbs": 22,
+    "fat": 14,
+    "fiber": 0,
+    "sugar": 6,
+    "sodium": 520,
+    "cholesterol": 0,
+    "saturatedFat": 5.5
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.604Z"
+}

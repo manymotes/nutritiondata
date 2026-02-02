@@ -1,0 +1,28 @@
+{
+  "fdcId": "200076",
+  "slug": "beer",
+  "name": "Beer",
+  "category": "beverages",
+  "description": "Beer - rich in essential nutrients. Good nutrition source for a healthy diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 43,
+    "protein": 0.5,
+    "carbs": 3.6,
+    "fat": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 11,
+    "cholesterol": 0,
+    "saturatedFat": 0
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:44:51.173Z"
+}

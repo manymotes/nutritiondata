@@ -1,0 +1,56 @@
+{
+  "fdcId": "meal-112",
+  "slug": "cottage-cheese-with-berries",
+  "name": "Cottage Cheese with Berries",
+  "category": "meals",
+  "mealType": "snack",
+  "description": "Cottage Cheese with Berries - A delicious and nutritious snack option.",
+  "servings": 1,
+  "prepTime": 2,
+  "cookTime": 0,
+  "ingredients": [
+    {
+      "name": "Cottage Cheese",
+      "amount": 150,
+      "unit": "g",
+      "grams": 150,
+      "slug": "cottage-cheese"
+    },
+    {
+      "name": "Raspberries",
+      "amount": 75,
+      "unit": "g",
+      "grams": 75,
+      "slug": "raspberries"
+    },
+    {
+      "name": "Honey",
+      "amount": 10,
+      "unit": "g",
+      "grams": 10,
+      "slug": "honey"
+    }
+  ],
+  "instructions": [
+    "Pour cottage cheese into bowl",
+    "Top with fresh raspberries",
+    "Drizzle with honey",
+    "Mix and enjoy"
+  ],
+  "nutrition": {
+    "calories": 180,
+    "protein": 22,
+    "carbs": 18,
+    "fat": 2,
+    "fiber": 3,
+    "sugar": 12,
+    "sodium": 350
+  },
+  "healthBenefits": [
+    "High protein",
+    "Low fat option",
+    "Filling"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:48:42.304Z"
+}

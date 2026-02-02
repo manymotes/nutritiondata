@@ -1,0 +1,34 @@
+{
+  "fdcId": "2533515",
+  "slug": "cinnamon-toast-crunch-soft-baked-cookies-cinnamon-toast-crunch",
+  "name": "CINNAMON TOAST CRUNCH SOFT BAKED COOKIES, CINNAMON TOAST CRUNCH",
+  "category": "grains",
+  "description": "CINNAMON TOAST CRUNCH SOFT BAKED COOKIES, CINNAMON TOAST CRUNCH from General Mills, Inc.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 30,
+      "label": "2 cookies"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 467,
+    "protein": 6.67,
+    "carbs": 66.7,
+    "fat": 20,
+    "fiber": 0,
+    "sugar": 36.7,
+    "sodium": 300,
+    "cholesterol": 117,
+    "saturatedFat": 10
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:08.436Z"
+}

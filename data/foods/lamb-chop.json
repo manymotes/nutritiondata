@@ -1,0 +1,28 @@
+{
+  "fdcId": "300016",
+  "slug": "lamb-chop",
+  "name": "Lamb Chop",
+  "category": "proteins",
+  "description": "Lamb Chop - A nutritious food source with good amounts of protein. Part of a healthy, balanced diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 294,
+    "protein": 25,
+    "carbs": 0,
+    "fat": 21,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 65,
+    "cholesterol": 0,
+    "saturatedFat": 9.5
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:46:37.273Z"
+}

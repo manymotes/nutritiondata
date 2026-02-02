@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next'
-import { SITE_URL, POPULAR_FOODS, FOOD_CATEGORIES } from '@/lib/constants'
+import { SITE_URL, FEATURED_FOODS, FOOD_CATEGORIES } from '@/lib/constants'
+import { getAllFoodSlugs } from '@/lib/data'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = SITE_URL
@@ -82,9 +83,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }))
 
-  // Food pages
-  const foodPages: MetadataRoute.Sitemap = POPULAR_FOODS.map((food) => ({
-    url: `${baseUrl}/calories-in/${food.slug}`,
+  // Food pages (all 200+ foods from /data/foods/)
+  const allFoodSlugs = getAllFoodSlugs()
+  const foodPages: MetadataRoute.Sitemap = allFoodSlugs.map((slug) => ({
+    url: `${baseUrl}/calories-in/${slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: 0.8,
@@ -98,12 +100,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  // Comparison pages (generate for popular food pairs)
+  // Comparison pages (generate for featured food pairs only - 7,626 comparisons)
+  // Note: Compare page supports all 200 foods, but we only add featured ones to sitemap
   const comparisonPages: MetadataRoute.Sitemap = []
-  for (let i = 0; i < POPULAR_FOODS.length; i++) {
-    for (let j = i + 1; j < POPULAR_FOODS.length; j++) {
+  for (let i = 0; i < FEATURED_FOODS.length; i++) {
+    for (let j = i + 1; j < FEATURED_FOODS.length; j++) {
       comparisonPages.push({
-        url: `${baseUrl}/compare/${POPULAR_FOODS[i].slug}-vs-${POPULAR_FOODS[j].slug}`,
+        url: `${baseUrl}/compare/${FEATURED_FOODS[i].slug}-vs-${FEATURED_FOODS[j].slug}`,
         lastModified: new Date(),
         changeFrequency: 'monthly' as const,
         priority: 0.6,

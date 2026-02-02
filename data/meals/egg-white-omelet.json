@@ -1,0 +1,64 @@
+{
+  "fdcId": "meal-204",
+  "slug": "egg-white-omelet",
+  "name": "Egg White Omelet",
+  "category": "meals",
+  "mealType": "breakfast",
+  "description": "Egg White Omelet - A delicious and nutritious breakfast option.",
+  "servings": 1,
+  "prepTime": 5,
+  "cookTime": 8,
+  "ingredients": [
+    {
+      "name": "Egg Whites",
+      "amount": 3,
+      "unit": "large",
+      "grams": 90,
+      "slug": "egg-whites"
+    },
+    {
+      "name": "Bell Pepper",
+      "amount": 75,
+      "unit": "g",
+      "grams": 75,
+      "slug": "bell-pepper"
+    },
+    {
+      "name": "Mushroom",
+      "amount": 50,
+      "unit": "g",
+      "grams": 50,
+      "slug": "mushroom"
+    },
+    {
+      "name": "Low Fat Cheese",
+      "amount": 20,
+      "unit": "g",
+      "grams": 20,
+      "slug": "low-fat-cheese"
+    }
+  ],
+  "instructions": [
+    "Heat non-stick pan",
+    "Pour egg whites and cook until set",
+    "Add peppers and mushrooms",
+    "Fold in half and top with cheese",
+    "Serve immediately"
+  ],
+  "nutrition": {
+    "calories": 140,
+    "protein": 22,
+    "carbs": 6,
+    "fat": 2,
+    "fiber": 1,
+    "sugar": 2,
+    "sodium": 180
+  },
+  "healthBenefits": [
+    "Very low fat",
+    "High protein",
+    "Suitable for diets"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:49:21.683Z"
+}

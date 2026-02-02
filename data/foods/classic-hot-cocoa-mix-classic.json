@@ -1,0 +1,35 @@
+{
+  "fdcId": "1129629",
+  "slug": "classic-hot-cocoa-mix-classic",
+  "name": "CLASSIC HOT COCOA MIX, CLASSIC",
+  "category": "fast-food",
+  "description": "CLASSIC HOT COCOA MIX, CLASSIC from STARBUCKS",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 28,
+      "label": "1 ENVELOPE"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 357,
+    "protein": 7.14,
+    "carbs": 78.6,
+    "fat": 8.93,
+    "fiber": 10.7,
+    "sugar": 60.7,
+    "sodium": 0,
+    "potassium": 986,
+    "cholesterol": 0,
+    "saturatedFat": 5.36
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:46:32.031Z"
+}

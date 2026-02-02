@@ -1,0 +1,48 @@
+{
+  "fdcId": "meal-207",
+  "slug": "banana-with-peanut-butter",
+  "name": "Banana with Peanut Butter",
+  "category": "meals",
+  "mealType": "snack",
+  "description": "Banana with Peanut Butter - A delicious and nutritious snack option.",
+  "servings": 1,
+  "prepTime": 2,
+  "cookTime": 0,
+  "ingredients": [
+    {
+      "name": "Banana",
+      "amount": 1,
+      "unit": "medium",
+      "grams": 118,
+      "slug": "banana"
+    },
+    {
+      "name": "Peanut Butter",
+      "amount": 30,
+      "unit": "g",
+      "grams": 30,
+      "slug": "peanut-butter"
+    }
+  ],
+  "instructions": [
+    "Slice banana into rounds",
+    "Serve with peanut butter for dipping",
+    "Enjoy"
+  ],
+  "nutrition": {
+    "calories": 270,
+    "protein": 8,
+    "carbs": 28,
+    "fat": 12,
+    "fiber": 3,
+    "sugar": 16,
+    "sodium": 95
+  },
+  "healthBenefits": [
+    "Quick energy",
+    "Satisfying",
+    "Classic combo"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:49:21.684Z"
+}

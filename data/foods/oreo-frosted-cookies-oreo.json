@@ -1,0 +1,35 @@
+{
+  "fdcId": "2670912",
+  "slug": "oreo-frosted-cookies-oreo",
+  "name": "OREO FROSTED COOKIES, OREO",
+  "category": "desserts",
+  "description": "OREO FROSTED COOKIES, OREO",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 38,
+      "label": "1 cookie"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 421,
+    "protein": 2.63,
+    "carbs": 63.2,
+    "fat": 15.8,
+    "fiber": 2.6,
+    "sugar": 42.1,
+    "sodium": 368,
+    "potassium": 132,
+    "cholesterol": 13,
+    "saturatedFat": 3.95
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:17.630Z"
+}

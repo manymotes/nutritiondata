@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000048",
+  "slug": "cheddar-cheese",
+  "name": "Cheddar Cheese",
+  "category": "dairy",
+  "description": "Cheddar Cheese - high in protein",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 402,
+    "protein": 23,
+    "carbs": 3.4,
+    "fat": 33,
+    "fiber": 0,
+    "sugar": 0.7,
+    "sodium": 714,
+    "cholesterol": 0,
+    "saturatedFat": 21
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.600Z"
+}

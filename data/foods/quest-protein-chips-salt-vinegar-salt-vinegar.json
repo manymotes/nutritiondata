@@ -1,0 +1,35 @@
+{
+  "fdcId": "1879529",
+  "slug": "quest-protein-chips-salt-vinegar-salt-vinegar",
+  "name": "QUEST, PROTEIN CHIPS, SALT & VINEGAR, SALT & VINEGAR",
+  "category": "snacks",
+  "description": "QUEST, PROTEIN CHIPS, SALT & VINEGAR, SALT & VINEGAR from Quest Nutrition, LLC",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 32,
+      "label": "1.125 ONZ"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 375,
+    "protein": 65.6,
+    "carbs": 15.6,
+    "fat": 6.25,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 906,
+    "potassium": 203,
+    "cholesterol": 31,
+    "saturatedFat": 0
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:26.743Z"
+}

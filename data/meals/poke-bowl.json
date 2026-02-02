@@ -1,0 +1,70 @@
+{
+  "fdcId": "meal-209",
+  "slug": "poke-bowl",
+  "name": "Poke Bowl",
+  "category": "meals",
+  "mealType": "lunch",
+  "description": "Poke Bowl - A delicious and nutritious lunch option.",
+  "servings": 1,
+  "prepTime": 10,
+  "cookTime": 0,
+  "ingredients": [
+    {
+      "name": "Ahi Tuna",
+      "amount": 150,
+      "unit": "g",
+      "grams": 150,
+      "slug": "ahi-tuna"
+    },
+    {
+      "name": "Sushi Rice",
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "slug": "sushi-rice"
+    },
+    {
+      "name": "Seaweed Salad",
+      "amount": 75,
+      "unit": "g",
+      "grams": 75,
+      "slug": "seaweed-salad"
+    },
+    {
+      "name": "Edamame",
+      "amount": 50,
+      "unit": "g",
+      "grams": 50,
+      "slug": "edamame"
+    },
+    {
+      "name": "Poke Sauce",
+      "amount": 30,
+      "unit": "ml",
+      "grams": 30,
+      "slug": "poke-sauce"
+    }
+  ],
+  "instructions": [
+    "Marinate diced tuna in poke sauce",
+    "Prepare rice bowl",
+    "Top with marinated tuna, seaweed, and edamame",
+    "Serve immediately"
+  ],
+  "nutrition": {
+    "calories": 380,
+    "protein": 36,
+    "carbs": 38,
+    "fat": 6,
+    "fiber": 2,
+    "sugar": 2,
+    "sodium": 680
+  },
+  "healthBenefits": [
+    "Restaurant quality",
+    "High protein",
+    "Quick preparation"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:49:21.685Z"
+}

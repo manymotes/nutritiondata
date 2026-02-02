@@ -1,0 +1,28 @@
+{
+  "fdcId": "200088",
+  "slug": "miso",
+  "name": "Miso",
+  "category": "proteins",
+  "description": "Miso - rich in essential nutrients. Good nutrition source for a healthy diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 161,
+    "protein": 12,
+    "carbs": 14,
+    "fat": 5,
+    "fiber": 3.4,
+    "sugar": 3,
+    "sodium": 5005,
+    "cholesterol": 0,
+    "saturatedFat": 1.4
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:44:51.175Z"
+}

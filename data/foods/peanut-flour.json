@@ -1,0 +1,28 @@
+{
+  "fdcId": "300047",
+  "slug": "peanut-flour",
+  "name": "Peanut Flour",
+  "category": "grains",
+  "description": "Peanut Flour - A nutritious food source with good amounts of protein. Part of a healthy, balanced diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 392,
+    "protein": 49,
+    "carbs": 20,
+    "fat": 12,
+    "fiber": 6,
+    "sugar": 4,
+    "sodium": 18,
+    "cholesterol": 0,
+    "saturatedFat": 2.3
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:46:37.283Z"
+}

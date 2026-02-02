@@ -1,0 +1,28 @@
+{
+  "fdcId": "300025",
+  "slug": "longan",
+  "name": "Longan",
+  "category": "fruits",
+  "description": "Longan - A nutritious food source with good amounts of essential vitamins and minerals. Part of a healthy, balanced diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 60,
+    "protein": 1.3,
+    "carbs": 15,
+    "fat": 0.1,
+    "fiber": 1.3,
+    "sugar": 14,
+    "sodium": 0,
+    "cholesterol": 0,
+    "saturatedFat": 0
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:46:37.276Z"
+}

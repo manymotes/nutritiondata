@@ -1,0 +1,28 @@
+{
+  "fdcId": "300028",
+  "slug": "tamarind",
+  "name": "Tamarind",
+  "category": "fruits",
+  "description": "Tamarind - A nutritious food source with good amounts of essential vitamins and minerals. Part of a healthy, balanced diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 239,
+    "protein": 2.8,
+    "carbs": 62,
+    "fat": 0.6,
+    "fiber": 2.3,
+    "sugar": 38,
+    "sodium": 28,
+    "cholesterol": 0,
+    "saturatedFat": 0.2
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:46:37.277Z"
+}

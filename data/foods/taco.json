@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000085",
+  "slug": "taco",
+  "name": "Taco",
+  "category": "fast-food",
+  "description": "Taco - high in nutrients",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 155,
+    "protein": 8,
+    "carbs": 13,
+    "fat": 8,
+    "fiber": 2,
+    "sugar": 1,
+    "sodium": 304,
+    "cholesterol": 0,
+    "saturatedFat": 3
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.605Z"
+}

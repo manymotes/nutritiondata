@@ -1,8 +1,10 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { getFoodData, getAllFoods } from '@/lib/data'
-import { SITE_NAME, POPULAR_FOODS, FOOD_CATEGORIES } from '@/lib/constants'
+import Script from 'next/script'
+import { getFoodData, getAllFoods, getAllFoodSlugs } from '@/lib/data'
+import { SITE_NAME, SITE_URL, POPULAR_FOODS, FOOD_CATEGORIES } from '@/lib/constants'
+import { getFoodContent } from '@/lib/food-content'
 
 interface PageProps {
   params: {
@@ -10,10 +12,11 @@ interface PageProps {
   }
 }
 
-// Generate static params for all foods
+// Generate static params for all foods (now reading from /data/foods/*.json)
 export async function generateStaticParams() {
-  return POPULAR_FOODS.map((food) => ({
-    slug: food.slug,
+  const allSlugs = getAllFoodSlugs()
+  return allSlugs.map((slug) => ({
+    slug,
   }))
 }
 
@@ -48,6 +51,7 @@ export default function FoodPage({ params }: PageProps) {
 
   const { nutritionPer100g: nutrition } = food
   const category = FOOD_CATEGORIES.find(c => c.slug === food.category)
+  const foodContent = getFoodContent(food.slug)
 
   // Get related foods for comparison
   const relatedFoods = POPULAR_FOODS
@@ -59,8 +63,60 @@ export default function FoodPage({ params }: PageProps) {
     .filter(f => f.slug !== food.slug)
     .slice(0, 5)
 
+  // Generate NutritionInformation schema
+  const nutritionSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'NutritionInformation',
+    name: food.name,
+    calories: `${nutrition.calories} calories`,
+    proteinContent: `${nutrition.protein}g`,
+    carbohydrateContent: `${nutrition.carbs}g`,
+    fatContent: `${nutrition.fat}g`,
+    fiberContent: `${nutrition.fiber}g`,
+    sugarContent: `${nutrition.sugar}g`,
+    sodiumContent: `${nutrition.sodium}mg`,
+    servingSize: '100g',
+  }
+
+  // Generate WebPage schema with breadcrumbs
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: SITE_URL,
+      },
+      category && {
+        '@type': 'ListItem',
+        position: 2,
+        name: category.name,
+        item: `${SITE_URL}/category/${category.slug}`,
+      },
+      {
+        '@type': 'ListItem',
+        position: category ? 3 : 2,
+        name: food.name,
+        item: `${SITE_URL}/calories-in/${params.slug}`,
+      },
+    ].filter(Boolean),
+  }
+
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <>
+      <Script
+        id="nutrition-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(nutritionSchema) }}
+      />
+      <Script
+        id="breadcrumb-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       {/* Breadcrumbs */}
       <nav className="text-sm mb-6">
         <ol className="flex items-center space-x-2 text-gray-500">
@@ -157,9 +213,11 @@ export default function FoodPage({ params }: PageProps) {
           <div className="prose max-w-none">
             <h2>About {food.name} Nutrition</h2>
             <p>
-              {food.name} is a nutritious food containing {nutrition.calories} calories per 100 grams.
-              With {nutrition.protein}g of protein, {nutrition.carbs}g of carbohydrates, and {nutrition.fat}g of fat,
-              it can be part of a balanced diet.
+              {foodContent.description}
+            </p>
+            <p>
+              With {nutrition.calories} calories per 100 grams, {food.name} provides {nutrition.protein}g of protein,
+              {nutrition.carbs}g of carbohydrates, and {nutrition.fat}g of fat.
             </p>
 
             <h3>Macronutrient Breakdown</h3>
@@ -169,17 +227,84 @@ export default function FoodPage({ params }: PageProps) {
               <li><strong>Fat:</strong> {nutrition.fat}g - {Math.round((nutrition.fat * 9 / nutrition.calories) * 100)}% of calories</li>
             </ul>
 
-            <h3>Health Considerations</h3>
-            <p>
-              {nutrition.fiber > 3
-                ? `${food.name} is a good source of dietary fiber with ${nutrition.fiber}g per 100g, which supports digestive health.`
-                : `${food.name} contains ${nutrition.fiber}g of fiber per 100g.`
-              }
-              {nutrition.protein > 15
-                ? ` It's also high in protein, making it a great choice for muscle building and satiety.`
-                : ''
-              }
-            </p>
+            <h3>Health Benefits of {food.name}</h3>
+            <ul>
+              {foodContent.healthBenefits.map((benefit, index) => (
+                <li key={index}>{benefit}</li>
+              ))}
+            </ul>
+
+            <h3>How to Eat {food.name}</h3>
+            <p>{foodContent.howToEat}</p>
+
+            <h3>Selection and Storage</h3>
+            <p>{foodContent.storageAndSelection}</p>
+
+            <h3>Dietary Considerations</h3>
+            <p>{foodContent.dietaryConsiderations}</p>
+          </div>
+
+          {/* FAQ Section */}
+          <div className="mt-12">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">
+              Frequently Asked Questions About {food.name} Calories
+            </h2>
+            <div className="space-y-4">
+              <div className="bg-white rounded-lg border border-gray-200 p-6">
+                <h3 className="font-semibold text-gray-900 mb-2">
+                  How many calories are in {food.name}?
+                </h3>
+                <p className="text-gray-700">
+                  {food.name} contains {nutrition.calories} calories per 100 grams. A typical serving
+                  may contain more or fewer calories depending on the portion size. For example,
+                  a {food.servingSizes[2]?.label || 'standard serving'} contains approximately{' '}
+                  {Math.round((nutrition.calories * (food.servingSizes[2]?.grams || 85)) / 100)} calories.
+                </p>
+              </div>
+
+              <div className="bg-white rounded-lg border border-gray-200 p-6">
+                <h3 className="font-semibold text-gray-900 mb-2">
+                  Is {food.name} good for weight loss?
+                </h3>
+                <p className="text-gray-700">
+                  {nutrition.calories < 100
+                    ? `Yes, ${food.name} is relatively low in calories with only ${nutrition.calories} calories per 100g, making it a good choice for weight loss diets when consumed as part of a balanced eating plan.`
+                    : nutrition.calories < 200
+                    ? `${food.name} has a moderate calorie content of ${nutrition.calories} calories per 100g. It can be part of a weight loss diet when consumed in appropriate portions.`
+                    : `${food.name} contains ${nutrition.calories} calories per 100g, which is relatively calorie-dense. While it can be enjoyed as part of a weight loss diet, portion control is important.`
+                  }
+                  {nutrition.protein > 10 && ` The ${nutrition.protein}g of protein per 100g helps promote satiety and can support weight management.`}
+                  {nutrition.fiber > 3 && ` With ${nutrition.fiber}g of fiber per 100g, it also helps keep you feeling full longer.`}
+                </p>
+              </div>
+
+              <div className="bg-white rounded-lg border border-gray-200 p-6">
+                <h3 className="font-semibold text-gray-900 mb-2">
+                  Is {food.name} high in protein?
+                </h3>
+                <p className="text-gray-700">
+                  {nutrition.protein >= 20
+                    ? `Yes, ${food.name} is an excellent source of protein with ${nutrition.protein}g per 100g. This makes it a great choice for building muscle, supporting recovery after exercise, and maintaining overall health.`
+                    : nutrition.protein >= 10
+                    ? `${food.name} is a good source of protein with ${nutrition.protein}g per 100g. While not the highest protein food, it contributes meaningfully to daily protein needs.`
+                    : `${food.name} contains ${nutrition.protein}g of protein per 100g, which is relatively modest. Consider pairing it with higher-protein foods to meet your protein goals.`
+                  }
+                </p>
+              </div>
+
+              <div className="bg-white rounded-lg border border-gray-200 p-6">
+                <h3 className="font-semibold text-gray-900 mb-2">
+                  What vitamins and nutrients are in {food.name}?
+                </h3>
+                <p className="text-gray-700">
+                  {food.name} provides several important nutrients including {nutrition.protein}g of protein,
+                  {nutrition.carbs}g of carbohydrates (including {nutrition.fiber}g of fiber and {nutrition.sugar}g of sugar),
+                  and {nutrition.fat}g of fat per 100g. It also contains {nutrition.sodium}mg of sodium.
+                  The specific vitamin and mineral content varies, but {food.name.toLowerCase()} can contribute
+                  to a balanced, nutritious diet.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -259,26 +384,7 @@ export default function FoodPage({ params }: PageProps) {
           </div>
         </div>
       </div>
-
-      {/* Schema.org structured data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NutritionInformation',
-            name: food.name,
-            calories: `${nutrition.calories} calories`,
-            servingSize: '100g',
-            proteinContent: `${nutrition.protein}g`,
-            carbohydrateContent: `${nutrition.carbs}g`,
-            fatContent: `${nutrition.fat}g`,
-            fiberContent: `${nutrition.fiber}g`,
-            sugarContent: `${nutrition.sugar}g`,
-            sodiumContent: `${nutrition.sodium}mg`,
-          }),
-        }}
-      />
     </div>
+    </>
   )
 }

@@ -1,0 +1,28 @@
+{
+  "fdcId": "300006",
+  "slug": "naan-bread",
+  "name": "Naan Bread",
+  "category": "grains",
+  "description": "Naan Bread - A nutritious food source with good amounts of essential vitamins and minerals. Part of a healthy, balanced diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 301,
+    "protein": 5.8,
+    "carbs": 48,
+    "fat": 7,
+    "fiber": 0.5,
+    "sugar": 5,
+    "sodium": 462,
+    "cholesterol": 0,
+    "saturatedFat": 0.5
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:46:37.270Z"
+}

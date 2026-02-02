@@ -1,0 +1,34 @@
+{
+  "fdcId": "2015192",
+  "slug": "amys-snacks-samosas-made-with-organic-wheat-and-vegetables",
+  "name": "AMY'S, SNACKS, SAMOSAS, MADE WITH ORGANIC WHEAT AND VEGETABLES",
+  "category": "fast-food",
+  "description": "AMY'S, SNACKS, SAMOSAS, MADE WITH ORGANIC WHEAT AND VEGETABLES from Amy's Kitchen Inc.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 91,
+      "label": "4 SNACKS"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 231,
+    "protein": 5.49,
+    "carbs": 29.7,
+    "fat": 9.89,
+    "fiber": 2.2,
+    "sugar": 2.2,
+    "sodium": 440,
+    "cholesterol": 0,
+    "saturatedFat": 1.1
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:40.502Z"
+}

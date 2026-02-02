@@ -1,0 +1,70 @@
+{
+  "fdcId": "meal-8",
+  "slug": "quinoa-buddha-bowl",
+  "name": "Quinoa Buddha Bowl",
+  "category": "meals",
+  "mealType": "lunch",
+  "description": "Quinoa Buddha Bowl - A delicious and nutritious lunch option.",
+  "servings": 1,
+  "prepTime": 10,
+  "cookTime": 15,
+  "ingredients": [
+    {
+      "name": "Quinoa",
+      "amount": 60,
+      "unit": "g",
+      "grams": 60,
+      "slug": "quinoa"
+    },
+    {
+      "name": "Chickpeas",
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "slug": "chickpeas"
+    },
+    {
+      "name": "Sweet Potato",
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "slug": "sweet-potato"
+    },
+    {
+      "name": "Kale",
+      "amount": 50,
+      "unit": "g",
+      "grams": 50,
+      "slug": "kale"
+    },
+    {
+      "name": "Tahini Dressing",
+      "amount": 30,
+      "unit": "ml",
+      "grams": 30,
+      "slug": "tahini-dressing"
+    }
+  ],
+  "instructions": [
+    "Cook quinoa according to package directions",
+    "Roast chickpeas and sweet potato at 400F for 15 minutes",
+    "Arrange in bowl with kale and roasted vegetables",
+    "Drizzle with tahini dressing and serve"
+  ],
+  "nutrition": {
+    "calories": 410,
+    "protein": 16,
+    "carbs": 58,
+    "fat": 12,
+    "fiber": 11,
+    "sugar": 8,
+    "sodium": 240
+  },
+  "healthBenefits": [
+    "Complete protein",
+    "High fiber",
+    "Rich in antioxidants"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:47:51.200Z"
+}

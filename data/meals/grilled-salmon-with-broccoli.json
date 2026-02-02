@@ -1,0 +1,71 @@
+{
+  "fdcId": "meal-9",
+  "slug": "grilled-salmon-with-broccoli",
+  "name": "Grilled Salmon with Broccoli",
+  "category": "meals",
+  "mealType": "dinner",
+  "description": "Grilled Salmon with Broccoli - A delicious and nutritious dinner option.",
+  "servings": 1,
+  "prepTime": 5,
+  "cookTime": 15,
+  "ingredients": [
+    {
+      "name": "Salmon Fillet",
+      "amount": 150,
+      "unit": "g",
+      "grams": 150,
+      "slug": "salmon-fillet"
+    },
+    {
+      "name": "Broccoli",
+      "amount": 150,
+      "unit": "g",
+      "grams": 150,
+      "slug": "broccoli"
+    },
+    {
+      "name": "Olive Oil",
+      "amount": 15,
+      "unit": "ml",
+      "grams": 15,
+      "slug": "olive-oil"
+    },
+    {
+      "name": "Lemon",
+      "amount": 1,
+      "unit": "medium",
+      "grams": 60,
+      "slug": "lemon"
+    },
+    {
+      "name": "Garlic",
+      "amount": 10,
+      "unit": "g",
+      "grams": 10,
+      "slug": "garlic"
+    }
+  ],
+  "instructions": [
+    "Preheat grill to medium-high",
+    "Brush salmon with olive oil and season",
+    "Grill salmon for 7-8 minutes per side",
+    "Toss broccoli with oil, garlic, and roast until tender",
+    "Serve with lemon wedges"
+  ],
+  "nutrition": {
+    "calories": 380,
+    "protein": 38,
+    "carbs": 12,
+    "fat": 18,
+    "fiber": 2,
+    "sugar": 2,
+    "sodium": 85
+  },
+  "healthBenefits": [
+    "High omega-3 fatty acids",
+    "Excellent protein",
+    "Heart healthy"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:47:51.201Z"
+}

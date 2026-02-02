@@ -1,0 +1,71 @@
+{
+  "fdcId": "meal-5",
+  "slug": "grilled-chicken-caesar-salad",
+  "name": "Grilled Chicken Caesar Salad",
+  "category": "meals",
+  "mealType": "lunch",
+  "description": "Grilled Chicken Caesar Salad - A delicious and nutritious lunch option.",
+  "servings": 1,
+  "prepTime": 10,
+  "cookTime": 12,
+  "ingredients": [
+    {
+      "name": "Chicken Breast",
+      "amount": 150,
+      "unit": "g",
+      "grams": 150,
+      "slug": "chicken-breast"
+    },
+    {
+      "name": "Romaine Lettuce",
+      "amount": 150,
+      "unit": "g",
+      "grams": 150,
+      "slug": "romaine-lettuce"
+    },
+    {
+      "name": "Parmesan Cheese",
+      "amount": 30,
+      "unit": "g",
+      "grams": 30,
+      "slug": "parmesan-cheese"
+    },
+    {
+      "name": "Caesar Dressing",
+      "amount": 30,
+      "unit": "ml",
+      "grams": 30,
+      "slug": "caesar-dressing"
+    },
+    {
+      "name": "Croutons",
+      "amount": 20,
+      "unit": "g",
+      "grams": 20,
+      "slug": "croutons"
+    }
+  ],
+  "instructions": [
+    "Season chicken and grill for 12 minutes until cooked",
+    "Slice chicken into strips",
+    "Toss lettuce with caesar dressing",
+    "Top with chicken, parmesan, and croutons",
+    "Serve immediately"
+  ],
+  "nutrition": {
+    "calories": 380,
+    "protein": 42,
+    "carbs": 14,
+    "fat": 16,
+    "fiber": 2,
+    "sugar": 1,
+    "sodium": 720
+  },
+  "healthBenefits": [
+    "High in lean protein",
+    "Supports muscle health",
+    "Good calcium source"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:47:51.199Z"
+}

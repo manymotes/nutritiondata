@@ -1,0 +1,28 @@
+{
+  "fdcId": "200075",
+  "slug": "wine",
+  "name": "Wine",
+  "category": "beverages",
+  "description": "Wine - rich in essential nutrients. Good nutrition source for a healthy diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 85,
+    "protein": 0.1,
+    "carbs": 2.6,
+    "fat": 0,
+    "fiber": 0,
+    "sugar": 0.6,
+    "sodium": 5,
+    "cholesterol": 0,
+    "saturatedFat": 0
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:44:51.173Z"
+}

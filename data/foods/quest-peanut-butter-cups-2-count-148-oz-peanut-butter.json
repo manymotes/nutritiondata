@@ -1,0 +1,35 @@
+{
+  "fdcId": "2607704",
+  "slug": "quest-peanut-butter-cups-2-count-148-oz-peanut-butter",
+  "name": "QUEST PEANUT BUTTER CUPS, 2 COUNT, 1.48 OZ, PEANUT BUTTER",
+  "category": "snacks",
+  "description": "QUEST PEANUT BUTTER CUPS, 2 COUNT, 1.48 OZ, PEANUT BUTTER from Quest Nutrition, LLC",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 42,
+      "label": "2 cups (42g)"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 452,
+    "protein": 26.2,
+    "carbs": 31,
+    "fat": 35.7,
+    "fiber": 9.5,
+    "sugar": 2.38,
+    "sodium": 298,
+    "potassium": 286,
+    "cholesterol": 0,
+    "saturatedFat": 21.4
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:26.745Z"
+}

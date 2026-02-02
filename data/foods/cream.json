@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000045",
+  "slug": "cream",
+  "name": "Cream",
+  "category": "dairy",
+  "description": "Cream - high in healthy fats",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 340,
+    "protein": 1.9,
+    "carbs": 4.1,
+    "fat": 35,
+    "fiber": 0,
+    "sugar": 4.1,
+    "sodium": 33,
+    "cholesterol": 0,
+    "saturatedFat": 22
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.600Z"
+}

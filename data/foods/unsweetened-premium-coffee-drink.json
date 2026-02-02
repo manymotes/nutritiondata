@@ -1,0 +1,32 @@
+{
+  "fdcId": "548331",
+  "slug": "unsweetened-premium-coffee-drink",
+  "name": "UNSWEETENED PREMIUM COFFEE DRINK",
+  "category": "fast-food",
+  "description": "UNSWEETENED PREMIUM COFFEE DRINK from STARBUCKS, INC",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 325,
+      "label": "11 OZA"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 5,
+    "protein": 0.31,
+    "carbs": 0.92,
+    "fat": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 0
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:46:32.013Z"
+}

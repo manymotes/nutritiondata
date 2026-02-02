@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000097",
+  "slug": "candy",
+  "name": "Candy",
+  "category": "desserts",
+  "description": "Candy - high in carbohydrates",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 400,
+    "protein": 0,
+    "carbs": 100,
+    "fat": 0,
+    "fiber": 0,
+    "sugar": 90,
+    "sodium": 20,
+    "cholesterol": 0,
+    "saturatedFat": 0
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.608Z"
+}

@@ -1,0 +1,28 @@
+{
+  "fdcId": "200034",
+  "slug": "pumpkin",
+  "name": "Pumpkin",
+  "category": "vegetables",
+  "description": "Pumpkin - rich in essential nutrients. Good nutrition source for a healthy diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 26,
+    "protein": 1,
+    "carbs": 6,
+    "fat": 0.1,
+    "fiber": 0.5,
+    "sugar": 2.8,
+    "sodium": 1,
+    "cholesterol": 0,
+    "saturatedFat": 0
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:44:51.163Z"
+}

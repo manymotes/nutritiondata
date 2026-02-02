@@ -1,0 +1,71 @@
+{
+  "fdcId": "meal-201",
+  "slug": "sushi-bowl",
+  "name": "Sushi Bowl",
+  "category": "meals",
+  "mealType": "lunch",
+  "description": "Sushi Bowl - A delicious and nutritious lunch option.",
+  "servings": 1,
+  "prepTime": 15,
+  "cookTime": 20,
+  "ingredients": [
+    {
+      "name": "Sushi Rice",
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "slug": "sushi-rice"
+    },
+    {
+      "name": "Salmon",
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "slug": "salmon"
+    },
+    {
+      "name": "Cucumber",
+      "amount": 75,
+      "unit": "g",
+      "grams": 75,
+      "slug": "cucumber"
+    },
+    {
+      "name": "Avocado",
+      "amount": 75,
+      "unit": "g",
+      "grams": 75,
+      "slug": "avocado"
+    },
+    {
+      "name": "Nori Seaweed",
+      "amount": 5,
+      "unit": "g",
+      "grams": 5,
+      "slug": "nori-seaweed"
+    }
+  ],
+  "instructions": [
+    "Cook sushi rice and let cool",
+    "Dice salmon, cucumber, and avocado",
+    "Layer rice in bowl",
+    "Top with salmon, cucumber, avocado, and torn nori",
+    "Serve with soy sauce"
+  ],
+  "nutrition": {
+    "calories": 380,
+    "protein": 22,
+    "carbs": 42,
+    "fat": 12,
+    "fiber": 4,
+    "sugar": 2,
+    "sodium": 580
+  },
+  "healthBenefits": [
+    "Omega-3 rich",
+    "Japanese-inspired",
+    "Restaurant quality"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:49:21.682Z"
+}

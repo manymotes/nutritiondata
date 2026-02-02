@@ -1,0 +1,70 @@
+{
+  "fdcId": "meal-203",
+  "slug": "buddha-bowl-with-tahini-dressing",
+  "name": "Buddha Bowl with Tahini Dressing",
+  "category": "meals",
+  "mealType": "lunch",
+  "description": "Buddha Bowl with Tahini Dressing - A delicious and nutritious lunch option.",
+  "servings": 1,
+  "prepTime": 15,
+  "cookTime": 0,
+  "ingredients": [
+    {
+      "name": "Spinach",
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "slug": "spinach"
+    },
+    {
+      "name": "Roasted Chickpeas",
+      "amount": 80,
+      "unit": "g",
+      "grams": 80,
+      "slug": "roasted-chickpeas"
+    },
+    {
+      "name": "Roasted Beets",
+      "amount": 75,
+      "unit": "g",
+      "grams": 75,
+      "slug": "roasted-beets"
+    },
+    {
+      "name": "Quinoa",
+      "amount": 50,
+      "unit": "g",
+      "grams": 50,
+      "slug": "quinoa"
+    },
+    {
+      "name": "Tahini Dressing",
+      "amount": 40,
+      "unit": "ml",
+      "grams": 40,
+      "slug": "tahini-dressing"
+    }
+  ],
+  "instructions": [
+    "Layer spinach in bowl",
+    "Add cooked quinoa, chickpeas, and beets",
+    "Drizzle with tahini dressing",
+    "Toss gently and serve"
+  ],
+  "nutrition": {
+    "calories": 380,
+    "protein": 15,
+    "carbs": 50,
+    "fat": 14,
+    "fiber": 12,
+    "sugar": 8,
+    "sodium": 280
+  },
+  "healthBenefits": [
+    "Earthy flavors",
+    "Plant-based",
+    "Very high fiber"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:49:21.683Z"
+}

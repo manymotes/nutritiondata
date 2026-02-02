@@ -1,0 +1,71 @@
+{
+  "fdcId": "meal-202",
+  "slug": "sheet-pan-fajitas",
+  "name": "Sheet Pan Fajitas",
+  "category": "meals",
+  "mealType": "dinner",
+  "description": "Sheet Pan Fajitas - A delicious and nutritious dinner option.",
+  "servings": 2,
+  "prepTime": 10,
+  "cookTime": 20,
+  "ingredients": [
+    {
+      "name": "Chicken Breast",
+      "amount": 250,
+      "unit": "g",
+      "grams": 250,
+      "slug": "chicken-breast"
+    },
+    {
+      "name": "Bell Pepper",
+      "amount": 150,
+      "unit": "g",
+      "grams": 150,
+      "slug": "bell-pepper"
+    },
+    {
+      "name": "Onion",
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "slug": "onion"
+    },
+    {
+      "name": "Corn Tortillas",
+      "amount": 4,
+      "unit": "pieces",
+      "grams": 120,
+      "slug": "corn-tortillas"
+    },
+    {
+      "name": "Lime",
+      "amount": 1,
+      "unit": "medium",
+      "grams": 50,
+      "slug": "lime"
+    }
+  ],
+  "instructions": [
+    "Slice chicken and peppers",
+    "Toss with spices and arrange on sheet pan",
+    "Bake at 425F for 15-20 minutes",
+    "Warm tortillas",
+    "Serve with lime wedges"
+  ],
+  "nutrition": {
+    "calories": 320,
+    "protein": 35,
+    "carbs": 28,
+    "fat": 7,
+    "fiber": 3,
+    "sugar": 4,
+    "sodium": 320
+  },
+  "healthBenefits": [
+    "One pan meal",
+    "Easy cleanup",
+    "Customizable"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:49:21.682Z"
+}

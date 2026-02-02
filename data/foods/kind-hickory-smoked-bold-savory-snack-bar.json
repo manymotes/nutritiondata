@@ -1,0 +1,35 @@
+{
+  "fdcId": "2079416",
+  "slug": "kind-hickory-smoked-bold-savory-snack-bar",
+  "name": "KIND, HICKORY SMOKED BOLD SAVORY SNACK BAR",
+  "category": "snacks",
+  "description": "KIND, HICKORY SMOKED BOLD SAVORY SNACK BAR from KIND Inc.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 45,
+      "label": "1 BAR"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 511,
+    "protein": 22.2,
+    "carbs": 33.3,
+    "fat": 35.6,
+    "fiber": 6.7,
+    "sugar": 13.3,
+    "sodium": 278,
+    "potassium": 511,
+    "cholesterol": 0,
+    "saturatedFat": 3.33
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:28.479Z"
+}

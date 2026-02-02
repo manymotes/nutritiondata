@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000110",
+  "slug": "cauliflower",
+  "name": "Cauliflower",
+  "category": "vegetables",
+  "description": "Cauliflower - high in nutrients",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 25,
+    "protein": 1.9,
+    "carbs": 5,
+    "fat": 0.3,
+    "fiber": 2.4,
+    "sugar": 1,
+    "sodium": 49,
+    "cholesterol": 0,
+    "saturatedFat": 0
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.611Z"
+}

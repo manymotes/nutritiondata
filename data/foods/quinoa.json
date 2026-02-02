@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000032",
+  "slug": "quinoa",
+  "name": "Quinoa",
+  "category": "grains",
+  "description": "Quinoa - high in nutrients",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 120,
+    "protein": 4.4,
+    "carbs": 21,
+    "fat": 1.9,
+    "fiber": 2.8,
+    "sugar": 1.6,
+    "sodium": 7,
+    "cholesterol": 0,
+    "saturatedFat": 0.2
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.599Z"
+}

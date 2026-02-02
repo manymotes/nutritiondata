@@ -1,0 +1,28 @@
+{
+  "fdcId": "300010",
+  "slug": "anchovies-in-oil",
+  "name": "Anchovies in Oil",
+  "category": "proteins",
+  "description": "Anchovies in Oil - A nutritious food source with good amounts of protein. Part of a healthy, balanced diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 210,
+    "protein": 29,
+    "carbs": 0,
+    "fat": 12,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 1050,
+    "cholesterol": 0,
+    "saturatedFat": 2.6
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:46:37.271Z"
+}

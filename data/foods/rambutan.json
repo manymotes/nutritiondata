@@ -1,0 +1,28 @@
+{
+  "fdcId": "200021",
+  "slug": "rambutan",
+  "name": "Rambutan",
+  "category": "fruits",
+  "description": "Rambutan - rich in essential nutrients. Good nutrition source for a healthy diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 82,
+    "protein": 0.8,
+    "carbs": 20,
+    "fat": 0.2,
+    "fiber": 0.9,
+    "sugar": 17,
+    "sodium": 27,
+    "cholesterol": 0,
+    "saturatedFat": 0
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:44:51.160Z"
+}

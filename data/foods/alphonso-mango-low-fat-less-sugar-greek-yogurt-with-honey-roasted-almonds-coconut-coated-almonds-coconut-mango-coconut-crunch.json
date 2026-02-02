@@ -1,0 +1,35 @@
+{
+  "fdcId": "2628223",
+  "slug": "alphonso-mango-low-fat-less-sugar-greek-yogurt-with-honey-roasted-almonds-coconut-coated-almonds-coconut-mango-coconut-crunch",
+  "name": "ALPHONSO MANGO LOW-FAT LESS SUGAR GREEK YOGURT WITH HONEY ROASTED ALMONDS, COCONUT COATED ALMONDS & COCONUT, MANGO COCONUT CRUNCH",
+  "category": "dairy",
+  "description": "ALPHONSO MANGO LOW-FAT LESS SUGAR GREEK YOGURT WITH HONEY ROASTED ALMONDS, COCONUT COATED ALMONDS & COCONUT, MANGO COCONUT CRUNCH from Chobani, Inc.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 128,
+      "label": "1 CONTAINER"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 125,
+    "protein": 8.59,
+    "carbs": 10.2,
+    "fat": 5.47,
+    "fiber": 0.8,
+    "sugar": 7.81,
+    "sodium": 55,
+    "potassium": 156,
+    "cholesterol": 8,
+    "saturatedFat": 3.12
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:21.161Z"
+}

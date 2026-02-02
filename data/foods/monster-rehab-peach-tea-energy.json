@@ -1,0 +1,33 @@
+{
+  "fdcId": "2490703",
+  "slug": "monster-rehab-peach-tea-energy",
+  "name": "MONSTER, REHAB PEACH TEA + ENERGY",
+  "category": "beverages",
+  "description": "MONSTER, REHAB PEACH TEA + ENERGY from Monster Energy Company",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 240,
+      "label": "8 OZA"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 4,
+    "protein": 0,
+    "carbs": 1.25,
+    "fat": 0,
+    "fiber": 0,
+    "sugar": 0.83,
+    "sodium": 38,
+    "potassium": 19
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:33.868Z"
+}

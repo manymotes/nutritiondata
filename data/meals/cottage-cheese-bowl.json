@@ -1,0 +1,63 @@
+{
+  "fdcId": "meal-101",
+  "slug": "cottage-cheese-bowl",
+  "name": "Cottage Cheese Bowl",
+  "category": "meals",
+  "mealType": "breakfast",
+  "description": "Cottage Cheese Bowl - A delicious and nutritious breakfast option.",
+  "servings": 1,
+  "prepTime": 3,
+  "cookTime": 0,
+  "ingredients": [
+    {
+      "name": "Cottage Cheese",
+      "amount": 200,
+      "unit": "g",
+      "grams": 200,
+      "slug": "cottage-cheese"
+    },
+    {
+      "name": "Peaches",
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "slug": "peaches"
+    },
+    {
+      "name": "Walnuts",
+      "amount": 25,
+      "unit": "g",
+      "grams": 25,
+      "slug": "walnuts"
+    },
+    {
+      "name": "Honey",
+      "amount": 10,
+      "unit": "g",
+      "grams": 10,
+      "slug": "honey"
+    }
+  ],
+  "instructions": [
+    "Add cottage cheese to bowl",
+    "Top with sliced peaches",
+    "Add walnuts",
+    "Drizzle with honey"
+  ],
+  "nutrition": {
+    "calories": 290,
+    "protein": 28,
+    "carbs": 20,
+    "fat": 10,
+    "fiber": 2,
+    "sugar": 15,
+    "sodium": 380
+  },
+  "healthBenefits": [
+    "Very high protein",
+    "Gut-friendly probiotics",
+    "Satisfying"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:48:42.300Z"
+}

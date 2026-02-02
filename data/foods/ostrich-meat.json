@@ -1,0 +1,28 @@
+{
+  "fdcId": "300019",
+  "slug": "ostrich-meat",
+  "name": "Ostrich Meat",
+  "category": "proteins",
+  "description": "Ostrich Meat - A nutritious food source with good amounts of protein. Part of a healthy, balanced diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 113,
+    "protein": 26,
+    "carbs": 0,
+    "fat": 2.4,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 124,
+    "cholesterol": 0,
+    "saturatedFat": 0.8
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:46:37.273Z"
+}

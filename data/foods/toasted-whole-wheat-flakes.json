@@ -1,0 +1,35 @@
+{
+  "fdcId": "1635926",
+  "slug": "toasted-whole-wheat-flakes",
+  "name": "TOASTED WHOLE WHEAT FLAKES",
+  "category": "grains",
+  "description": "TOASTED WHOLE WHEAT FLAKES from General Mills, Inc.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 27,
+      "label": "3/4 cup"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 370,
+    "protein": 7.41,
+    "carbs": 81.5,
+    "fat": 1.85,
+    "fiber": 11.1,
+    "sugar": 14.8,
+    "sodium": 704,
+    "potassium": 333,
+    "cholesterol": 0,
+    "saturatedFat": 0
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:10.227Z"
+}

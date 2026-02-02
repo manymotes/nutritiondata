@@ -1,0 +1,34 @@
+{
+  "fdcId": "2560866",
+  "slug": "cinnamon-toast-crunch-frosting-cinnamon",
+  "name": "CINNAMON TOAST CRUNCH FROSTING, CINNAMON",
+  "category": "grains",
+  "description": "CINNAMON TOAST CRUNCH FROSTING, CINNAMON from General Mills, Inc.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 34,
+      "label": "2 tbsp (34g)"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 412,
+    "protein": 0,
+    "carbs": 67.6,
+    "fat": 14.7,
+    "fiber": 0,
+    "sugar": 58.8,
+    "sodium": 206,
+    "cholesterol": 0,
+    "saturatedFat": 7.35
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:08.437Z"
+}

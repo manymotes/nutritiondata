@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000029",
+  "slug": "asparagus",
+  "name": "Asparagus",
+  "category": "vegetables",
+  "description": "Asparagus - high in nutrients",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 20,
+    "protein": 2.2,
+    "carbs": 4,
+    "fat": 0.1,
+    "fiber": 2.1,
+    "sugar": 1.9,
+    "sodium": 2,
+    "cholesterol": 0,
+    "saturatedFat": 0
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.598Z"
+}

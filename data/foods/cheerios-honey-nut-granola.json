@@ -1,0 +1,35 @@
+{
+  "fdcId": "2751727",
+  "slug": "cheerios-honey-nut-granola",
+  "name": "Cheerios Honey Nut Granola",
+  "category": "grains",
+  "description": "Cheerios Honey Nut Granola from GENERAL MILLS SALES INC.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 28,
+      "label": "1 oz Snack"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 393,
+    "protein": 7.14,
+    "carbs": 78.6,
+    "fat": 8.93,
+    "fiber": 7.1,
+    "sugar": 28.6,
+    "sodium": 286,
+    "potassium": 0,
+    "cholesterol": 0,
+    "saturatedFat": 0
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:09.336Z"
+}

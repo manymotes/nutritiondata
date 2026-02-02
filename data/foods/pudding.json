@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000096",
+  "slug": "pudding",
+  "name": "Pudding",
+  "category": "desserts",
+  "description": "Pudding - high in nutrients",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 105,
+    "protein": 3.6,
+    "carbs": 17,
+    "fat": 3,
+    "fiber": 0,
+    "sugar": 14,
+    "sodium": 220,
+    "cholesterol": 0,
+    "saturatedFat": 1.9
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.608Z"
+}

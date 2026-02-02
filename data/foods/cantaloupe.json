@@ -1,0 +1,28 @@
+{
+  "fdcId": "200027",
+  "slug": "cantaloupe",
+  "name": "Cantaloupe",
+  "category": "fruits",
+  "description": "Cantaloupe - rich in essential nutrients. Good nutrition source for a healthy diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 34,
+    "protein": 0.8,
+    "carbs": 8,
+    "fat": 0.2,
+    "fiber": 0.9,
+    "sugar": 8,
+    "sodium": 16,
+    "cholesterol": 0,
+    "saturatedFat": 0
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:44:51.161Z"
+}

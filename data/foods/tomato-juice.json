@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000068",
+  "slug": "tomato-juice",
+  "name": "Tomato Juice",
+  "category": "beverages",
+  "description": "Tomato Juice - high in nutrients",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 18,
+    "protein": 0.9,
+    "carbs": 3.9,
+    "fat": 0.2,
+    "fiber": 0.8,
+    "sugar": 2.6,
+    "sodium": 383,
+    "cholesterol": 0,
+    "saturatedFat": 0
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.603Z"
+}

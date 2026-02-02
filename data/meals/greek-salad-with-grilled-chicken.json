@@ -1,0 +1,78 @@
+{
+  "fdcId": "meal-113",
+  "slug": "greek-salad-with-grilled-chicken",
+  "name": "Greek Salad with Grilled Chicken",
+  "category": "meals",
+  "mealType": "lunch",
+  "description": "Greek Salad with Grilled Chicken - A delicious and nutritious lunch option.",
+  "servings": 1,
+  "prepTime": 10,
+  "cookTime": 12,
+  "ingredients": [
+    {
+      "name": "Chicken Breast",
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "slug": "chicken-breast"
+    },
+    {
+      "name": "Romaine Lettuce",
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "slug": "romaine-lettuce"
+    },
+    {
+      "name": "Tomato",
+      "amount": 1,
+      "unit": "medium",
+      "grams": 150,
+      "slug": "tomato"
+    },
+    {
+      "name": "Cucumber",
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "slug": "cucumber"
+    },
+    {
+      "name": "Feta Cheese",
+      "amount": 40,
+      "unit": "g",
+      "grams": 40,
+      "slug": "feta-cheese"
+    },
+    {
+      "name": "Kalamata Olives",
+      "amount": 30,
+      "unit": "g",
+      "grams": 30,
+      "slug": "kalamata-olives"
+    }
+  ],
+  "instructions": [
+    "Grill chicken breast until cooked through",
+    "Chop lettuce, tomato, and cucumber",
+    "Combine vegetables",
+    "Top with sliced chicken, feta, and olives",
+    "Dress with olive oil and lemon juice"
+  ],
+  "nutrition": {
+    "calories": 340,
+    "protein": 32,
+    "carbs": 16,
+    "fat": 16,
+    "fiber": 4,
+    "sugar": 6,
+    "sodium": 580
+  },
+  "healthBenefits": [
+    "Mediterranean diet",
+    "High protein",
+    "Fresh vegetables"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:48:42.304Z"
+}

@@ -1,0 +1,28 @@
+{
+  "fdcId": "200080",
+  "slug": "energy-drink",
+  "name": "Energy Drink",
+  "category": "beverages",
+  "description": "Energy Drink - rich in essential nutrients. Good nutrition source for a healthy diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 47,
+    "protein": 0,
+    "carbs": 12,
+    "fat": 0,
+    "fiber": 0,
+    "sugar": 11,
+    "sodium": 106,
+    "cholesterol": 0,
+    "saturatedFat": 0
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:44:51.174Z"
+}

@@ -1,0 +1,28 @@
+{
+  "fdcId": "200082",
+  "slug": "coconut-milk",
+  "name": "Coconut Milk",
+  "category": "beverages",
+  "description": "Coconut Milk - rich in fats. Good nutrition source for a healthy diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 230,
+    "protein": 2,
+    "carbs": 2.3,
+    "fat": 24,
+    "fiber": 2.3,
+    "sugar": 0,
+    "sodium": 100,
+    "cholesterol": 0,
+    "saturatedFat": 21
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:44:51.174Z"
+}

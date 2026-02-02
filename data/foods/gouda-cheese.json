@@ -1,0 +1,28 @@
+{
+  "fdcId": "200061",
+  "slug": "gouda-cheese",
+  "name": "Gouda Cheese",
+  "category": "dairy",
+  "description": "Gouda Cheese - rich in protein. Good nutrition source for a healthy diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 356,
+    "protein": 27,
+    "carbs": 2.2,
+    "fat": 27,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 819,
+    "cholesterol": 0,
+    "saturatedFat": 17.3
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:44:51.170Z"
+}

@@ -1,0 +1,35 @@
+{
+  "fdcId": "2739267",
+  "slug": "lucky-charms-cereal",
+  "name": "Lucky Charms Cereal",
+  "category": "grains",
+  "description": "Lucky Charms Cereal from GENERAL MILLS SALES INC.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 36,
+      "label": "Lucky Charms"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 380,
+    "protein": 7.6,
+    "carbs": 83.4,
+    "fat": 3.97,
+    "fiber": 6.37,
+    "sugar": 33.5,
+    "sodium": 624,
+    "potassium": 212,
+    "cholesterol": 0,
+    "saturatedFat": 0.76
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:02.846Z"
+}

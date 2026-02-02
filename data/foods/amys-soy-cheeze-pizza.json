@@ -1,0 +1,34 @@
+{
+  "fdcId": "2015183",
+  "slug": "amys-soy-cheeze-pizza",
+  "name": "AMY'S, SOY CHEEZE PIZZA",
+  "category": "fast-food",
+  "description": "AMY'S, SOY CHEEZE PIZZA from Amy's Kitchen Inc.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 123,
+      "label": "0.333 PIZZA"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 236,
+    "protein": 9.76,
+    "carbs": 30.1,
+    "fat": 8.94,
+    "fiber": 1.6,
+    "sugar": 2.44,
+    "sodium": 480,
+    "cholesterol": 0,
+    "saturatedFat": 0.81
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:40.501Z"
+}

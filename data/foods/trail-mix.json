@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000075",
+  "slug": "trail-mix",
+  "name": "Trail Mix",
+  "category": "snacks",
+  "description": "Trail Mix - high in healthy fats",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 463,
+    "protein": 15,
+    "carbs": 48,
+    "fat": 24,
+    "fiber": 7,
+    "sugar": 30,
+    "sodium": 154,
+    "cholesterol": 0,
+    "saturatedFat": 4.2
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.603Z"
+}

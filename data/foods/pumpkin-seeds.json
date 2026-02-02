@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000055",
+  "slug": "pumpkin-seeds",
+  "name": "Pumpkin Seeds",
+  "category": "nuts-seeds",
+  "description": "Pumpkin Seeds - high in protein",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 559,
+    "protein": 19,
+    "carbs": 11,
+    "fat": 49,
+    "fiber": 6.5,
+    "sugar": 1.1,
+    "sodium": 18,
+    "cholesterol": 0,
+    "saturatedFat": 9
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.600Z"
+}

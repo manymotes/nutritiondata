@@ -1,0 +1,28 @@
+{
+  "fdcId": "200072",
+  "slug": "whey-protein",
+  "name": "Whey Protein",
+  "category": "dairy",
+  "description": "Whey Protein - rich in protein. Good nutrition source for a healthy diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 417,
+    "protein": 97,
+    "carbs": 0,
+    "fat": 2,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 320,
+    "cholesterol": 0,
+    "saturatedFat": 1
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:44:51.172Z"
+}

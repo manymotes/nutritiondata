@@ -1,0 +1,28 @@
+{
+  "fdcId": "300002",
+  "slug": "gyro",
+  "name": "Gyro",
+  "category": "fast-food",
+  "description": "Gyro - A nutritious food source with good amounts of protein. Part of a healthy, balanced diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 250,
+    "protein": 20,
+    "carbs": 24,
+    "fat": 10,
+    "fiber": 0,
+    "sugar": 2,
+    "sodium": 600,
+    "cholesterol": 0,
+    "saturatedFat": 3.5
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:46:37.269Z"
+}

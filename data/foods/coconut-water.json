@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000064",
+  "slug": "coconut-water",
+  "name": "Coconut Water",
+  "category": "beverages",
+  "description": "Coconut Water - high in nutrients",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 19,
+    "protein": 0.7,
+    "carbs": 3.7,
+    "fat": 0.2,
+    "fiber": 1.1,
+    "sugar": 2.6,
+    "sodium": 105,
+    "cholesterol": 0,
+    "saturatedFat": 0.1
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.602Z"
+}

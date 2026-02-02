@@ -1,0 +1,78 @@
+{
+  "fdcId": "meal-103",
+  "slug": "mediterranean-chickpea-salad",
+  "name": "Mediterranean Chickpea Salad",
+  "category": "meals",
+  "mealType": "lunch",
+  "description": "Mediterranean Chickpea Salad - A delicious and nutritious lunch option.",
+  "servings": 1,
+  "prepTime": 10,
+  "cookTime": 0,
+  "ingredients": [
+    {
+      "name": "Chickpeas",
+      "amount": 150,
+      "unit": "g",
+      "grams": 150,
+      "slug": "chickpeas"
+    },
+    {
+      "name": "Cherry Tomatoes",
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "slug": "cherry-tomatoes"
+    },
+    {
+      "name": "Cucumber",
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "slug": "cucumber"
+    },
+    {
+      "name": "Red Onion",
+      "amount": 30,
+      "unit": "g",
+      "grams": 30,
+      "slug": "red-onion"
+    },
+    {
+      "name": "Feta Cheese",
+      "amount": 40,
+      "unit": "g",
+      "grams": 40,
+      "slug": "feta-cheese"
+    },
+    {
+      "name": "Olive Oil",
+      "amount": 15,
+      "unit": "ml",
+      "grams": 15,
+      "slug": "olive-oil"
+    }
+  ],
+  "instructions": [
+    "Drain and rinse chickpeas",
+    "Chop tomatoes, cucumber, and onion",
+    "Combine vegetables with chickpeas",
+    "Crumble feta on top",
+    "Drizzle with olive oil and serve"
+  ],
+  "nutrition": {
+    "calories": 360,
+    "protein": 15,
+    "carbs": 45,
+    "fat": 12,
+    "fiber": 12,
+    "sugar": 6,
+    "sodium": 520
+  },
+  "healthBenefits": [
+    "Plant-based protein",
+    "Mediterranean diet",
+    "High fiber"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:48:42.301Z"
+}

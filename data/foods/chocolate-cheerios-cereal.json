@@ -1,0 +1,35 @@
+{
+  "fdcId": "2752073",
+  "slug": "chocolate-cheerios-cereal",
+  "name": "Chocolate Cheerios Cereal",
+  "category": "grains",
+  "description": "Chocolate Cheerios Cereal from GENERAL MILLS SALES INC.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 36,
+      "label": "1 cup"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 389,
+    "protein": 8.33,
+    "carbs": 80.6,
+    "fat": 5.56,
+    "fiber": 8.3,
+    "sugar": 27.8,
+    "sodium": 500,
+    "potassium": 472,
+    "cholesterol": 0,
+    "saturatedFat": 0
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:00.998Z"
+}

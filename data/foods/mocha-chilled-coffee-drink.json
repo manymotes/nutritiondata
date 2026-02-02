@@ -1,0 +1,34 @@
+{
+  "fdcId": "540576",
+  "slug": "mocha-chilled-coffee-drink",
+  "name": "MOCHA CHILLED COFFEE DRINK",
+  "category": "fast-food",
+  "description": "MOCHA CHILLED COFFEE DRINK from STARBUCKS, INC",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 285,
+      "label": "1 BOTTLE"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 63,
+    "protein": 2.46,
+    "carbs": 11.6,
+    "fat": 1.05,
+    "fiber": 0,
+    "sugar": 10.9,
+    "sodium": 33,
+    "cholesterol": 5,
+    "saturatedFat": 0.7
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:46:32.024Z"
+}

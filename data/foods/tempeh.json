@@ -1,0 +1,28 @@
+{
+  "fdcId": "200086",
+  "slug": "tempeh",
+  "name": "Tempeh",
+  "category": "proteins",
+  "description": "Tempeh - rich in protein. Good nutrition source for a healthy diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 195,
+    "protein": 19,
+    "carbs": 7,
+    "fat": 11,
+    "fiber": 4,
+    "sugar": 0,
+    "sodium": 7,
+    "cholesterol": 0,
+    "saturatedFat": 2.6
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:44:51.175Z"
+}

@@ -1,0 +1,28 @@
+{
+  "fdcId": "200092",
+  "slug": "squid",
+  "name": "Squid",
+  "category": "proteins",
+  "description": "Squid - rich in protein. Good nutrition source for a healthy diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 92,
+    "protein": 16,
+    "carbs": 3,
+    "fat": 1.4,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 44,
+    "cholesterol": 0,
+    "saturatedFat": 0.4
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:44:51.176Z"
+}

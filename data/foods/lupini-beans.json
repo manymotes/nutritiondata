@@ -1,0 +1,28 @@
+{
+  "fdcId": "300043",
+  "slug": "lupini-beans",
+  "name": "Lupini Beans",
+  "category": "grains",
+  "description": "Lupini Beans - A nutritious food source with good amounts of dietary fiber. Part of a healthy, balanced diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 119,
+    "protein": 13.2,
+    "carbs": 4.6,
+    "fat": 6,
+    "fiber": 5.6,
+    "sugar": 0.3,
+    "sodium": 240,
+    "cholesterol": 0,
+    "saturatedFat": 0.7
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:46:37.281Z"
+}

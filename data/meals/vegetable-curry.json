@@ -1,0 +1,72 @@
+{
+  "fdcId": "meal-117",
+  "slug": "vegetable-curry",
+  "name": "Vegetable Curry",
+  "category": "meals",
+  "mealType": "dinner",
+  "description": "Vegetable Curry - A delicious and nutritious dinner option.",
+  "servings": 2,
+  "prepTime": 15,
+  "cookTime": 20,
+  "ingredients": [
+    {
+      "name": "Chickpeas",
+      "amount": 200,
+      "unit": "g",
+      "grams": 200,
+      "slug": "chickpeas"
+    },
+    {
+      "name": "Coconut Milk",
+      "amount": 200,
+      "unit": "ml",
+      "grams": 200,
+      "slug": "coconut-milk"
+    },
+    {
+      "name": "Spinach",
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "slug": "spinach"
+    },
+    {
+      "name": "Bell Pepper",
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "slug": "bell-pepper"
+    },
+    {
+      "name": "Curry Paste",
+      "amount": 15,
+      "unit": "g",
+      "grams": 15,
+      "slug": "curry-paste"
+    }
+  ],
+  "instructions": [
+    "Heat oil in pot and add curry paste",
+    "Add coconut milk and bring to simmer",
+    "Add chickpeas and bell pepper",
+    "Simmer for 15 minutes",
+    "Stir in spinach and cook for 2 minutes",
+    "Serve over rice"
+  ],
+  "nutrition": {
+    "calories": 350,
+    "protein": 14,
+    "carbs": 42,
+    "fat": 14,
+    "fiber": 10,
+    "sugar": 6,
+    "sodium": 480
+  },
+  "healthBenefits": [
+    "Vegetarian protein",
+    "Anti-inflammatory spices",
+    "Comfort food"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:48:42.304Z"
+}

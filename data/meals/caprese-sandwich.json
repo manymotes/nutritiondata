@@ -1,0 +1,71 @@
+{
+  "fdcId": "meal-104",
+  "slug": "caprese-sandwich",
+  "name": "Caprese Sandwich",
+  "category": "meals",
+  "mealType": "lunch",
+  "description": "Caprese Sandwich - A delicious and nutritious lunch option.",
+  "servings": 1,
+  "prepTime": 5,
+  "cookTime": 0,
+  "ingredients": [
+    {
+      "name": "Whole Grain Bread",
+      "amount": 2,
+      "unit": "slices",
+      "grams": 60,
+      "slug": "whole-grain-bread"
+    },
+    {
+      "name": "Fresh Mozzarella",
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "slug": "fresh-mozzarella"
+    },
+    {
+      "name": "Tomato",
+      "amount": 1,
+      "unit": "medium",
+      "grams": 150,
+      "slug": "tomato"
+    },
+    {
+      "name": "Basil Leaves",
+      "amount": 10,
+      "unit": "g",
+      "grams": 10,
+      "slug": "basil"
+    },
+    {
+      "name": "Balsamic Vinegar",
+      "amount": 15,
+      "unit": "ml",
+      "grams": 15,
+      "slug": "balsamic-vinegar"
+    }
+  ],
+  "instructions": [
+    "Slice bread and toast lightly",
+    "Layer mozzarella and tomato slices",
+    "Add fresh basil leaves",
+    "Drizzle with balsamic vinegar",
+    "Top with second bread slice and cut"
+  ],
+  "nutrition": {
+    "calories": 380,
+    "protein": 18,
+    "carbs": 35,
+    "fat": 18,
+    "fiber": 4,
+    "sugar": 4,
+    "sodium": 450
+  },
+  "healthBenefits": [
+    "Fresh ingredients",
+    "Italian-inspired",
+    "Good calcium"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:48:42.301Z"
+}

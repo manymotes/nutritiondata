@@ -1,0 +1,48 @@
+{
+  "fdcId": "meal-118",
+  "slug": "edamame",
+  "name": "Edamame",
+  "category": "meals",
+  "mealType": "snack",
+  "description": "Edamame - A delicious and nutritious snack option.",
+  "servings": 1,
+  "prepTime": 0,
+  "cookTime": 5,
+  "ingredients": [
+    {
+      "name": "Frozen Edamame",
+      "amount": 150,
+      "unit": "g",
+      "grams": 150,
+      "slug": "frozen-edamame"
+    },
+    {
+      "name": "Sea Salt",
+      "amount": 1,
+      "unit": "pinch",
+      "grams": 1,
+      "slug": "sea-salt"
+    }
+  ],
+  "instructions": [
+    "Boil water and cook frozen edamame for 3-5 minutes",
+    "Drain and sprinkle with sea salt",
+    "Serve warm or cold"
+  ],
+  "nutrition": {
+    "calories": 190,
+    "protein": 18,
+    "carbs": 14,
+    "fat": 8,
+    "fiber": 5,
+    "sugar": 2,
+    "sodium": 190
+  },
+  "healthBenefits": [
+    "Plant-based protein",
+    "Complete amino acids",
+    "Fiber-rich"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:48:42.305Z"
+}

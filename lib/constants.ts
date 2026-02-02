@@ -1,7 +1,7 @@
 // Site-wide constants
 
 export const SITE_NAME = 'CalorieData'
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://nutritiondata.motesmass.workers.dev'
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://caloriedata.org'
 export const SITE_DESCRIPTION = 'Free nutrition data for 300,000+ foods. Find calories, macros, and compare any foods instantly.'
 
 export const USDA_API_KEY = process.env.USDA_API_KEY || ''
@@ -21,8 +21,10 @@ export const FOOD_CATEGORIES = [
   { slug: 'desserts', name: 'Desserts', icon: '🍰' },
 ] as const
 
-// Popular foods for homepage and initial data
-export const POPULAR_FOODS = [
+// Featured foods for homepage (top 124 most popular)
+// Note: Full food database is in /data/foods/*.json (200+ foods)
+// Use getAllFoodSlugs() from lib/data.ts to get complete list
+export const FEATURED_FOODS = [
   // Fruits (High search volume)
   { slug: 'banana', name: 'Banana', category: 'fruits' },
   { slug: 'apple', name: 'Apple', category: 'fruits' },
@@ -158,6 +160,9 @@ export const POPULAR_FOODS = [
   { slug: 'candy', name: 'Candy', category: 'desserts' },
 ] as const
 
+// Backward compatibility: keep POPULAR_FOODS as alias
+export const POPULAR_FOODS = FEATURED_FOODS
+
 // Nutrient display configuration
 export const NUTRIENTS = {
   calories: { name: 'Calories', unit: 'kcal', color: 'orange' },
@@ -168,3 +173,23 @@ export const NUTRIENTS = {
   sugar: { name: 'Sugar', unit: 'g', color: 'pink' },
   sodium: { name: 'Sodium', unit: 'mg', color: 'purple' },
 } as const
+
+// Nutrient filter pages
+export const NUTRIENT_FILTERS = [
+  { slug: 'high-protein', name: 'High Protein Foods', description: 'Foods with 15g+ protein per 100g' },
+  { slug: 'high-fiber', name: 'High Fiber Foods', description: 'Foods with 3g+ fiber per 100g' },
+  { slug: 'low-carb', name: 'Low Carb Foods', description: 'Foods with 10g or less carbs per 100g' },
+  { slug: 'low-calorie', name: 'Low Calorie Foods', description: 'Foods with 100 calories or less per 100g' },
+  { slug: 'high-iron', name: 'High Iron Foods', description: 'Iron-rich foods for energy and health' },
+  { slug: 'high-calcium', name: 'High Calcium Foods', description: 'Foods rich in calcium for strong bones' },
+] as const
+
+// Diet type filter pages
+export const DIET_FILTERS = [
+  { slug: 'keto', name: 'Keto Diet', description: 'Low-carb, high-fat foods for ketogenic diets' },
+  { slug: 'vegan', name: 'Vegan Diet', description: 'Plant-based foods for vegan diets' },
+  { slug: 'vegetarian', name: 'Vegetarian Diet', description: 'Meat-free foods for vegetarian diets' },
+  { slug: 'paleo', name: 'Paleo Diet', description: 'Whole foods for paleo and ancestral diets' },
+  { slug: 'gluten-free', name: 'Gluten Free', description: 'Foods naturally gluten-free' },
+  { slug: 'low-sodium', name: 'Low Sodium', description: 'Foods with 200mg sodium or less per 100g' },
+] as const

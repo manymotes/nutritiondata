@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000082",
+  "slug": "french-fries",
+  "name": "French Fries",
+  "category": "fast-food",
+  "description": "French Fries - high in carbohydrates",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 365,
+    "protein": 3.4,
+    "carbs": 48,
+    "fat": 17,
+    "fiber": 4.2,
+    "sugar": 0.3,
+    "sodium": 246,
+    "cholesterol": 0,
+    "saturatedFat": 3.2
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.604Z"
+}

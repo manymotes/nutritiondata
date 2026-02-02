@@ -1,0 +1,35 @@
+{
+  "fdcId": "2746542",
+  "slug": "honey-nut-cheerios-cereal-bowlpak",
+  "name": "Honey Nut Cheerios Cereal Bowlpak",
+  "category": "grains",
+  "description": "Honey Nut Cheerios Cereal Bowlpak from GENERAL MILLS SALES INC.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 28,
+      "label": "28"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 393,
+    "protein": 7.14,
+    "carbs": 82.1,
+    "fat": 5.36,
+    "fiber": 7.1,
+    "sugar": 32.1,
+    "sodium": 571,
+    "potassium": 393,
+    "cholesterol": 0,
+    "saturatedFat": 0
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:09.337Z"
+}

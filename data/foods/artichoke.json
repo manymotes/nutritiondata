@@ -1,0 +1,28 @@
+{
+  "fdcId": "200031",
+  "slug": "artichoke",
+  "name": "Artichoke",
+  "category": "vegetables",
+  "description": "Artichoke - rich in essential nutrients. Good nutrition source for a healthy diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 47,
+    "protein": 2.7,
+    "carbs": 10,
+    "fat": 0.1,
+    "fiber": 5.2,
+    "sugar": 0.5,
+    "sodium": 66,
+    "cholesterol": 0,
+    "saturatedFat": 0
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:44:51.163Z"
+}

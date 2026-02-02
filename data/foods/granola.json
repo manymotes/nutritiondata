@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000070",
+  "slug": "granola",
+  "name": "Granola",
+  "category": "snacks",
+  "description": "Granola - high in carbohydrates",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 471,
+    "protein": 9.4,
+    "carbs": 68,
+    "fat": 18,
+    "fiber": 8.6,
+    "sugar": 33,
+    "sodium": 5,
+    "cholesterol": 0,
+    "saturatedFat": 1.3
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.603Z"
+}

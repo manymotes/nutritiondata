@@ -1,0 +1,34 @@
+{
+  "fdcId": "2242441",
+  "slug": "starbucks-specialty-coffee-beverage-vanilla-caffe-latte-vanilla-caffe-latte",
+  "name": "STARBUCKS, SPECIALTY COFFEE BEVERAGE, VANILLA CAFFE LATTE, VANILLA CAFFE LATTE",
+  "category": "fast-food",
+  "description": "STARBUCKS, SPECIALTY COFFEE BEVERAGE, VANILLA CAFFE LATTE, VANILLA CAFFE LATTE from Starbucks Coffee Company",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 240,
+      "label": "1 K-CUP POD AND 1 SWEETENED DAIRY PACKET"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 1620,
+    "protein": 50,
+    "carbs": 262,
+    "fat": 43.8,
+    "fiber": 0,
+    "sugar": 250,
+    "sodium": 875,
+    "cholesterol": 125,
+    "saturatedFat": 25
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:46:32.007Z"
+}

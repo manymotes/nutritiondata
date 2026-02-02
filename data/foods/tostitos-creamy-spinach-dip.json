@@ -1,0 +1,34 @@
+{
+  "fdcId": "1633676",
+  "slug": "tostitos-creamy-spinach-dip",
+  "name": "TOSTITOS, CREAMY SPINACH DIP",
+  "category": "snacks",
+  "description": "TOSTITOS, CREAMY SPINACH DIP from Frito-Lay Company",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 32,
+      "label": "2 Tbsp"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 156,
+    "protein": 3.12,
+    "carbs": 6.25,
+    "fat": 12.5,
+    "fiber": 3.1,
+    "sugar": 3.12,
+    "sodium": 625,
+    "cholesterol": 0,
+    "saturatedFat": 0
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:15.606Z"
+}

@@ -1,0 +1,77 @@
+{
+  "fdcId": "meal-7",
+  "slug": "tuna-salad",
+  "name": "Tuna Salad",
+  "category": "meals",
+  "mealType": "lunch",
+  "description": "Tuna Salad - A delicious and nutritious lunch option.",
+  "servings": 1,
+  "prepTime": 5,
+  "cookTime": 0,
+  "ingredients": [
+    {
+      "name": "Canned Tuna",
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "slug": "canned-tuna"
+    },
+    {
+      "name": "Mixed Greens",
+      "amount": 150,
+      "unit": "g",
+      "grams": 150,
+      "slug": "mixed-greens"
+    },
+    {
+      "name": "Cucumber",
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "slug": "cucumber"
+    },
+    {
+      "name": "Cherry Tomatoes",
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "slug": "cherry-tomatoes"
+    },
+    {
+      "name": "Olive Oil",
+      "amount": 15,
+      "unit": "ml",
+      "grams": 15,
+      "slug": "olive-oil"
+    },
+    {
+      "name": "Lemon Juice",
+      "amount": 15,
+      "unit": "ml",
+      "grams": 15,
+      "slug": "lemon-juice"
+    }
+  ],
+  "instructions": [
+    "Drain tuna and place in bowl",
+    "Mix with olive oil and lemon juice",
+    "Combine with mixed greens, cucumber, and tomatoes",
+    "Toss gently and serve"
+  ],
+  "nutrition": {
+    "calories": 250,
+    "protein": 30,
+    "carbs": 12,
+    "fat": 8,
+    "fiber": 3,
+    "sugar": 4,
+    "sodium": 380
+  },
+  "healthBenefits": [
+    "Excellent omega-3 source",
+    "Lean protein",
+    "Low calorie option"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:47:51.200Z"
+}

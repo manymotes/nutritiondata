@@ -1,0 +1,33 @@
+{
+  "fdcId": "2154949",
+  "slug": "all-natural-snapple-apple-juice-drink-from-concentrate-snapple-apple",
+  "name": "ALL NATURAL SNAPPLE APPLE JUICE DRINK FROM CONCENTRATE, SNAPPLE APPLE",
+  "category": "beverages",
+  "description": "ALL NATURAL SNAPPLE APPLE JUICE DRINK FROM CONCENTRATE, SNAPPLE APPLE from Snapple Beverage Corp.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 240,
+      "label": "8 OZA"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 42,
+    "protein": 0,
+    "carbs": 10,
+    "fat": 0,
+    "fiber": 0,
+    "sugar": 10,
+    "sodium": 2,
+    "potassium": 12
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:35.744Z"
+}

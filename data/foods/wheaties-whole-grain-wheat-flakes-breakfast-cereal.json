@@ -1,0 +1,35 @@
+{
+  "fdcId": "2738639",
+  "slug": "wheaties-whole-grain-wheat-flakes-breakfast-cereal",
+  "name": "Wheaties Whole Grain Wheat Flakes Breakfast Cereal",
+  "category": "grains",
+  "description": "Wheaties Whole Grain Wheat Flakes Breakfast Cereal from GENERAL MILLS SALES INC.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 38,
+      "label": "1 cup"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 352,
+    "protein": 8.72,
+    "carbs": 83.6,
+    "fat": 1.93,
+    "fiber": 11.3,
+    "sugar": 14.3,
+    "sodium": 590,
+    "potassium": 366,
+    "cholesterol": 0,
+    "saturatedFat": 0.42
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:10.227Z"
+}

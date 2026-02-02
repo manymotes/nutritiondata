@@ -1,0 +1,35 @@
+{
+  "fdcId": "1635936",
+  "slug": "general-mills-cinnamon-toast-crunch-milk-n-cereal-bars-cinnamon-toast-crunch-cinnamon-toast-crunch",
+  "name": "GENERAL MILLS, CINNAMON TOAST CRUNCH, MILK 'N CEREAL BARS, CINNAMON TOAST CRUNCH, CINNAMON TOAST CRUNCH",
+  "category": "grains",
+  "description": "GENERAL MILLS, CINNAMON TOAST CRUNCH, MILK 'N CEREAL BARS, CINNAMON TOAST CRUNCH, CINNAMON TOAST CRUNCH from General Mills, Inc.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 45,
+      "label": "1 BAR"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 400,
+    "protein": 8.89,
+    "carbs": 73.3,
+    "fat": 10,
+    "fiber": 2.2,
+    "sugar": 37.8,
+    "sodium": 289,
+    "potassium": 244,
+    "cholesterol": 0,
+    "saturatedFat": 5.56
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:08.437Z"
+}

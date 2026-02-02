@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000092",
+  "slug": "pie",
+  "name": "Pie",
+  "category": "desserts",
+  "description": "Pie - high in carbohydrates",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 320,
+    "protein": 3,
+    "carbs": 35,
+    "fat": 17,
+    "fiber": 0.9,
+    "sugar": 15,
+    "sodium": 290,
+    "cholesterol": 0,
+    "saturatedFat": 3
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.607Z"
+}

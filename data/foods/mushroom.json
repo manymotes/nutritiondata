@@ -1,0 +1,28 @@
+{
+  "fdcId": "200033",
+  "slug": "mushroom",
+  "name": "Mushroom",
+  "category": "vegetables",
+  "description": "Mushroom - rich in essential nutrients. Good nutrition source for a healthy diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 22,
+    "protein": 3.1,
+    "carbs": 3.3,
+    "fat": 0.3,
+    "fiber": 1,
+    "sugar": 0.1,
+    "sodium": 5,
+    "cholesterol": 0,
+    "saturatedFat": 0
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:44:51.163Z"
+}

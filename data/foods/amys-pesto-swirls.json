@@ -1,0 +1,34 @@
+{
+  "fdcId": "2061307",
+  "slug": "amys-pesto-swirls",
+  "name": "AMY'S, PESTO SWIRLS",
+  "category": "fast-food",
+  "description": "AMY'S, PESTO SWIRLS from Amy's Kitchen Inc.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 69,
+      "label": "2 PIECES"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 261,
+    "protein": 8.7,
+    "carbs": 29,
+    "fat": 13,
+    "fiber": 2.9,
+    "sugar": 4.35,
+    "sodium": 464,
+    "cholesterol": 7,
+    "saturatedFat": 2.9
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:40.498Z"
+}

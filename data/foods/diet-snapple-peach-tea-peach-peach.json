@@ -1,0 +1,32 @@
+{
+  "fdcId": "662182",
+  "slug": "diet-snapple-peach-tea-peach-peach",
+  "name": "DIET SNAPPLE, PEACH TEA, PEACH, PEACH",
+  "category": "beverages",
+  "description": "DIET SNAPPLE, PEACH TEA, PEACH, PEACH from DIET SNAPPLE",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 473,
+      "label": "16 OZA"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 2,
+    "protein": 0,
+    "carbs": 0.21,
+    "fat": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 3
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:35.745Z"
+}

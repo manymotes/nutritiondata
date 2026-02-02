@@ -1,0 +1,63 @@
+{
+  "fdcId": "meal-100",
+  "slug": "protein-pancakes",
+  "name": "Protein Pancakes",
+  "category": "meals",
+  "mealType": "breakfast",
+  "description": "Protein Pancakes - A delicious and nutritious breakfast option.",
+  "servings": 2,
+  "prepTime": 5,
+  "cookTime": 10,
+  "ingredients": [
+    {
+      "name": "Eggs",
+      "amount": 2,
+      "unit": "large",
+      "grams": 100,
+      "slug": "eggs"
+    },
+    {
+      "name": "Banana",
+      "amount": 1,
+      "unit": "medium",
+      "grams": 118,
+      "slug": "banana"
+    },
+    {
+      "name": "Oats",
+      "amount": 40,
+      "unit": "g",
+      "grams": 40,
+      "slug": "oats"
+    },
+    {
+      "name": "Honey",
+      "amount": 20,
+      "unit": "g",
+      "grams": 20,
+      "slug": "honey"
+    }
+  ],
+  "instructions": [
+    "Mash banana in a bowl",
+    "Add eggs and oats, mix well",
+    "Cook on griddle until golden brown on both sides",
+    "Serve with honey drizzle"
+  ],
+  "nutrition": {
+    "calories": 280,
+    "protein": 14,
+    "carbs": 40,
+    "fat": 6,
+    "fiber": 3,
+    "sugar": 16,
+    "sodium": 45
+  },
+  "healthBenefits": [
+    "High protein breakfast",
+    "Simple recipe",
+    "Filling meal"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:48:42.298Z"
+}

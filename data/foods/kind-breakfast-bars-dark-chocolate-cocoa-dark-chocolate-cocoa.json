@@ -1,0 +1,34 @@
+{
+  "fdcId": "2585611",
+  "slug": "kind-breakfast-bars-dark-chocolate-cocoa-dark-chocolate-cocoa",
+  "name": "KIND, BREAKFAST BARS, DARK CHOCOLATE COCOA, DARK CHOCOLATE COCOA",
+  "category": "snacks",
+  "description": "KIND, BREAKFAST BARS, DARK CHOCOLATE COCOA, DARK CHOCOLATE COCOA from KIND Inc.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 50,
+      "label": "2 Bars"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 440,
+    "protein": 8,
+    "carbs": 66,
+    "fat": 16,
+    "fiber": 10,
+    "sugar": 22,
+    "sodium": 50,
+    "cholesterol": 0,
+    "saturatedFat": 3
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:28.479Z"
+}

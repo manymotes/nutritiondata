@@ -1,0 +1,64 @@
+{
+  "fdcId": "meal-3",
+  "slug": "scrambled-eggs-with-toast",
+  "name": "Scrambled Eggs with Toast",
+  "category": "meals",
+  "mealType": "breakfast",
+  "description": "Scrambled Eggs with Toast - A delicious and nutritious breakfast option.",
+  "servings": 1,
+  "prepTime": 5,
+  "cookTime": 10,
+  "ingredients": [
+    {
+      "name": "Eggs",
+      "amount": 2,
+      "unit": "large",
+      "grams": 100,
+      "slug": "eggs"
+    },
+    {
+      "name": "Whole Wheat Bread",
+      "amount": 2,
+      "unit": "slices",
+      "grams": 60,
+      "slug": "whole-wheat-bread"
+    },
+    {
+      "name": "Butter",
+      "amount": 10,
+      "unit": "g",
+      "grams": 10,
+      "slug": "butter"
+    },
+    {
+      "name": "Salt and Pepper",
+      "amount": 1,
+      "unit": "pinch",
+      "grams": 1,
+      "slug": "salt"
+    }
+  ],
+  "instructions": [
+    "Toast bread until golden",
+    "Melt butter in a pan over medium heat",
+    "Scramble eggs with salt and pepper",
+    "Cook for 3-4 minutes until fluffy",
+    "Serve with toast"
+  ],
+  "nutrition": {
+    "calories": 420,
+    "protein": 18,
+    "carbs": 32,
+    "fat": 22,
+    "fiber": 3,
+    "sugar": 2,
+    "sodium": 580
+  },
+  "healthBenefits": [
+    "Excellent protein source",
+    "Rich in choline",
+    "Good for muscle building"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:47:51.198Z"
+}

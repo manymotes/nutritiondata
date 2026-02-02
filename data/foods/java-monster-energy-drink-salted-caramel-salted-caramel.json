@@ -1,0 +1,35 @@
+{
+  "fdcId": "2047479",
+  "slug": "java-monster-energy-drink-salted-caramel-salted-caramel",
+  "name": "JAVA MONSTER, ENERGY DRINK, SALTED CARAMEL, SALTED CARAMEL",
+  "category": "beverages",
+  "description": "JAVA MONSTER, ENERGY DRINK, SALTED CARAMEL, SALTED CARAMEL from Monster Energy Company",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 240,
+      "label": "8 OZA"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 42,
+    "protein": 1.67,
+    "carbs": 6.25,
+    "fat": 1.04,
+    "fiber": 0,
+    "sugar": 5.42,
+    "sodium": 121,
+    "potassium": 75,
+    "cholesterol": 4,
+    "saturatedFat": 0.62
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:33.869Z"
+}

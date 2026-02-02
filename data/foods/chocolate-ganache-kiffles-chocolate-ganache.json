@@ -1,0 +1,34 @@
+{
+  "fdcId": "2417551",
+  "slug": "chocolate-ganache-kiffles-chocolate-ganache",
+  "name": "CHOCOLATE GANACHE KIFFLES, CHOCOLATE GANACHE",
+  "category": "fast-food",
+  "description": "CHOCOLATE GANACHE KIFFLES, CHOCOLATE GANACHE from Aunt Wendy's Kiffles ",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 34,
+      "label": "2 Cookies"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 353,
+    "protein": 8.82,
+    "carbs": 88.2,
+    "fat": 16.2,
+    "fiber": 2.9,
+    "sugar": 47.1,
+    "sodium": 309,
+    "cholesterol": 29,
+    "saturatedFat": 8.82
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:46:25.888Z"
+}

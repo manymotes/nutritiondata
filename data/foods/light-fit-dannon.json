@@ -1,0 +1,35 @@
+{
+  "fdcId": "2744989",
+  "slug": "light-fit-dannon",
+  "name": "Light + Fit Dannon",
+  "category": "dairy",
+  "description": "Light + Fit Dannon from Dannon Company",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 170,
+      "label": "3/4 cup (170g)"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 47,
+    "protein": 2.94,
+    "carbs": 8.82,
+    "fat": 0,
+    "fiber": 0,
+    "sugar": 5.88,
+    "sodium": 50,
+    "potassium": 135,
+    "cholesterol": 3,
+    "saturatedFat": 0
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:22.138Z"
+}

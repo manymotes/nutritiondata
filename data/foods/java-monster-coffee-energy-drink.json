@@ -1,0 +1,35 @@
+{
+  "fdcId": "2568226",
+  "slug": "java-monster-coffee-energy-drink",
+  "name": "JAVA MONSTER COFFEE + ENERGY DRINK",
+  "category": "beverages",
+  "description": "JAVA MONSTER COFFEE + ENERGY DRINK from Monster Energy Company",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 325,
+      "label": "11 fl. oz. (325mL)"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 49,
+    "protein": 1.85,
+    "carbs": 8,
+    "fat": 1.08,
+    "fiber": 0,
+    "sugar": 8,
+    "sodium": 102,
+    "potassium": 105,
+    "cholesterol": 3,
+    "saturatedFat": 0.62
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:33.867Z"
+}

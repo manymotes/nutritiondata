@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000066",
+  "slug": "soy-milk",
+  "name": "Soy Milk",
+  "category": "beverages",
+  "description": "Soy Milk - high in nutrients",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 33,
+    "protein": 3.3,
+    "carbs": 1.5,
+    "fat": 1.6,
+    "fiber": 0.5,
+    "sugar": 0.7,
+    "sodium": 28,
+    "cholesterol": 0,
+    "saturatedFat": 0.2
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.603Z"
+}

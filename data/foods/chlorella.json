@@ -1,0 +1,28 @@
+{
+  "fdcId": "300034",
+  "slug": "chlorella",
+  "name": "Chlorella",
+  "category": "vegetables",
+  "description": "Chlorella - A nutritious food source with good amounts of protein. Part of a healthy, balanced diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 340,
+    "protein": 58,
+    "carbs": 9,
+    "fat": 6,
+    "fiber": 5,
+    "sugar": 0,
+    "sodium": 200,
+    "cholesterol": 0,
+    "saturatedFat": 1.2
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:46:37.279Z"
+}

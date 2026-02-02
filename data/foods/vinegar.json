@@ -1,0 +1,28 @@
+{
+  "fdcId": "300058",
+  "slug": "vinegar",
+  "name": "Vinegar",
+  "category": "snacks",
+  "description": "Vinegar - A nutritious food source with good amounts of essential vitamins and minerals. Part of a healthy, balanced diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 12,
+    "protein": 0.2,
+    "carbs": 0.4,
+    "fat": 0,
+    "fiber": 0,
+    "sugar": 0.1,
+    "sodium": 5,
+    "cholesterol": 0,
+    "saturatedFat": 0
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:46:37.287Z"
+}

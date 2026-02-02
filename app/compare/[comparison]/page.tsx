@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { compareFoods, getFoodData } from '@/lib/data'
+import { compareFoods, getFoodData, getStrategicComparisons } from '@/lib/data'
 import { POPULAR_FOODS } from '@/lib/constants'
 
 interface PageProps {
@@ -17,19 +17,49 @@ function parseComparison(comparison: string): { food1: string; food2: string } |
   return { food1: parts[0], food2: parts[1] }
 }
 
-// Generate static params for popular comparisons
+// Generate static params for strategic comparisons
 export async function generateStaticParams() {
-  const comparisons: { comparison: string }[] = []
+  try {
+    // Get strategic comparisons which includes popular and cross-category pairings
+    const strategicComps = getStrategicComparisons()
 
-  for (let i = 0; i < POPULAR_FOODS.length; i++) {
-    for (let j = i + 1; j < POPULAR_FOODS.length; j++) {
-      comparisons.push({
-        comparison: `${POPULAR_FOODS[i].slug}-vs-${POPULAR_FOODS[j].slug}`,
-      })
+    // Also keep some popular food comparisons for familiarity
+    const popularComps: Array<[string, string]> = []
+    for (let i = 0; i < POPULAR_FOODS.length; i++) {
+      for (let j = i + 1; j < Math.min(i + 5, POPULAR_FOODS.length); j++) {
+        popularComps.push([POPULAR_FOODS[i].slug, POPULAR_FOODS[j].slug])
+      }
     }
-  }
 
-  return comparisons
+    // Combine both sets and remove duplicates
+    const allComps = [...strategicComps, ...popularComps]
+    const seen = new Set<string>()
+    const comparisons: { comparison: string }[] = []
+
+    for (const [food1, food2] of allComps) {
+      const key = food1 < food2 ? `${food1}-${food2}` : `${food2}-${food1}`
+      if (!seen.has(key)) {
+        seen.add(key)
+        comparisons.push({
+          comparison: key.includes('-vs-') ? key : `${food1}-vs-${food2}`,
+        })
+      }
+    }
+
+    return comparisons.slice(0, 3000) // Limit to ~3000 comparisons for build performance
+  } catch (error) {
+    console.error('Error generating comparison params:', error)
+    // Fallback to popular foods only
+    const comparisons: { comparison: string }[] = []
+    for (let i = 0; i < POPULAR_FOODS.length; i++) {
+      for (let j = i + 1; j < POPULAR_FOODS.length; j++) {
+        comparisons.push({
+          comparison: `${POPULAR_FOODS[i].slug}-vs-${POPULAR_FOODS[j].slug}`,
+        })
+      }
+    }
+    return comparisons
+  }
 }
 
 // Generate metadata

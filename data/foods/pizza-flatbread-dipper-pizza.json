@@ -1,0 +1,35 @@
+{
+  "fdcId": "2677586",
+  "slug": "pizza-flatbread-dipper-pizza",
+  "name": "PIZZA FLATBREAD DIPPER, PIZZA",
+  "category": "fast-food",
+  "description": "PIZZA FLATBREAD DIPPER, PIZZA",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 96,
+      "label": "1 package"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 260,
+    "protein": 8.33,
+    "carbs": 27.1,
+    "fat": 14.6,
+    "fiber": 2.1,
+    "sugar": 4.17,
+    "sodium": 510,
+    "potassium": 250,
+    "cholesterol": 21,
+    "saturatedFat": 4.17
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:46:28.822Z"
+}

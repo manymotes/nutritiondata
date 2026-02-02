@@ -1,0 +1,35 @@
+{
+  "fdcId": "2527835",
+  "slug": "doritos-nacho-cheese-flavored-popcorn",
+  "name": "DORITOS NACHO CHEESE FLAVORED POPCORN",
+  "category": "snacks",
+  "description": "DORITOS NACHO CHEESE FLAVORED POPCORN",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 28,
+      "label": "1 serving (28GRM)"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 571,
+    "protein": 7.14,
+    "carbs": 46.4,
+    "fat": 39.3,
+    "fiber": 7.1,
+    "sugar": 3.57,
+    "sodium": 714,
+    "potassium": 607,
+    "cholesterol": 18,
+    "saturatedFat": 7.14
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:11.911Z"
+}

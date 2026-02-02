@@ -1,0 +1,34 @@
+{
+  "fdcId": "411889",
+  "slug": "starbucks-frappuccino-chilled-coffee-drink-smores",
+  "name": "STARBUCKS, FRAPPUCCINO, CHILLED COFFEE DRINK, S'MORES",
+  "category": "fast-food",
+  "description": "STARBUCKS, FRAPPUCCINO, CHILLED COFFEE DRINK, S'MORES from STARBUCKS",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 411,
+      "label": "1 BOTTLE"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 71,
+    "protein": 2.19,
+    "carbs": 12.9,
+    "fat": 1.09,
+    "fiber": 0.2,
+    "sugar": 11.2,
+    "sodium": 34,
+    "cholesterol": 5,
+    "saturatedFat": 0.73
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:46:32.004Z"
+}

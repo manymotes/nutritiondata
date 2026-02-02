@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000087",
+  "slug": "sandwich",
+  "name": "Sandwich",
+  "category": "fast-food",
+  "description": "Sandwich - high in carbohydrates",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 260,
+    "protein": 9,
+    "carbs": 35,
+    "fat": 9,
+    "fiber": 1.5,
+    "sugar": 4,
+    "sodium": 610,
+    "cholesterol": 0,
+    "saturatedFat": 2
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.605Z"
+}

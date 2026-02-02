@@ -1,0 +1,77 @@
+{
+  "fdcId": "meal-6",
+  "slug": "turkey-and-swiss-sandwich",
+  "name": "Turkey and Swiss Sandwich",
+  "category": "meals",
+  "mealType": "lunch",
+  "description": "Turkey and Swiss Sandwich - A delicious and nutritious lunch option.",
+  "servings": 1,
+  "prepTime": 5,
+  "cookTime": 0,
+  "ingredients": [
+    {
+      "name": "Whole Wheat Bread",
+      "amount": 2,
+      "unit": "slices",
+      "grams": 60,
+      "slug": "whole-wheat-bread"
+    },
+    {
+      "name": "Turkey Breast",
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "slug": "turkey-breast"
+    },
+    {
+      "name": "Swiss Cheese",
+      "amount": 30,
+      "unit": "g",
+      "grams": 30,
+      "slug": "swiss-cheese"
+    },
+    {
+      "name": "Tomato",
+      "amount": 1,
+      "unit": "medium",
+      "grams": 150,
+      "slug": "tomato"
+    },
+    {
+      "name": "Lettuce",
+      "amount": 30,
+      "unit": "g",
+      "grams": 30,
+      "slug": "lettuce"
+    },
+    {
+      "name": "Mayonnaise",
+      "amount": 15,
+      "unit": "g",
+      "grams": 15,
+      "slug": "mayonnaise"
+    }
+  ],
+  "instructions": [
+    "Toast bread lightly",
+    "Spread mayonnaise on both slices",
+    "Layer turkey, cheese, tomato, and lettuce",
+    "Cut diagonally and serve"
+  ],
+  "nutrition": {
+    "calories": 390,
+    "protein": 30,
+    "carbs": 35,
+    "fat": 14,
+    "fiber": 4,
+    "sugar": 4,
+    "sodium": 580
+  },
+  "healthBenefits": [
+    "Good protein content",
+    "Balanced meal",
+    "Easy to prepare"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:47:51.200Z"
+}

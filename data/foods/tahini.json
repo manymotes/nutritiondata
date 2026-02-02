@@ -1,0 +1,28 @@
+{
+  "fdcId": "300004",
+  "slug": "tahini",
+  "name": "Tahini",
+  "category": "nuts-seeds",
+  "description": "Tahini - A nutritious food source with good amounts of protein. Part of a healthy, balanced diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 595,
+    "protein": 17,
+    "carbs": 21,
+    "fat": 53,
+    "fiber": 9.3,
+    "sugar": 0.9,
+    "sodium": 91,
+    "cholesterol": 0,
+    "saturatedFat": 7.5
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:46:37.270Z"
+}

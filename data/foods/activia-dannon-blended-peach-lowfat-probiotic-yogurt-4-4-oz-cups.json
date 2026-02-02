@@ -1,0 +1,35 @@
+{
+  "fdcId": "2744942",
+  "slug": "activia-dannon-blended-peach-lowfat-probiotic-yogurt-4-4-oz-cups",
+  "name": "Activia Dannon Blended Peach Lowfat Probiotic Yogurt 4-4 oz. Cups",
+  "category": "dairy",
+  "description": "Activia Dannon Blended Peach Lowfat Probiotic Yogurt 4-4 oz. Cups from Dannon Company",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 113,
+      "label": "113g"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 71,
+    "protein": 3.54,
+    "carbs": 11.5,
+    "fat": 1.33,
+    "fiber": 0,
+    "sugar": 7.96,
+    "sodium": 53,
+    "potassium": 166,
+    "cholesterol": 4,
+    "saturatedFat": 0.88
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:25.839Z"
+}

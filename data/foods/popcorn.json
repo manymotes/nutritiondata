@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000071",
+  "slug": "popcorn",
+  "name": "Popcorn",
+  "category": "snacks",
+  "description": "Popcorn - high in carbohydrates",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 387,
+    "protein": 3.5,
+    "carbs": 77,
+    "fat": 4.5,
+    "fiber": 15,
+    "sugar": 1.1,
+    "sodium": 2,
+    "cholesterol": 0,
+    "saturatedFat": 0.6
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.603Z"
+}

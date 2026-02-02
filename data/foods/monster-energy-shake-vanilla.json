@@ -1,0 +1,35 @@
+{
+  "fdcId": "1895449",
+  "slug": "monster-energy-shake-vanilla",
+  "name": "MONSTER ENERGY SHAKE, VANILLA",
+  "category": "beverages",
+  "description": "MONSTER ENERGY SHAKE, VANILLA from Monster Energy Company",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 240,
+      "label": "8.0 OZA"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 46,
+    "protein": 5.42,
+    "carbs": 4.17,
+    "fat": 0.83,
+    "fiber": 0,
+    "sugar": 3.75,
+    "sodium": 88,
+    "potassium": 158,
+    "cholesterol": 4,
+    "saturatedFat": 0.42
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:33.867Z"
+}

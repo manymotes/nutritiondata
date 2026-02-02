@@ -1,0 +1,71 @@
+{
+  "fdcId": "meal-206",
+  "slug": "grilled-vegetables-with-couscous",
+  "name": "Grilled Vegetables with Couscous",
+  "category": "meals",
+  "mealType": "dinner",
+  "description": "Grilled Vegetables with Couscous - A delicious and nutritious dinner option.",
+  "servings": 1,
+  "prepTime": 10,
+  "cookTime": 15,
+  "ingredients": [
+    {
+      "name": "Couscous",
+      "amount": 60,
+      "unit": "g",
+      "grams": 60,
+      "slug": "couscous"
+    },
+    {
+      "name": "Zucchini",
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "slug": "zucchini"
+    },
+    {
+      "name": "Eggplant",
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "slug": "eggplant"
+    },
+    {
+      "name": "Cherry Tomatoes",
+      "amount": 75,
+      "unit": "g",
+      "grams": 75,
+      "slug": "cherry-tomatoes"
+    },
+    {
+      "name": "Olive Oil",
+      "amount": 15,
+      "unit": "ml",
+      "grams": 15,
+      "slug": "olive-oil"
+    }
+  ],
+  "instructions": [
+    "Toss vegetables with olive oil and herbs",
+    "Grill at medium-high heat for 10-12 minutes",
+    "Prepare couscous according to package",
+    "Arrange grilled vegetables over couscous",
+    "Serve warm"
+  ],
+  "nutrition": {
+    "calories": 280,
+    "protein": 9,
+    "carbs": 42,
+    "fat": 8,
+    "fiber": 6,
+    "sugar": 4,
+    "sodium": 120
+  },
+  "healthBenefits": [
+    "Light and fresh",
+    "Vegetarian",
+    "Summer favorite"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:49:21.684Z"
+}

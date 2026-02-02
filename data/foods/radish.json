@@ -1,0 +1,28 @@
+{
+  "fdcId": "200035",
+  "slug": "radish",
+  "name": "Radish",
+  "category": "vegetables",
+  "description": "Radish - rich in essential nutrients. Good nutrition source for a healthy diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 16,
+    "protein": 0.7,
+    "carbs": 3.4,
+    "fat": 0.1,
+    "fiber": 0.7,
+    "sugar": 1.9,
+    "sodium": 25,
+    "cholesterol": 0,
+    "saturatedFat": 0
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:44:51.164Z"
+}

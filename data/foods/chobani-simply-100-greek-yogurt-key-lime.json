@@ -1,0 +1,35 @@
+{
+  "fdcId": "2082287",
+  "slug": "chobani-simply-100-greek-yogurt-key-lime",
+  "name": "CHOBANI, SIMPLY 100, GREEK YOGURT, KEY LIME",
+  "category": "dairy",
+  "description": "CHOBANI, SIMPLY 100, GREEK YOGURT, KEY LIME from Chobani, Inc.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 150,
+      "label": "5.3 ONZ"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 67,
+    "protein": 8,
+    "carbs": 10.7,
+    "fat": 0,
+    "fiber": 3.3,
+    "sugar": 5.33,
+    "sodium": 60,
+    "potassium": 153,
+    "cholesterol": 3,
+    "saturatedFat": 0
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:21.131Z"
+}

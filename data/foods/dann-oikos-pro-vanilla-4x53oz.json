@@ -1,0 +1,35 @@
+{
+  "fdcId": "2745013",
+  "slug": "dann-oikos-pro-vanilla-4x53oz",
+  "name": "DANN OIKOS PRO VANILLA 4X5.3OZ",
+  "category": "dairy",
+  "description": "DANN OIKOS PRO VANILLA 4X5.3OZ from Dannon Company",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 150,
+      "label": "1 container (150g)"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 93,
+    "protein": 13.3,
+    "carbs": 5.33,
+    "fat": 2,
+    "fiber": 0,
+    "sugar": 2,
+    "sodium": 30,
+    "potassium": 140,
+    "cholesterol": 13,
+    "saturatedFat": 0
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:24.926Z"
+}

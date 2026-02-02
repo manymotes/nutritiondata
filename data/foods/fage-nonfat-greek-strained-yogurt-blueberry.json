@@ -1,0 +1,34 @@
+{
+  "fdcId": "360742",
+  "slug": "fage-nonfat-greek-strained-yogurt-blueberry",
+  "name": "FAGE, NONFAT GREEK STRAINED YOGURT, BLUEBERRY",
+  "category": "dairy",
+  "description": "FAGE, NONFAT GREEK STRAINED YOGURT, BLUEBERRY from FAGE USA DAIRY INDUSTRY INC",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 150,
+      "label": "1 CONTAINER"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 80,
+    "protein": 8.67,
+    "carbs": 11.3,
+    "fat": 0,
+    "fiber": 0,
+    "sugar": 10.7,
+    "sodium": 30,
+    "cholesterol": 0,
+    "saturatedFat": 0
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:24.018Z"
+}

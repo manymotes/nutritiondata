@@ -1,0 +1,34 @@
+{
+  "fdcId": "1855136",
+  "slug": "amys-organic-pasta-sauce-tomato-basil-tomato-basil",
+  "name": "AMY'S, ORGANIC PASTA SAUCE, TOMATO BASIL, TOMATO BASIL",
+  "category": "fast-food",
+  "description": "AMY'S, ORGANIC PASTA SAUCE, TOMATO BASIL, TOMATO BASIL from Amy's Kitchen Inc.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 125,
+      "label": "0.5 cup"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 72,
+    "protein": 1.6,
+    "carbs": 8.8,
+    "fat": 3.6,
+    "fiber": 1.6,
+    "sugar": 4.8,
+    "sodium": 232,
+    "cholesterol": 0,
+    "saturatedFat": 0.4
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:40.503Z"
+}

@@ -1,0 +1,35 @@
+{
+  "fdcId": "2655832",
+  "slug": "ritz-big-crackers",
+  "name": "RITZ, BIG CRACKERS",
+  "category": "snacks",
+  "description": "RITZ, BIG CRACKERS from Nabisco Biscuit Company",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 16,
+      "label": "3 CRACKERS"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 500,
+    "protein": 6.25,
+    "carbs": 62.5,
+    "fat": 21.9,
+    "fiber": 0,
+    "sugar": 6.25,
+    "sodium": 875,
+    "potassium": 94,
+    "cholesterol": 0,
+    "saturatedFat": 6.25
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:19.303Z"
+}

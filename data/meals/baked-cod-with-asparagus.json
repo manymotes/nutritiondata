@@ -1,0 +1,64 @@
+{
+  "fdcId": "meal-116",
+  "slug": "baked-cod-with-asparagus",
+  "name": "Baked Cod with Asparagus",
+  "category": "meals",
+  "mealType": "dinner",
+  "description": "Baked Cod with Asparagus - A delicious and nutritious dinner option.",
+  "servings": 1,
+  "prepTime": 5,
+  "cookTime": 15,
+  "ingredients": [
+    {
+      "name": "Cod Fillet",
+      "amount": 150,
+      "unit": "g",
+      "grams": 150,
+      "slug": "cod-fillet"
+    },
+    {
+      "name": "Asparagus",
+      "amount": 150,
+      "unit": "g",
+      "grams": 150,
+      "slug": "asparagus"
+    },
+    {
+      "name": "Lemon",
+      "amount": 1,
+      "unit": "medium",
+      "grams": 60,
+      "slug": "lemon"
+    },
+    {
+      "name": "Olive Oil",
+      "amount": 10,
+      "unit": "ml",
+      "grams": 10,
+      "slug": "olive-oil"
+    }
+  ],
+  "instructions": [
+    "Preheat oven to 400F",
+    "Place cod on sheet pan",
+    "Toss asparagus with olive oil and arrange around cod",
+    "Season with salt, pepper, and lemon juice",
+    "Bake for 12-15 minutes until fish flakes easily"
+  ],
+  "nutrition": {
+    "calories": 220,
+    "protein": 30,
+    "carbs": 8,
+    "fat": 8,
+    "fiber": 2,
+    "sugar": 1,
+    "sodium": 90
+  },
+  "healthBenefits": [
+    "Lean white fish",
+    "Low calorie",
+    "High protein"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:48:42.304Z"
+}

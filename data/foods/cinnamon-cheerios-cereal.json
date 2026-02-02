@@ -1,0 +1,35 @@
+{
+  "fdcId": "2716626",
+  "slug": "cinnamon-cheerios-cereal",
+  "name": "Cinnamon Cheerios Cereal",
+  "category": "grains",
+  "description": "Cinnamon Cheerios Cereal from GENERAL MILLS SALES INC.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 36,
+      "label": "1 cup"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 387,
+    "protein": 8.77,
+    "carbs": 80,
+    "fat": 6.18,
+    "fiber": 7.8,
+    "sugar": 31.2,
+    "sodium": 415,
+    "potassium": 396,
+    "cholesterol": 0,
+    "saturatedFat": 1.05
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:47:01.000Z"
+}

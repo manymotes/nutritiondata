@@ -1,0 +1,34 @@
+{
+  "fdcId": "411893",
+  "slug": "starbucks-frappuccino-chilled-coffee-drink-mocha-coconut",
+  "name": "STARBUCKS, FRAPPUCCINO, CHILLED COFFEE DRINK, MOCHA COCONUT",
+  "category": "fast-food",
+  "description": "STARBUCKS, FRAPPUCCINO, CHILLED COFFEE DRINK, MOCHA COCONUT from STARBUCKS",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "serving",
+      "grams": 411,
+      "label": "1 BOTTLE"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 73,
+    "protein": 2.43,
+    "carbs": 13.1,
+    "fat": 1.09,
+    "fiber": 0.2,
+    "sugar": 11.4,
+    "sodium": 34,
+    "cholesterol": 5,
+    "saturatedFat": 0.73
+  },
+  "source": "usda",
+  "updatedAt": "2026-01-30T03:46:32.005Z"
+}

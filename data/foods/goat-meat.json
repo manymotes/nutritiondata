@@ -1,0 +1,28 @@
+{
+  "fdcId": "300017",
+  "slug": "goat-meat",
+  "name": "Goat Meat",
+  "category": "proteins",
+  "description": "Goat Meat - A nutritious food source with good amounts of protein. Part of a healthy, balanced diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 143,
+    "protein": 22,
+    "carbs": 0,
+    "fat": 6.4,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 76,
+    "cholesterol": 0,
+    "saturatedFat": 1.9
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:46:37.273Z"
+}

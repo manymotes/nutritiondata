@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000035",
+  "slug": "pasta",
+  "name": "Pasta",
+  "category": "grains",
+  "description": "Pasta - high in nutrients",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 131,
+    "protein": 5.3,
+    "carbs": 25,
+    "fat": 1.1,
+    "fiber": 1.8,
+    "sugar": 0.6,
+    "sodium": 3,
+    "cholesterol": 0,
+    "saturatedFat": 0.2
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.599Z"
+}

@@ -1,0 +1,28 @@
+{
+  "fdcId": "200046",
+  "slug": "millet",
+  "name": "Millet",
+  "category": "grains",
+  "description": "Millet - rich in carbohydrates. Good nutrition source for a healthy diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 378,
+    "protein": 6.3,
+    "carbs": 72,
+    "fat": 4.2,
+    "fiber": 8.5,
+    "sugar": 1.3,
+    "sodium": 7,
+    "cholesterol": 0,
+    "saturatedFat": 0.8
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:44:51.166Z"
+}

@@ -1,0 +1,71 @@
+{
+  "fdcId": "meal-107",
+  "slug": "beef-stir-fry",
+  "name": "Beef Stir-Fry",
+  "category": "meals",
+  "mealType": "dinner",
+  "description": "Beef Stir-Fry - A delicious and nutritious dinner option.",
+  "servings": 1,
+  "prepTime": 15,
+  "cookTime": 12,
+  "ingredients": [
+    {
+      "name": "Lean Beef",
+      "amount": 150,
+      "unit": "g",
+      "grams": 150,
+      "slug": "lean-beef"
+    },
+    {
+      "name": "Broccoli",
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "slug": "broccoli"
+    },
+    {
+      "name": "Bell Pepper",
+      "amount": 75,
+      "unit": "g",
+      "grams": 75,
+      "slug": "bell-pepper"
+    },
+    {
+      "name": "Garlic",
+      "amount": 10,
+      "unit": "g",
+      "grams": 10,
+      "slug": "garlic"
+    },
+    {
+      "name": "Low Sodium Soy Sauce",
+      "amount": 15,
+      "unit": "ml",
+      "grams": 15,
+      "slug": "low-sodium-soy-sauce"
+    }
+  ],
+  "instructions": [
+    "Slice beef thinly against the grain",
+    "Heat wok or large skillet",
+    "Stir-fry beef until cooked through",
+    "Add vegetables and garlic, stir-fry until tender-crisp",
+    "Add soy sauce and toss to combine"
+  ],
+  "nutrition": {
+    "calories": 320,
+    "protein": 38,
+    "carbs": 14,
+    "fat": 12,
+    "fiber": 2,
+    "sugar": 3,
+    "sodium": 420
+  },
+  "healthBenefits": [
+    "Lean protein",
+    "Iron-rich beef",
+    "Quick and healthy"
+  ],
+  "source": "calorie-data",
+  "updatedAt": "2026-02-01T20:48:42.303Z"
+}

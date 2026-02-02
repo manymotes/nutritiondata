@@ -1,0 +1,28 @@
+{
+  "fdcId": "200047",
+  "slug": "spelt",
+  "name": "Spelt",
+  "category": "grains",
+  "description": "Spelt - rich in protein. Good nutrition source for a healthy diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 404,
+    "protein": 17,
+    "carbs": 68,
+    "fat": 2.4,
+    "fiber": 10.7,
+    "sugar": 1.8,
+    "sodium": 3,
+    "cholesterol": 0,
+    "saturatedFat": 0.4
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:44:51.166Z"
+}

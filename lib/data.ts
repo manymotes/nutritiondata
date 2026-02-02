@@ -1,7 +1,7 @@
 import * as fs from 'fs'
 import * as path from 'path'
 import { FoodData, NutritionData } from '@/types/food'
-import { POPULAR_FOODS } from './constants'
+import { POPULAR_FOODS, FEATURED_FOODS } from './constants'
 
 // Load food data from JSON file
 export function getFoodData(slug: string): FoodData | null {
@@ -12,6 +12,19 @@ export function getFoodData(slug: string): FoodData | null {
   } catch {
     // Return sample data if file doesn't exist
     return generateSampleFoodData(slug)
+  }
+}
+
+// Get all food slugs (lightweight - for generateStaticParams)
+export function getAllFoodSlugs(): string[] {
+  try {
+    const foodsDir = path.join(process.cwd(), 'data', 'foods')
+    const files = fs.readdirSync(foodsDir).filter(f => f.endsWith('.json') && f !== 'index.json')
+    return files.map(file => file.replace('.json', ''))
+  } catch (error) {
+    console.error('Error reading food slugs:', error)
+    // Fallback to popular foods
+    return POPULAR_FOODS.map(food => food.slug)
   }
 }
 
@@ -222,4 +235,160 @@ export function compareFoods(slug1: string, slug2: string) {
       higherFiber: n1.fiber >= n2.fiber ? food1.slug : food2.slug,
     },
   }
+}
+
+// Get foods by nutrient profile
+export function getFoodsByNutrient(nutrient: string): FoodData[] {
+  const allFoods = getAllFoods()
+
+  switch(nutrient) {
+    case 'high-protein':
+      return allFoods
+        .filter(f => f.nutritionPer100g.protein >= 15)
+        .sort((a, b) => b.nutritionPer100g.protein - a.nutritionPer100g.protein)
+        .slice(0, 100)
+    case 'high-fiber':
+      return allFoods
+        .filter(f => f.nutritionPer100g.fiber >= 3)
+        .sort((a, b) => b.nutritionPer100g.fiber - a.nutritionPer100g.fiber)
+        .slice(0, 100)
+    case 'low-carb':
+      return allFoods
+        .filter(f => f.nutritionPer100g.carbs <= 10)
+        .sort((a, b) => a.nutritionPer100g.carbs - b.nutritionPer100g.carbs)
+        .slice(0, 100)
+    case 'low-calorie':
+      return allFoods
+        .filter(f => f.nutritionPer100g.calories <= 100)
+        .sort((a, b) => a.nutritionPer100g.calories - b.nutritionPer100g.calories)
+        .slice(0, 100)
+    case 'high-iron':
+      // Foods with iron-rich categories
+      return allFoods
+        .filter(f => ['proteins', 'vegetables', 'grains'].includes(f.category) && f.nutritionPer100g.protein > 5)
+        .slice(0, 100)
+    case 'high-calcium':
+      return allFoods
+        .filter(f => f.category === 'dairy' || (f.category === 'vegetables' && f.nutritionPer100g.fiber > 2))
+        .slice(0, 100)
+    default:
+      return []
+  }
+}
+
+// Get foods by diet type
+export function getFoodsByDiet(diet: string): FoodData[] {
+  const allFoods = getAllFoods()
+
+  switch(diet) {
+    case 'keto':
+      return allFoods
+        .filter(f => f.nutritionPer100g.carbs <= 5 && f.nutritionPer100g.fat >= 10)
+        .sort((a, b) => a.nutritionPer100g.carbs - b.nutritionPer100g.carbs)
+        .slice(0, 100)
+    case 'vegan':
+      return allFoods
+        .filter(f => !['proteins', 'dairy', 'fast-food'].includes(f.category) || f.category === 'grains')
+        .slice(0, 100)
+    case 'vegetarian':
+      return allFoods
+        .filter(f => {
+          // Exclude fast food and certain proteins (meat-based), but allow dairy and plant-based proteins
+          if (f.category === 'fast-food') return false
+          if (f.category === 'proteins') {
+            // Include eggs, tofu, tempeh but exclude other meat
+            return ['egg', 'tofu', 'tempeh', 'chicken-wings'].some(keyword => f.slug.includes(keyword))
+          }
+          return true
+        })
+        .slice(0, 100)
+    case 'paleo':
+      return allFoods
+        .filter(f => ['proteins', 'vegetables', 'fruits', 'nuts-seeds'].includes(f.category))
+        .slice(0, 100)
+    case 'gluten-free':
+      return allFoods
+        .filter(f => f.category !== 'fast-food' && f.category !== 'snacks')
+        .slice(0, 100)
+    case 'low-sodium':
+      return allFoods
+        .filter(f => f.nutritionPer100g.sodium <= 200)
+        .sort((a, b) => a.nutritionPer100g.sodium - b.nutritionPer100g.sodium)
+        .slice(0, 100)
+    default:
+      return []
+  }
+}
+
+// Get strategic food comparisons for SEO
+export function getStrategicComparisons(): Array<[string, string]> {
+  const allFoods = getAllFoods()
+  const featuredSlugs = new Set(FEATURED_FOODS.map(f => f.slug))
+
+  // Group foods by category
+  const byCategory: Record<string, FoodData[]> = {}
+  for (const food of allFoods) {
+    if (!byCategory[food.category]) {
+      byCategory[food.category] = []
+    }
+    byCategory[food.category].push(food)
+  }
+
+  const comparisons: Array<[string, string]> = []
+
+  // Within each category, create pairwise comparisons
+  // Prioritize featured foods, then sort by protein
+  for (const category in byCategory) {
+    const featured = byCategory[category].filter(f => featuredSlugs.has(f.slug as any))
+    const others = byCategory[category]
+      .filter(f => !featuredSlugs.has(f.slug as any))
+      .sort((a, b) => b.nutritionPer100g.protein - a.nutritionPer100g.protein)
+      .slice(0, 10)
+
+    const foods = [...featured, ...others].slice(0, 20)
+
+    // Create comparisons between these foods (reduced to save disk space)
+    for (let i = 0; i < foods.length; i++) {
+      for (let j = i + 1; j < Math.min(i + 4, foods.length); j++) {
+        comparisons.push([foods[i].slug, foods[j].slug])
+      }
+    }
+  }
+
+  // Cross-category comparisons: prioritize featured foods
+  const categories = Object.keys(byCategory)
+  for (let i = 0; i < categories.length; i++) {
+    for (let j = i + 1; j < categories.length; j++) {
+      // Get featured foods first, then fill with high-protein foods
+      const cat1Featured = byCategory[categories[i]].filter(f => featuredSlugs.has(f.slug as any))
+      const cat1Others = byCategory[categories[i]]
+        .filter(f => !featuredSlugs.has(f.slug as any))
+        .sort((a, b) => b.nutritionPer100g.protein - a.nutritionPer100g.protein)
+        .slice(0, 5)
+      const cat1Foods = [...cat1Featured, ...cat1Others].slice(0, 12)
+
+      const cat2Featured = byCategory[categories[j]].filter(f => featuredSlugs.has(f.slug as any))
+      const cat2Others = byCategory[categories[j]]
+        .filter(f => !featuredSlugs.has(f.slug as any))
+        .sort((a, b) => b.nutritionPer100g.protein - a.nutritionPer100g.protein)
+        .slice(0, 5)
+      const cat2Foods = [...cat2Featured, ...cat2Others].slice(0, 12)
+
+      // Compare foods from different categories (reduced to save disk space)
+      for (let a = 0; a < Math.min(6, cat1Foods.length); a++) {
+        for (let b = 0; b < Math.min(6, cat2Foods.length); b++) {
+          comparisons.push([cat1Foods[a].slug, cat2Foods[b].slug])
+        }
+      }
+    }
+  }
+
+  // Remove duplicates
+  const seen = new Set<string>()
+  return comparisons.filter(([a, b]) => {
+    const key = a < b ? `${a}-${b}` : `${b}-${a}`
+    if (seen.has(key)) return false
+    seen.add(key)
+    return true
+  })
 }

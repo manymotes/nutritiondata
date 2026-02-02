@@ -1,0 +1,28 @@
+{
+  "fdcId": "200050",
+  "slug": "teff",
+  "name": "Teff",
+  "category": "grains",
+  "description": "Teff - rich in carbohydrates. Good nutrition source for a healthy diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 365,
+    "protein": 13,
+    "carbs": 73,
+    "fat": 2.4,
+    "fiber": 8,
+    "sugar": 1.2,
+    "sodium": 1,
+    "cholesterol": 0,
+    "saturatedFat": 0.3
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:44:51.166Z"
+}

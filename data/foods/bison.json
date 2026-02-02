@@ -1,0 +1,28 @@
+{
+  "fdcId": "200002",
+  "slug": "bison",
+  "name": "Bison",
+  "category": "proteins",
+  "description": "Bison - rich in protein. Good nutrition source for a healthy diet.",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 143,
+    "protein": 24,
+    "carbs": 0,
+    "fat": 6,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 82,
+    "cholesterol": 0,
+    "saturatedFat": 2.4
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:44:51.156Z"
+}
