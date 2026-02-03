@@ -53,15 +53,43 @@ export default function FoodPage({ params }: PageProps) {
   const category = FOOD_CATEGORIES.find(c => c.slug === food.category)
   const foodContent = getFoodContent(food.slug)
 
-  // Get related foods for comparison
+  // Get related foods from same category for internal linking (5-8 foods)
   const relatedFoods = POPULAR_FOODS
     .filter(f => f.category === food.category && f.slug !== food.slug)
-    .slice(0, 4)
+    .slice(0, 8)
 
-  // Get other popular foods for comparison
+  // Get comparison foods from same category
+  const comparisonFoods = POPULAR_FOODS
+    .filter(f => f.category === food.category && f.slug !== food.slug)
+    .slice(0, 6)
+
+  // Get other popular foods for sidebar
   const otherFoods = POPULAR_FOODS
     .filter(f => f.slug !== food.slug)
     .slice(0, 5)
+
+  // Helper function to get nutritional highlights
+  const getNutritionalHighlights = () => {
+    const highlights = []
+    if (nutrition.calories < 50) highlights.push({ icon: '⚡', text: 'Very Low Calorie', desc: `Only ${nutrition.calories} calories per 100g` })
+    else if (nutrition.calories < 100) highlights.push({ icon: '🎯', text: 'Low Calorie', desc: `Just ${nutrition.calories} calories per 100g` })
+
+    if (nutrition.protein >= 20) highlights.push({ icon: '💪', text: 'High Protein', desc: `${nutrition.protein}g protein per 100g` })
+    else if (nutrition.protein >= 10) highlights.push({ icon: '🥩', text: 'Good Protein Source', desc: `${nutrition.protein}g protein per 100g` })
+
+    if (nutrition.fiber >= 5) highlights.push({ icon: '🌾', text: 'High Fiber', desc: `${nutrition.fiber}g fiber per 100g` })
+    else if (nutrition.fiber >= 3) highlights.push({ icon: '🌿', text: 'Good Fiber Source', desc: `${nutrition.fiber}g fiber per 100g` })
+
+    if (nutrition.fat < 3) highlights.push({ icon: '✨', text: 'Low Fat', desc: `Only ${nutrition.fat}g fat per 100g` })
+
+    if (nutrition.carbs < 5) highlights.push({ icon: '🥑', text: 'Low Carb', desc: `Just ${nutrition.carbs}g carbs per 100g` })
+
+    if (nutrition.sugar < 5) highlights.push({ icon: '🍬', text: 'Low Sugar', desc: `Only ${nutrition.sugar}g sugar per 100g` })
+
+    return highlights.slice(0, 4)
+  }
+
+  const nutritionalHighlights = getNutritionalHighlights()
 
   // Generate NutritionInformation schema
   const nutritionSchema = {
@@ -149,6 +177,29 @@ export default function FoodPage({ params }: PageProps) {
             Here&apos;s the complete nutrition breakdown.
           </p>
 
+          {/* Nutritional Highlights */}
+          {nutritionalHighlights.length > 0 && (
+            <div className="mb-8">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Nutritional Highlights</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {nutritionalHighlights.map((highlight, index) => (
+                  <div
+                    key={index}
+                    className="bg-gradient-to-br from-primary-50 to-white rounded-lg p-5 border-l-4 border-primary-600 hover:shadow-md transition-shadow"
+                  >
+                    <div className="flex items-start space-x-3">
+                      <span className="text-3xl">{highlight.icon}</span>
+                      <div>
+                        <h3 className="font-semibold text-gray-900 text-lg">{highlight.text}</h3>
+                        <p className="text-gray-600 text-sm mt-1">{highlight.desc}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
           {/* Main Nutrition Card */}
           <div className="bg-white rounded-lg border-2 border-gray-900 overflow-hidden mb-8">
             <div className="bg-gray-900 text-white px-6 py-4">
@@ -193,6 +244,60 @@ export default function FoodPage({ params }: PageProps) {
             </div>
           </div>
 
+          {/* Macro Breakdown Visual */}
+          <div className="bg-white rounded-lg border border-gray-200 p-6 mb-8">
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Macronutrient Distribution</h3>
+            <div className="space-y-4">
+              {/* Protein Bar */}
+              <div>
+                <div className="flex justify-between mb-2">
+                  <span className="text-sm font-medium text-gray-700">Protein</span>
+                  <span className="text-sm font-semibold text-red-600">
+                    {nutrition.protein}g ({Math.round((nutrition.protein * 4 / nutrition.calories) * 100)}%)
+                  </span>
+                </div>
+                <div className="w-full bg-gray-200 rounded-full h-3">
+                  <div
+                    className="bg-red-500 h-3 rounded-full transition-all"
+                    style={{ width: `${Math.min((nutrition.protein * 4 / nutrition.calories) * 100, 100)}%` }}
+                  ></div>
+                </div>
+              </div>
+
+              {/* Carbs Bar */}
+              <div>
+                <div className="flex justify-between mb-2">
+                  <span className="text-sm font-medium text-gray-700">Carbohydrates</span>
+                  <span className="text-sm font-semibold text-blue-600">
+                    {nutrition.carbs}g ({Math.round((nutrition.carbs * 4 / nutrition.calories) * 100)}%)
+                  </span>
+                </div>
+                <div className="w-full bg-gray-200 rounded-full h-3">
+                  <div
+                    className="bg-blue-500 h-3 rounded-full transition-all"
+                    style={{ width: `${Math.min((nutrition.carbs * 4 / nutrition.calories) * 100, 100)}%` }}
+                  ></div>
+                </div>
+              </div>
+
+              {/* Fat Bar */}
+              <div>
+                <div className="flex justify-between mb-2">
+                  <span className="text-sm font-medium text-gray-700">Fat</span>
+                  <span className="text-sm font-semibold text-yellow-600">
+                    {nutrition.fat}g ({Math.round((nutrition.fat * 9 / nutrition.calories) * 100)}%)
+                  </span>
+                </div>
+                <div className="w-full bg-gray-200 rounded-full h-3">
+                  <div
+                    className="bg-yellow-500 h-3 rounded-full transition-all"
+                    style={{ width: `${Math.min((nutrition.fat * 9 / nutrition.calories) * 100, 100)}%` }}
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Serving Sizes */}
           <div className="bg-white rounded-lg border border-gray-200 p-6 mb-8">
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Calories by Serving Size</h3>
@@ -208,6 +313,65 @@ export default function FoodPage({ params }: PageProps) {
               })}
             </div>
           </div>
+
+          {/* Related Foods Section */}
+          {relatedFoods.length > 0 && (
+            <div className="bg-white rounded-lg border border-gray-200 p-6 mb-8">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                Related Foods in {category?.name || food.category}
+              </h2>
+              <p className="text-gray-600 mb-4">
+                Explore other foods in the {category?.name || food.category} category:
+              </p>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                {relatedFoods.map((related) => (
+                  <Link
+                    key={related.slug}
+                    href={`/calories-in/${related.slug}`}
+                    className="group block bg-gray-50 hover:bg-primary-50 rounded-lg p-4 border border-gray-200 hover:border-primary-300 transition-all"
+                  >
+                    <div className="text-center">
+                      <p className="font-medium text-gray-900 group-hover:text-primary-700 text-sm mb-1">
+                        {related.name}
+                      </p>
+                      <p className="text-xs text-gray-500">View Nutrition →</p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Compare with Similar Foods */}
+          {comparisonFoods.length > 0 && (
+            <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg border border-blue-200 p-6 mb-8">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                Compare {food.name} with Similar Foods
+              </h2>
+              <p className="text-gray-700 mb-4">
+                See how {food.name} stacks up against other foods in nutritional value:
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                {comparisonFoods.map((compareFood) => (
+                  <Link
+                    key={compareFood.slug}
+                    href={`/compare/${food.slug}-vs-${compareFood.slug}`}
+                    className="flex items-center justify-between bg-white hover:bg-blue-50 rounded-lg p-4 border border-blue-200 hover:border-blue-400 transition-all group"
+                  >
+                    <div className="flex items-center space-x-2">
+                      <span className="text-lg">⚖️</span>
+                      <span className="font-medium text-gray-900 group-hover:text-blue-700">
+                        {food.name} vs {compareFood.name}
+                      </span>
+                    </div>
+                    <span className="text-blue-600 group-hover:text-blue-700 font-medium">
+                      Compare →
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
 
           {/* About Section */}
           <div className="prose max-w-none">
@@ -311,38 +475,57 @@ export default function FoodPage({ params }: PageProps) {
         {/* Sidebar */}
         <div className="space-y-6">
           {/* Quick Stats */}
-          <div className="bg-primary-50 rounded-lg p-6">
-            <h3 className="font-semibold text-gray-900 mb-4">Quick Facts</h3>
-            <div className="space-y-3">
-              <div className="flex justify-between">
-                <span className="text-gray-600">Category</span>
-                <span className="font-medium">{category?.name || food.category}</span>
+          <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-lg p-6 border-2 border-primary-200">
+            <h3 className="font-bold text-gray-900 mb-4 text-lg">Quick Nutrition Facts</h3>
+            <div className="space-y-4">
+              <div className="bg-white rounded-lg p-3">
+                <div className="flex justify-between items-center">
+                  <span className="text-gray-600 text-sm">Category</span>
+                  <span className="font-semibold text-primary-700">{category?.name || food.category}</span>
+                </div>
               </div>
-              <div className="flex justify-between">
-                <span className="text-gray-600">Calories/100g</span>
-                <span className="font-medium">{nutrition.calories}</span>
+              <div className="bg-white rounded-lg p-3">
+                <div className="flex justify-between items-center">
+                  <span className="text-gray-600 text-sm">Calories/100g</span>
+                  <span className="font-bold text-2xl text-primary-600">{nutrition.calories}</span>
+                </div>
               </div>
-              <div className="flex justify-between">
-                <span className="text-gray-600">Protein/100g</span>
-                <span className="font-medium">{nutrition.protein}g</span>
+              <div className="bg-white rounded-lg p-3">
+                <div className="flex justify-between items-center">
+                  <span className="text-gray-600 text-sm">Protein</span>
+                  <span className="font-semibold text-gray-900">{nutrition.protein}g</span>
+                </div>
+              </div>
+              <div className="bg-white rounded-lg p-3">
+                <div className="flex justify-between items-center">
+                  <span className="text-gray-600 text-sm">Carbs</span>
+                  <span className="font-semibold text-gray-900">{nutrition.carbs}g</span>
+                </div>
+              </div>
+              <div className="bg-white rounded-lg p-3">
+                <div className="flex justify-between items-center">
+                  <span className="text-gray-600 text-sm">Fat</span>
+                  <span className="font-semibold text-gray-900">{nutrition.fat}g</span>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* Compare with similar foods */}
-          {relatedFoods.length > 0 && (
+          {/* Quick Comparisons */}
+          {comparisonFoods.length > 0 && (
             <div className="bg-white rounded-lg border border-gray-200 p-6">
               <h3 className="font-semibold text-gray-900 mb-4">
-                Compare {food.name} to:
+                Quick Comparisons
               </h3>
               <ul className="space-y-2">
-                {relatedFoods.map((related) => (
+                {comparisonFoods.slice(0, 4).map((related) => (
                   <li key={related.slug}>
                     <Link
                       href={`/compare/${food.slug}-vs-${related.slug}`}
-                      className="text-primary-600 hover:text-primary-700 text-sm"
+                      className="text-primary-600 hover:text-primary-700 text-sm flex items-center space-x-1"
                     >
-                      {related.name} →
+                      <span>vs {related.name}</span>
+                      <span>→</span>
                     </Link>
                   </li>
                 ))}
@@ -367,11 +550,25 @@ export default function FoodPage({ params }: PageProps) {
             </ul>
           </div>
 
+          {/* Explore More Foods */}
+          <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-lg border-2 border-green-200 p-6">
+            <h3 className="font-bold text-gray-900 mb-2 text-lg">Explore More Foods</h3>
+            <p className="text-sm text-gray-700 mb-4">
+              Discover nutrition data for thousands of foods
+            </p>
+            <Link
+              href="/category"
+              className="block w-full bg-primary-600 text-white text-center py-3 rounded-lg hover:bg-primary-700 transition-colors font-semibold"
+            >
+              Browse Categories
+            </Link>
+          </div>
+
           {/* CTA */}
           <div className="bg-gray-100 rounded-lg p-6">
-            <h3 className="font-semibold text-gray-900 mb-2">Track Your Calories</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Track Your Nutrition</h3>
             <p className="text-sm text-gray-600 mb-4">
-              Use a calorie tracking app to monitor your daily intake.
+              Monitor your daily intake to reach your health goals
             </p>
             <a
               href="https://www.myfitnesspal.com"

@@ -5,6 +5,7 @@ import './globals.css'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { GoogleAnalytics } from '@/components/analytics/GoogleAnalytics'
+import { RouteTracker } from '@/components/analytics/RouteTracker'
 import { SITE_NAME, SITE_DESCRIPTION, SITE_URL } from '@/lib/constants'
 import { siteConfig } from '@/lib/config'
 
@@ -49,6 +50,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} antialiased bg-gray-50`}>
         <GoogleAnalytics />
+        <RouteTracker />
         {/* AdSense Script */}
         {siteConfig.adSenseClientId && (
           <Script
