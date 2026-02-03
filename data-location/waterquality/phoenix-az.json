@@ -1,0 +1,204 @@
+{
+  "city": "Phoenix",
+  "state": "Arizona",
+  "stateCode": "AZ",
+  "slug": "phoenix-az",
+  "population": 1608139,
+  "waterGrade": "B-",
+  "overallScore": 75,
+  "lastUpdated": "2024-01-15",
+
+  "waterSources": [
+    {
+      "name": "Colorado River (CAP)",
+      "percentage": 50,
+      "type": "Surface Water",
+      "description": "Water from the Colorado River delivered via the Central Arizona Project canal system"
+    },
+    {
+      "name": "Salt and Verde Rivers",
+      "percentage": 40,
+      "type": "Surface Water",
+      "description": "Local surface water from reservoirs on the Salt and Verde River system"
+    },
+    {
+      "name": "Local Groundwater",
+      "percentage": 10,
+      "type": "Groundwater",
+      "description": "Supplementary groundwater from Phoenix area aquifers"
+    }
+  ],
+
+  "qualityMetrics": {
+    "leadCompliance": 95,
+    "bacterialCompliance": 97,
+    "chemicalCompliance": 85,
+    "turbidity": 0.15,
+    "pH": 7.8,
+    "hardness": 185,
+    "chlorineLevel": 1.3
+  },
+
+  "contaminants": [
+    {
+      "name": "Arsenic",
+      "level": 4.2,
+      "unit": "ppb",
+      "legalLimit": 10,
+      "healthGoal": 0.004,
+      "status": "Above Health Goal",
+      "trend": "stable"
+    },
+    {
+      "name": "Total Trihalomethanes (TTHMs)",
+      "level": 58,
+      "unit": "ppb",
+      "legalLimit": 80,
+      "healthGoal": 0,
+      "status": "Below Legal Limit",
+      "trend": "stable"
+    },
+    {
+      "name": "Chromium-6",
+      "level": 0.8,
+      "unit": "ppb",
+      "legalLimit": 10,
+      "healthGoal": 0.02,
+      "status": "Above Health Goal",
+      "trend": "stable"
+    },
+    {
+      "name": "Lead",
+      "level": 4.1,
+      "unit": "ppb",
+      "legalLimit": 15,
+      "healthGoal": 0,
+      "status": "Below Legal Limit",
+      "trend": "stable"
+    },
+    {
+      "name": "Nitrate",
+      "level": 2.8,
+      "unit": "ppm",
+      "legalLimit": 10,
+      "healthGoal": 0.14,
+      "status": "Above Health Goal",
+      "trend": "stable"
+    }
+  ],
+
+  "contaminationHistory": [
+    {
+      "year": 2016,
+      "incident": "1,4-Dioxane Detection",
+      "description": "Industrial solvent 1,4-dioxane detected in several West Valley wells",
+      "resolution": "Contaminated wells shut down, treatment systems installed, alternate sources utilized"
+    },
+    {
+      "year": 2020,
+      "incident": "PFAS in Groundwater",
+      "description": "Per- and polyfluoroalkyl substances found in some groundwater wells",
+      "resolution": "Affected wells taken offline, advanced treatment systems planned, increased reliance on surface water"
+    }
+  ],
+
+  "treatmentFacilities": [
+    {
+      "name": "Val Vista Water Treatment Plant",
+      "location": "Mesa (serves Phoenix)",
+      "capacity": "220 million gallons/day",
+      "technology": "Conventional treatment, ozonation, biological filtration"
+    },
+    {
+      "name": "Squaw Peak Water Treatment Plant",
+      "location": "Phoenix",
+      "capacity": "200 million gallons/day",
+      "technology": "Conventional filtration, chlorination, fluoridation"
+    },
+    {
+      "name": "Deer Valley Water Treatment Plant",
+      "location": "North Phoenix",
+      "capacity": "160 million gallons/day",
+      "technology": "Advanced treatment, membrane filtration"
+    }
+  ],
+
+  "stateAverages": {
+    "leadCompliance": 92,
+    "bacterialCompliance": 95,
+    "chemicalCompliance": 83,
+    "overallScore": 73
+  },
+
+  "trends": [
+    {
+      "year": 2019,
+      "overallScore": 73,
+      "arsenicLevel": 4.8,
+      "bacterialCompliance": 96
+    },
+    {
+      "year": 2020,
+      "overallScore": 73,
+      "arsenicLevel": 4.6,
+      "bacterialCompliance": 96
+    },
+    {
+      "year": 2021,
+      "overallScore": 74,
+      "arsenicLevel": 4.4,
+      "bacterialCompliance": 97
+    },
+    {
+      "year": 2022,
+      "overallScore": 74,
+      "arsenicLevel": 4.3,
+      "bacterialCompliance": 97
+    },
+    {
+      "year": 2023,
+      "overallScore": 75,
+      "arsenicLevel": 4.2,
+      "bacterialCompliance": 97
+    }
+  ],
+
+  "nearbyUtilities": ["Mesa, AZ", "Scottsdale, AZ", "Tempe, AZ", "Glendale, AZ"],
+
+  "faq": [
+    {
+      "question": "Is Phoenix tap water safe to drink?",
+      "answer": "Yes, Phoenix tap water meets all EPA and state drinking water standards. The city conducts over 250,000 water quality tests annually and operates state-of-the-art treatment facilities to ensure safety."
+    },
+    {
+      "question": "Why is Phoenix water so hard?",
+      "answer": "Phoenix water hardness (averaging 185 mg/L) comes from natural minerals in the Colorado River and local sources. Hard water is safe to drink and provides beneficial minerals, though it may cause scale buildup on fixtures and appliances."
+    },
+    {
+      "question": "What is being done about arsenic in Phoenix water?",
+      "answer": "Arsenic occurs naturally in Arizona's geology. Phoenix's arsenic levels are well below the federal limit of 10 ppb. The city uses source blending and treatment optimization to minimize arsenic levels while maintaining compliance."
+    },
+    {
+      "question": "How secure is Phoenix's water supply given drought conditions?",
+      "answer": "Phoenix has diversified its water portfolio with Colorado River water, Salt/Verde River supplies, and stored groundwater. The city has invested in conservation, infrastructure, and long-term water banking to ensure reliability through drought periods."
+    },
+    {
+      "question": "Should I use a water softener in Phoenix?",
+      "answer": "Water softeners are optional and a personal choice. They can reduce mineral deposits on fixtures but require maintenance and add sodium to water. The city's hard water is safe to drink and doesn't require softening for health reasons."
+    }
+  ],
+
+  "additionalInfo": {
+    "waterUtility": "City of Phoenix Water Services Department",
+    "annualWaterReport": "https://www.phoenix.gov/waterservices/customer-services/water-quality",
+    "customerServicePhone": "602-262-6251",
+    "emergencyPhone": "602-262-6251",
+    "conservationPrograms": [
+      "Desert Landscaping Rebates",
+      "High-Efficiency Toilet Rebates",
+      "Smart Irrigation Controller Rebates",
+      "Rainwater Harvesting Rebates",
+      "Grass to Xeriscape Conversion Program"
+    ]
+  }
+}

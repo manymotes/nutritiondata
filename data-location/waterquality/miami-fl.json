@@ -1,0 +1,192 @@
+{
+  "city": "Miami",
+  "state": "Florida",
+  "stateCode": "FL",
+  "slug": "miami-fl",
+  "population": 442241,
+  "waterGrade": "B-",
+  "overallScore": 76,
+  "lastUpdated": "2024-01-15",
+
+  "waterSources": [
+    {
+      "name": "Biscayne Aquifer",
+      "percentage": 100,
+      "type": "Groundwater",
+      "description": "Shallow limestone aquifer beneath Miami-Dade County, recharged by rainfall and Everglades"
+    }
+  ],
+
+  "qualityMetrics": {
+    "leadCompliance": 96,
+    "bacterialCompliance": 95,
+    "chemicalCompliance": 84,
+    "turbidity": 0.11,
+    "pH": 7.9,
+    "hardness": 225,
+    "chlorineLevel": 1.6
+  },
+
+  "contaminants": [
+    {
+      "name": "Total Trihalomethanes (TTHMs)",
+      "level": 72,
+      "unit": "ppb",
+      "legalLimit": 80,
+      "healthGoal": 0,
+      "status": "Below Legal Limit",
+      "trend": "stable"
+    },
+    {
+      "name": "Haloacetic Acids (HAA5)",
+      "level": 52,
+      "unit": "ppb",
+      "legalLimit": 60,
+      "healthGoal": 0,
+      "status": "Below Legal Limit",
+      "trend": "stable"
+    },
+    {
+      "name": "Lead",
+      "level": 3.2,
+      "unit": "ppb",
+      "legalLimit": 15,
+      "healthGoal": 0,
+      "status": "Below Legal Limit",
+      "trend": "stable"
+    },
+    {
+      "name": "Radium (226 + 228)",
+      "level": 3.5,
+      "unit": "pCi/L",
+      "legalLimit": 5,
+      "healthGoal": 0.43,
+      "status": "Above Health Goal",
+      "trend": "stable"
+    },
+    {
+      "name": "Nitrate",
+      "level": 1.4,
+      "unit": "ppm",
+      "legalLimit": 10,
+      "healthGoal": 0.14,
+      "status": "Above Health Goal",
+      "trend": "stable"
+    }
+  ],
+
+  "contaminationHistory": [
+    {
+      "year": 2017,
+      "incident": "Saltwater Intrusion Concerns",
+      "description": "Rising sea levels increasing risk of saltwater intrusion into freshwater aquifer",
+      "resolution": "Enhanced monitoring network, well field management optimization, exploring alternative sources"
+    },
+    {
+      "year": 2020,
+      "incident": "Main Break Boil Water Notices",
+      "description": "Several water main breaks led to precautionary boil water notices in affected areas",
+      "resolution": "Infrastructure improvements, pipe replacement program accelerated"
+    }
+  ],
+
+  "treatmentFacilities": [
+    {
+      "name": "Hialeah Water Treatment Plant",
+      "location": "Hialeah",
+      "capacity": "345 million gallons/day",
+      "technology": "Lime softening, filtration, chlorination, fluoridation"
+    },
+    {
+      "name": "John E. Preston Water Treatment Plant",
+      "location": "West Miami",
+      "capacity": "280 million gallons/day",
+      "technology": "Membrane softening, nanofiltration, disinfection"
+    },
+    {
+      "name": "Alexander Orr Jr. Water Treatment Plant",
+      "location": "South Miami",
+      "capacity": "112 million gallons/day",
+      "technology": "Conventional lime softening, filtration"
+    }
+  ],
+
+  "stateAverages": {
+    "leadCompliance": 94,
+    "bacterialCompliance": 96,
+    "chemicalCompliance": 86,
+    "overallScore": 77
+  },
+
+  "trends": [
+    {
+      "year": 2019,
+      "overallScore": 75,
+      "tthmsLevel": 75,
+      "bacterialCompliance": 94
+    },
+    {
+      "year": 2020,
+      "overallScore": 74,
+      "tthmsLevel": 74,
+      "bacterialCompliance": 94
+    },
+    {
+      "year": 2021,
+      "overallScore": 75,
+      "tthmsLevel": 73,
+      "bacterialCompliance": 95
+    },
+    {
+      "year": 2022,
+      "overallScore": 76,
+      "tthmsLevel": 73,
+      "bacterialCompliance": 95
+    },
+    {
+      "year": 2023,
+      "overallScore": 76,
+      "tthmsLevel": 72,
+      "bacterialCompliance": 95
+    }
+  ],
+
+  "nearbyUtilities": ["Hialeah, FL", "Miami Beach, FL", "Coral Gables, FL", "Kendall, FL"],
+
+  "faq": [
+    {
+      "question": "Is Miami tap water safe to drink?",
+      "answer": "Yes, Miami-Dade water meets all federal and state drinking water standards. The county operates three major treatment plants and conducts extensive testing to ensure safety. However, the water is very hard due to limestone geology."
+    },
+    {
+      "question": "Why is Miami water so hard?",
+      "answer": "Miami's water comes from the Biscayne Aquifer, which flows through limestone rock. This naturally adds calcium and magnesium, resulting in very hard water (averaging 225 mg/L). While safe to drink, many residents use water softeners for household use."
+    },
+    {
+      "question": "What is being done about saltwater intrusion?",
+      "answer": "Miami-Dade is actively addressing saltwater intrusion through enhanced monitoring, strategic well management, and exploring alternative water sources. Climate change and sea level rise make this an ongoing priority for the county."
+    },
+    {
+      "question": "Why does Miami water taste different than other cities?",
+      "answer": "Miami's groundwater source and high mineral content give it a distinct taste compared to cities using surface water. The water undergoes lime softening treatment which also affects taste. The water is safe, but some residents prefer filtered or bottled water for taste preferences."
+    },
+    {
+      "question": "Should I be concerned about disinfection byproducts?",
+      "answer": "Miami's TTHMs and HAA5 levels are below federal limits. These byproducts form when chlorine (needed for disinfection) reacts with organic matter. The county uses optimized treatment to minimize these while maintaining necessary disinfection."
+    }
+  ],
+
+  "additionalInfo": {
+    "waterUtility": "Miami-Dade Water and Sewer Department",
+    "annualWaterReport": "https://www.miamidade.gov/water/water-quality.asp",
+    "customerServicePhone": "305-665-7477",
+    "emergencyPhone": "305-665-7477",
+    "conservationPrograms": [
+      "Florida-Friendly Landscaping",
+      "Irrigation System Evaluations",
+      "High-Efficiency Toilet Rebates",
+      "Rain Sensor Rebates",
+      "Water Conservation Tips Program"
+    ]
+  }
+}

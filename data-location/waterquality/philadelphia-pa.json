@@ -1,0 +1,189 @@
+{
+  "city": "Philadelphia",
+  "state": "Pennsylvania",
+  "stateCode": "PA",
+  "slug": "philadelphia-pa",
+  "population": 1584064,
+  "waterGrade": "B+",
+  "overallScore": 83,
+  "lastUpdated": "2024-01-15",
+
+  "waterSources": [
+    {
+      "name": "Schuylkill River",
+      "percentage": 55,
+      "type": "Surface Water",
+      "description": "Major river source treated at Baxter Water Treatment Plant"
+    },
+    {
+      "name": "Delaware River",
+      "percentage": 45,
+      "type": "Surface Water",
+      "description": "Secondary river source treated at Belmont and Queen Lane facilities"
+    }
+  ],
+
+  "qualityMetrics": {
+    "leadCompliance": 95,
+    "bacterialCompliance": 98,
+    "chemicalCompliance": 90,
+    "turbidity": 0.14,
+    "pH": 7.4,
+    "hardness": 95,
+    "chlorineLevel": 1.1
+  },
+
+  "contaminants": [
+    {
+      "name": "Lead",
+      "level": 4.8,
+      "unit": "ppb",
+      "legalLimit": 15,
+      "healthGoal": 0,
+      "status": "Below Legal Limit",
+      "trend": "improving"
+    },
+    {
+      "name": "Total Trihalomethanes (TTHMs)",
+      "level": 48,
+      "unit": "ppb",
+      "legalLimit": 80,
+      "healthGoal": 0,
+      "status": "Below Legal Limit",
+      "trend": "stable"
+    },
+    {
+      "name": "Haloacetic Acids (HAA5)",
+      "level": 32,
+      "unit": "ppb",
+      "legalLimit": 60,
+      "healthGoal": 0,
+      "status": "Below Legal Limit",
+      "trend": "stable"
+    },
+    {
+      "name": "PFAS (Total)",
+      "level": 8.5,
+      "unit": "ppt",
+      "legalLimit": 20,
+      "healthGoal": 4,
+      "status": "Above Health Goal",
+      "trend": "improving"
+    }
+  ],
+
+  "contaminationHistory": [
+    {
+      "year": 2017,
+      "incident": "Lead Service Line Concerns",
+      "description": "City-wide assessment revealed approximately 50,000 lead service lines",
+      "resolution": "Lead service line replacement program launched, free water testing offered to residents"
+    },
+    {
+      "year": 2019,
+      "incident": "PFAS Detection in Delaware River",
+      "description": "Per- and polyfluoroalkyl substances detected in Delaware River source water",
+      "resolution": "Enhanced monitoring implemented, treatment optimization ongoing, levels below federal limits"
+    }
+  ],
+
+  "treatmentFacilities": [
+    {
+      "name": "Baxter Water Treatment Plant",
+      "location": "Roxborough",
+      "capacity": "290 million gallons/day",
+      "technology": "Conventional treatment, ozonation, filtration, chlorination"
+    },
+    {
+      "name": "Queen Lane Water Treatment Plant",
+      "location": "East Falls",
+      "capacity": "220 million gallons/day",
+      "technology": "Conventional filtration, disinfection, corrosion control"
+    },
+    {
+      "name": "Belmont Water Treatment Plant",
+      "location": "Belmont",
+      "capacity": "50 million gallons/day",
+      "technology": "Conventional treatment, chlorination"
+    }
+  ],
+
+  "stateAverages": {
+    "leadCompliance": 93,
+    "bacterialCompliance": 96,
+    "chemicalCompliance": 91,
+    "overallScore": 81
+  },
+
+  "trends": [
+    {
+      "year": 2019,
+      "overallScore": 80,
+      "leadLevel": 6.2,
+      "bacterialCompliance": 97
+    },
+    {
+      "year": 2020,
+      "overallScore": 81,
+      "leadLevel": 5.8,
+      "bacterialCompliance": 97
+    },
+    {
+      "year": 2021,
+      "overallScore": 82,
+      "leadLevel": 5.3,
+      "bacterialCompliance": 98
+    },
+    {
+      "year": 2022,
+      "overallScore": 82,
+      "leadLevel": 5.0,
+      "bacterialCompliance": 98
+    },
+    {
+      "year": 2023,
+      "overallScore": 83,
+      "leadLevel": 4.8,
+      "bacterialCompliance": 98
+    }
+  ],
+
+  "nearbyUtilities": ["Camden, NJ", "Wilmington, DE", "Chester, PA", "Upper Darby, PA"],
+
+  "faq": [
+    {
+      "question": "Is Philadelphia tap water safe to drink?",
+      "answer": "Yes, Philadelphia's tap water meets all federal and state drinking water standards. The Philadelphia Water Department conducts over 100,000 water quality tests annually and operates three modern treatment plants to ensure safety."
+    },
+    {
+      "question": "Where does Philadelphia's water come from?",
+      "answer": "Philadelphia draws water from two major rivers: the Schuylkill River (55%) and the Delaware River (45%). Both rivers are protected by extensive watershed management programs and treated at state-of-the-art facilities."
+    },
+    {
+      "question": "What is being done about lead in Philadelphia water?",
+      "answer": "The water leaving treatment plants contains no lead. Philadelphia has approximately 50,000 lead service lines and offers free water testing, filters to affected residents, and a lead service line replacement program. The city also optimizes corrosion control treatment."
+    },
+    {
+      "question": "Does Philadelphia test for PFAS?",
+      "answer": "Yes, Philadelphia monitors for PFAS (per- and polyfluoroalkyl substances) in both source water and finished drinking water. Current levels are below EPA health advisory levels, and the city continues to monitor and optimize treatment."
+    },
+    {
+      "question": "How does Philadelphia's water compare to other major cities?",
+      "answer": "Philadelphia's water quality ranks among the better large city systems in the US, with a B+ grade. The city benefits from relatively clean source rivers, advanced treatment technology, and comprehensive monitoring programs."
+    }
+  ],
+
+  "additionalInfo": {
+    "waterUtility": "Philadelphia Water Department",
+    "annualWaterReport": "https://www.phila.gov/water/quality/",
+    "customerServicePhone": "215-685-6300",
+    "emergencyPhone": "215-685-6300",
+    "conservationPrograms": [
+      "Rain Barrel Program",
+      "Toilet Rebate Program",
+      "Stormwater Management Incentive Program",
+      "Free Lead Testing",
+      "Green Infrastructure Grants"
+    ]
+  }
+}

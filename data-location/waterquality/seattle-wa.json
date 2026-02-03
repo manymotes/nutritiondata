@@ -1,0 +1,177 @@
+{
+  "city": "Seattle",
+  "state": "Washington",
+  "stateCode": "WA",
+  "slug": "seattle-wa",
+  "population": 749256,
+  "waterGrade": "A",
+  "overallScore": 92,
+  "lastUpdated": "2024-01-15",
+
+  "waterSources": [
+    {
+      "name": "Cedar River Watershed",
+      "percentage": 70,
+      "type": "Surface Water",
+      "description": "Protected watershed in the Cascade Mountains, naturally filtered through ancient forest"
+    },
+    {
+      "name": "Tolt River Watershed",
+      "percentage": 30,
+      "type": "Surface Water",
+      "description": "Supplementary source from protected watershed in the Cascade foothills"
+    }
+  ],
+
+  "qualityMetrics": {
+    "leadCompliance": 99,
+    "bacterialCompliance": 99,
+    "chemicalCompliance": 97,
+    "turbidity": 0.06,
+    "pH": 7.3,
+    "hardness": 22,
+    "chlorineLevel": 0.7
+  },
+
+  "contaminants": [
+    {
+      "name": "Lead",
+      "level": 2.1,
+      "unit": "ppb",
+      "legalLimit": 15,
+      "healthGoal": 0,
+      "status": "Below Legal Limit",
+      "trend": "improving"
+    },
+    {
+      "name": "Total Trihalomethanes (TTHMs)",
+      "level": 28,
+      "unit": "ppb",
+      "legalLimit": 80,
+      "healthGoal": 0,
+      "status": "Below Legal Limit",
+      "trend": "stable"
+    },
+    {
+      "name": "Haloacetic Acids (HAA5)",
+      "level": 18,
+      "unit": "ppb",
+      "legalLimit": 60,
+      "healthGoal": 0,
+      "status": "Below Legal Limit",
+      "trend": "stable"
+    },
+    {
+      "name": "Chlorine",
+      "level": 0.7,
+      "unit": "ppm",
+      "legalLimit": 4,
+      "healthGoal": 4,
+      "status": "Optimal",
+      "trend": "stable"
+    }
+  ],
+
+  "contaminationHistory": [
+    {
+      "year": 2018,
+      "incident": "Tolt River Turbidity Event",
+      "description": "Heavy rainfall caused temporary elevated turbidity in Tolt River source",
+      "resolution": "Additional treatment processes activated, water quality quickly restored, no health impacts"
+    }
+  ],
+
+  "treatmentFacilities": [
+    {
+      "name": "Cedar River Water Treatment Facility",
+      "location": "Maple Valley",
+      "capacity": "180 million gallons/day",
+      "technology": "Ozonation, biological filtration, UV disinfection, chlorination"
+    },
+    {
+      "name": "Tolt River Water Treatment Facility",
+      "location": "Carnation",
+      "capacity": "120 million gallons/day",
+      "technology": "Conventional filtration, UV disinfection, chloramination"
+    }
+  ],
+
+  "stateAverages": {
+    "leadCompliance": 95,
+    "bacterialCompliance": 97,
+    "chemicalCompliance": 94,
+    "overallScore": 85
+  },
+
+  "trends": [
+    {
+      "year": 2019,
+      "overallScore": 90,
+      "leadLevel": 2.8,
+      "bacterialCompliance": 99
+    },
+    {
+      "year": 2020,
+      "overallScore": 91,
+      "leadLevel": 2.6,
+      "bacterialCompliance": 99
+    },
+    {
+      "year": 2021,
+      "overallScore": 91,
+      "leadLevel": 2.4,
+      "bacterialCompliance": 99
+    },
+    {
+      "year": 2022,
+      "overallScore": 92,
+      "leadLevel": 2.2,
+      "bacterialCompliance": 99
+    },
+    {
+      "year": 2023,
+      "overallScore": 92,
+      "leadLevel": 2.1,
+      "bacterialCompliance": 99
+    }
+  ],
+
+  "nearbyUtilities": ["Bellevue, WA", "Tacoma, WA", "Everett, WA", "Renton, WA"],
+
+  "faq": [
+    {
+      "question": "Is Seattle tap water safe to drink?",
+      "answer": "Yes, Seattle has some of the best tap water in the nation. The water comes from protected mountain watersheds and undergoes advanced treatment. Seattle's water consistently meets or exceeds all federal and state standards and has won national taste awards."
+    },
+    {
+      "question": "Why is Seattle water so good?",
+      "answer": "Seattle's water quality benefits from pristine mountain watershed sources in protected old-growth forests of the Cascades. The naturally soft water requires minimal treatment, and Seattle uses advanced UV disinfection and ozonation rather than heavy chlorination."
+    },
+    {
+      "question": "Is Seattle water soft or hard?",
+      "answer": "Seattle has very soft water (22 mg/L hardness), among the softest of any major US city. This means less mineral buildup on fixtures and appliances, better soap lathering, and a naturally pleasant taste."
+    },
+    {
+      "question": "Does Seattle add fluoride to the water?",
+      "answer": "No, Seattle does not fluoridate its water supply. Voters have rejected fluoridation multiple times, most recently in 2011. The city provides information about alternative sources of fluoride for dental health."
+    },
+    {
+      "question": "How does Seattle protect its water sources?",
+      "answer": "Seattle owns and manages over 100,000 acres of protected watershed land in the Cascade Mountains. Public access is prohibited to prevent contamination, and the watersheds are managed for water quality protection and forest health."
+    }
+  ],
+
+  "additionalInfo": {
+    "waterUtility": "Seattle Public Utilities",
+    "annualWaterReport": "https://www.seattle.gov/utilities/your-services/water/water-quality",
+    "customerServicePhone": "206-684-3000",
+    "emergencyPhone": "206-386-1800",
+    "conservationPrograms": [
+      "Rain Wise Rebate Program",
+      "RainWise Cistern Rebates",
+      "Toilet Rebate Program",
+      "Commercial Water Conservation",
+      "Watershed Protection Program"
+    ]
+  }
+}

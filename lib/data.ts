@@ -224,6 +224,30 @@ export function compareFoods(slug1: string, slug2: string) {
   const n1 = food1.nutritionPer100g
   const n2 = food2.nutritionPer100g
 
+  // Calculate winner scores
+  let score1 = 0
+  let score2 = 0
+
+  // Lower calories is better
+  if (n1.calories < n2.calories) score1++
+  else if (n2.calories < n1.calories) score2++
+
+  // Higher protein is better
+  if (n1.protein > n2.protein) score1++
+  else if (n2.protein > n1.protein) score2++
+
+  // Higher fiber is better
+  if (n1.fiber > n2.fiber) score1++
+  else if (n2.fiber > n1.fiber) score2++
+
+  // Lower sugar is better
+  if (n1.sugar < n2.sugar) score1++
+  else if (n2.sugar < n1.sugar) score2++
+
+  // Lower sodium is better
+  if (n1.sodium < n2.sodium) score1++
+  else if (n2.sodium < n1.sodium) score2++
+
   return {
     food1,
     food2,
@@ -233,8 +257,63 @@ export function compareFoods(slug1: string, slug2: string) {
       lowerCarbs: n1.carbs <= n2.carbs ? food1.slug : food2.slug,
       lowerFat: n1.fat <= n2.fat ? food1.slug : food2.slug,
       higherFiber: n1.fiber >= n2.fiber ? food1.slug : food2.slug,
+      lowerSugar: n1.sugar <= n2.sugar ? food1.slug : food2.slug,
+      lowerSodium: n1.sodium <= n2.sodium ? food1.slug : food2.slug,
+    },
+    healthScore: {
+      food1: score1,
+      food2: score2,
+      winner: score1 > score2 ? food1.slug : score2 > score1 ? food2.slug : 'tie',
     },
   }
+}
+
+// Get related comparisons for a food pair
+export function getRelatedComparisons(slug1: string, slug2: string, limit: number = 6): Array<[string, string, string]> {
+  const food1 = getFoodData(slug1)
+  const food2 = getFoodData(slug2)
+
+  if (!food1 || !food2) return []
+
+  const allFoods = getAllFoods()
+  const related: Array<[string, string, string]> = []
+
+  // Add foods from same category as food1
+  const sameCat1 = allFoods
+    .filter(f => f.category === food1.category && f.slug !== slug1 && f.slug !== slug2)
+    .slice(0, 2)
+
+  for (const food of sameCat1) {
+    related.push([slug1, food.slug, `${food1.name} vs ${food.name}`])
+  }
+
+  // Add foods from same category as food2
+  const sameCat2 = allFoods
+    .filter(f => f.category === food2.category && f.slug !== slug1 && f.slug !== slug2)
+    .slice(0, 2)
+
+  for (const food of sameCat2) {
+    related.push([slug2, food.slug, `${food2.name} vs ${food.name}`])
+  }
+
+  // Add cross-category comparisons with similar calorie counts
+  const similarCalories = allFoods
+    .filter(f => {
+      const avgCal = (food1.nutritionPer100g.calories + food2.nutritionPer100g.calories) / 2
+      return Math.abs(f.nutritionPer100g.calories - avgCal) < 50 &&
+             f.slug !== slug1 &&
+             f.slug !== slug2 &&
+             !related.some(r => r[1] === f.slug)
+    })
+    .slice(0, 2)
+
+  for (const food of similarCalories) {
+    const compare = slug1 < food.slug ? slug1 : food.slug
+    const with_ = slug1 < food.slug ? food.slug : slug1
+    related.push([compare, with_, `${food1.name} vs ${food.name}`])
+  }
+
+  return related.slice(0, limit)
 }
 
 // Get foods by nutrient profile

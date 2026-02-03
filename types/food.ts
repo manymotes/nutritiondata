@@ -43,5 +43,12 @@ export interface FoodComparison {
     lowerCarbs: string
     lowerFat: string
     higherFiber: string
+    lowerSugar: string
+    lowerSodium: string
+  }
+  healthScore: {
+    food1: number
+    food2: number
+    winner: string
   }
 }

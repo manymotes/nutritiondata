@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next'
 import { SITE_URL, FEATURED_FOODS, FOOD_CATEGORIES } from '@/lib/constants'
-import { getAllFoodSlugs } from '@/lib/data'
+import { getAllFoodSlugs, getStrategicComparisons } from '@/lib/data'
+import { getAllWaterQualitySlugs } from '@/lib/waterQualityData'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = SITE_URL
@@ -42,6 +43,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.5,
+    },
+    {
+      url: `${baseUrl}/water-quality`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
     },
   ]
 
@@ -100,19 +107,46 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  // Comparison pages (generate for featured food pairs only - 7,626 comparisons)
-  // Note: Compare page supports all 200 foods, but we only add featured ones to sitemap
+  // Comparison pages (strategic comparisons - 1,000+ pages)
+  // Uses getStrategicComparisons which generates within-category and cross-category comparisons
+  const strategicComps = getStrategicComparisons()
   const comparisonPages: MetadataRoute.Sitemap = []
-  for (let i = 0; i < FEATURED_FOODS.length; i++) {
-    for (let j = i + 1; j < FEATURED_FOODS.length; j++) {
-      comparisonPages.push({
-        url: `${baseUrl}/compare/${FEATURED_FOODS[i].slug}-vs-${FEATURED_FOODS[j].slug}`,
-        lastModified: new Date(),
-        changeFrequency: 'monthly' as const,
-        priority: 0.6,
-      })
+
+  // Add strategic comparisons (high-value SEO comparisons)
+  for (const [food1, food2] of strategicComps) {
+    const slug = `${food1}-vs-${food2}`
+    comparisonPages.push({
+      url: `${baseUrl}/compare/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+    })
+  }
+
+  // Also add featured food comparisons for high-traffic terms
+  for (let i = 0; i < Math.min(50, FEATURED_FOODS.length); i++) {
+    for (let j = i + 1; j < Math.min(i + 10, FEATURED_FOODS.length); j++) {
+      const slug = `${FEATURED_FOODS[i].slug}-vs-${FEATURED_FOODS[j].slug}`
+      // Only add if not already in strategic comparisons
+      if (!comparisonPages.find(p => p.url.endsWith(slug))) {
+        comparisonPages.push({
+          url: `${baseUrl}/compare/${slug}`,
+          lastModified: new Date(),
+          changeFrequency: 'monthly' as const,
+          priority: 0.7, // Higher priority for featured foods
+        })
+      }
     }
   }
 
-  return [...staticPages, ...foodPages, ...categoryPages, ...listPages, ...blogPages, ...calculatorPages, ...comparisonPages]
+  // Water Quality pages (all cities)
+  const allWaterQualitySlugs = getAllWaterQualitySlugs()
+  const waterQualityPages: MetadataRoute.Sitemap = allWaterQualitySlugs.map((slug) => ({
+    url: `${baseUrl}/water-quality/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+  }))
+
+  return [...staticPages, ...foodPages, ...categoryPages, ...listPages, ...blogPages, ...calculatorPages, ...comparisonPages, ...waterQualityPages]
 }

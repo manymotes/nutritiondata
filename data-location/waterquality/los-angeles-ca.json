@@ -1,0 +1,210 @@
+{
+  "city": "Los Angeles",
+  "state": "California",
+  "stateCode": "CA",
+  "slug": "los-angeles-ca",
+  "population": 3979576,
+  "waterGrade": "B+",
+  "overallScore": 82,
+  "lastUpdated": "2024-01-15",
+
+  "waterSources": [
+    {
+      "name": "Los Angeles Aqueduct",
+      "percentage": 30,
+      "type": "Surface Water",
+      "description": "Water from the Eastern Sierra Nevada mountains via the historic LA Aqueduct"
+    },
+    {
+      "name": "State Water Project",
+      "percentage": 35,
+      "type": "Surface Water",
+      "description": "Northern California water delivered via the California Aqueduct"
+    },
+    {
+      "name": "Colorado River Aqueduct",
+      "percentage": 25,
+      "type": "Surface Water",
+      "description": "Water from the Colorado River imported from eastern sources"
+    },
+    {
+      "name": "Local Groundwater",
+      "percentage": 10,
+      "type": "Groundwater",
+      "description": "Groundwater from the San Fernando Valley and other local basins"
+    }
+  ],
+
+  "qualityMetrics": {
+    "leadCompliance": 96,
+    "bacterialCompliance": 98,
+    "chemicalCompliance": 91,
+    "turbidity": 0.18,
+    "pH": 8.1,
+    "hardness": 145,
+    "chlorineLevel": 1.2
+  },
+
+  "contaminants": [
+    {
+      "name": "Chromium-6",
+      "level": 1.8,
+      "unit": "ppb",
+      "legalLimit": 10,
+      "healthGoal": 0.02,
+      "status": "Above Health Goal",
+      "trend": "improving"
+    },
+    {
+      "name": "Lead",
+      "level": 4.5,
+      "unit": "ppb",
+      "legalLimit": 15,
+      "healthGoal": 0,
+      "status": "Below Legal Limit",
+      "trend": "stable"
+    },
+    {
+      "name": "Total Trihalomethanes (TTHMs)",
+      "level": 52,
+      "unit": "ppb",
+      "legalLimit": 80,
+      "healthGoal": 0,
+      "status": "Below Legal Limit",
+      "trend": "improving"
+    },
+    {
+      "name": "Arsenic",
+      "level": 2.1,
+      "unit": "ppb",
+      "legalLimit": 10,
+      "healthGoal": 0.004,
+      "status": "Above Health Goal",
+      "trend": "stable"
+    },
+    {
+      "name": "Perchlorate",
+      "level": 3.2,
+      "unit": "ppb",
+      "legalLimit": 6,
+      "healthGoal": 1,
+      "status": "Above Health Goal",
+      "trend": "improving"
+    }
+  ],
+
+  "contaminationHistory": [
+    {
+      "year": 2015,
+      "incident": "Chromium-6 Detection",
+      "description": "Higher than recommended levels of hexavalent chromium (Chromium-6) found in some water sources",
+      "resolution": "Enhanced treatment processes implemented, ongoing monitoring and blending strategies"
+    },
+    {
+      "year": 2019,
+      "incident": "San Fernando Valley Groundwater Contamination",
+      "description": "Industrial pollutants including TCE and PCE found in some groundwater wells",
+      "resolution": "Affected wells taken offline, treatment systems installed, alternative sources utilized"
+    },
+    {
+      "year": 2021,
+      "incident": "PFAS Detection",
+      "description": "Per- and polyfluoroalkyl substances (PFAS) detected in some local groundwater sources",
+      "resolution": "Wellhead treatment systems installed, water blending optimization implemented"
+    }
+  ],
+
+  "treatmentFacilities": [
+    {
+      "name": "Joseph Jensen Filtration Plant",
+      "location": "Granada Hills",
+      "capacity": "750 million gallons/day",
+      "technology": "Conventional filtration, ozonation, chlorination"
+    },
+    {
+      "name": "Los Angeles-Glendale Water Reclamation Plant",
+      "location": "Glendale",
+      "capacity": "20 million gallons/day",
+      "technology": "Advanced treatment, microfiltration, reverse osmosis"
+    }
+  ],
+
+  "stateAverages": {
+    "leadCompliance": 94,
+    "bacterialCompliance": 97,
+    "chemicalCompliance": 89,
+    "overallScore": 80
+  },
+
+  "trends": [
+    {
+      "year": 2019,
+      "overallScore": 78,
+      "chromium6Level": 2.8,
+      "bacterialCompliance": 97
+    },
+    {
+      "year": 2020,
+      "overallScore": 79,
+      "chromium6Level": 2.4,
+      "bacterialCompliance": 97
+    },
+    {
+      "year": 2021,
+      "overallScore": 80,
+      "chromium6Level": 2.1,
+      "bacterialCompliance": 98
+    },
+    {
+      "year": 2022,
+      "overallScore": 81,
+      "chromium6Level": 1.9,
+      "bacterialCompliance": 98
+    },
+    {
+      "year": 2023,
+      "overallScore": 82,
+      "chromium6Level": 1.8,
+      "bacterialCompliance": 98
+    }
+  ],
+
+  "nearbyUtilities": ["Pasadena, CA", "Glendale, CA", "Long Beach, CA", "Santa Monica, CA"],
+
+  "faq": [
+    {
+      "question": "Is Los Angeles tap water safe to drink?",
+      "answer": "Yes, LA tap water meets all federal and state drinking water standards. The Los Angeles Department of Water and Power conducts over 300,000 water quality tests annually to ensure safety and quality."
+    },
+    {
+      "question": "Why is LA water so hard?",
+      "answer": "LA receives water from multiple sources, including the Colorado River and State Water Project, which naturally contain higher mineral content. The water hardness averages 145 mg/L (moderately hard), which is safe but may leave mineral deposits on fixtures."
+    },
+    {
+      "question": "What is being done about Chromium-6?",
+      "answer": "LADWP has invested over $70 million in wellhead treatment systems to remove Chromium-6. While levels are below the legal limit, the utility continues to reduce concentrations through treatment and source blending."
+    },
+    {
+      "question": "Should I use a water filter in Los Angeles?",
+      "answer": "While LA tap water is safe to drink, some residents choose to use filters to reduce mineral content, improve taste, or further reduce contaminants to below health goal levels. NSF-certified filters for specific contaminants are recommended if filtering."
+    },
+    {
+      "question": "Where does LA get its water?",
+      "answer": "LA imports about 85% of its water from the Eastern Sierra Nevada (LA Aqueduct), Northern California (State Water Project), and the Colorado River. About 10-15% comes from local groundwater sources in the San Fernando Valley and other basins."
+    }
+  ],
+
+  "additionalInfo": {
+    "waterUtility": "Los Angeles Department of Water and Power (LADWP)",
+    "annualWaterReport": "https://www.ladwp.com/waterquality",
+    "customerServicePhone": "(800) 342-5397",
+    "emergencyPhone": "(800) 342-5397",
+    "conservationPrograms": [
+      "Turf Replacement Rebate Program",
+      "Rain Barrel Program",
+      "High-Efficiency Toilet Rebates",
+      "Smart Irrigation Controller Rebates",
+      "WaterSense Landscape Program"
+    ]
+  }
+}

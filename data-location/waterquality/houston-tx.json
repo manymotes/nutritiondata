@@ -1,0 +1,210 @@
+{
+  "city": "Houston",
+  "state": "Texas",
+  "stateCode": "TX",
+  "slug": "houston-tx",
+  "population": 2304580,
+  "waterGrade": "B",
+  "overallScore": 78,
+  "lastUpdated": "2024-01-15",
+
+  "waterSources": [
+    {
+      "name": "Lake Houston",
+      "percentage": 25,
+      "type": "Surface Water",
+      "description": "Reservoir on the San Jacinto River northeast of Houston"
+    },
+    {
+      "name": "Lake Conroe",
+      "percentage": 30,
+      "type": "Surface Water",
+      "description": "Reservoir on the West Fork of the San Jacinto River"
+    },
+    {
+      "name": "Trinity River",
+      "percentage": 35,
+      "type": "Surface Water",
+      "description": "Water from the Trinity River via Lake Livingston"
+    },
+    {
+      "name": "Local Groundwater",
+      "percentage": 10,
+      "type": "Groundwater",
+      "description": "Groundwater from the Gulf Coast Aquifer and Chicot Aquifer"
+    }
+  ],
+
+  "qualityMetrics": {
+    "leadCompliance": 94,
+    "bacterialCompliance": 96,
+    "chemicalCompliance": 88,
+    "turbidity": 0.22,
+    "pH": 8.3,
+    "hardness": 115,
+    "chlorineLevel": 1.5
+  },
+
+  "contaminants": [
+    {
+      "name": "Total Trihalomethanes (TTHMs)",
+      "level": 68,
+      "unit": "ppb",
+      "legalLimit": 80,
+      "healthGoal": 0,
+      "status": "Below Legal Limit",
+      "trend": "stable"
+    },
+    {
+      "name": "Haloacetic Acids (HAA5)",
+      "level": 48,
+      "unit": "ppb",
+      "legalLimit": 60,
+      "healthGoal": 0,
+      "status": "Below Legal Limit",
+      "trend": "stable"
+    },
+    {
+      "name": "Lead",
+      "level": 5.2,
+      "unit": "ppb",
+      "legalLimit": 15,
+      "healthGoal": 0,
+      "status": "Below Legal Limit",
+      "trend": "stable"
+    },
+    {
+      "name": "Radium",
+      "level": 2.8,
+      "unit": "pCi/L",
+      "legalLimit": 5,
+      "healthGoal": 0.43,
+      "status": "Above Health Goal",
+      "trend": "stable"
+    },
+    {
+      "name": "Atrazine",
+      "level": 1.2,
+      "unit": "ppb",
+      "legalLimit": 3,
+      "healthGoal": 0.15,
+      "status": "Above Health Goal",
+      "trend": "seasonal"
+    }
+  ],
+
+  "contaminationHistory": [
+    {
+      "year": 2017,
+      "incident": "Hurricane Harvey Impact",
+      "description": "Massive flooding from Hurricane Harvey caused temporary water quality concerns and boil water notices in some areas",
+      "resolution": "Emergency chlorination, extensive testing, infrastructure repairs completed"
+    },
+    {
+      "year": 2021,
+      "incident": "Winter Storm Uri",
+      "description": "Severe winter storm caused water main breaks and treatment plant operational challenges",
+      "resolution": "Boil water notice issued and lifted after testing confirmed safety, infrastructure winterization improvements made"
+    }
+  ],
+
+  "treatmentFacilities": [
+    {
+      "name": "East Water Purification Plant",
+      "location": "East Houston",
+      "capacity": "320 million gallons/day",
+      "technology": "Conventional treatment, sedimentation, filtration, chlorination"
+    },
+    {
+      "name": "Southeast Water Purification Plant",
+      "location": "Southeast Houston",
+      "capacity": "200 million gallons/day",
+      "technology": "Surface water treatment, advanced filtration, disinfection"
+    },
+    {
+      "name": "Northeast Water Purification Plant",
+      "location": "Northeast Houston",
+      "capacity": "320 million gallons/day",
+      "technology": "Conventional treatment, ozonation, biological filtration"
+    }
+  ],
+
+  "stateAverages": {
+    "leadCompliance": 91,
+    "bacterialCompliance": 95,
+    "chemicalCompliance": 86,
+    "overallScore": 76
+  },
+
+  "trends": [
+    {
+      "year": 2019,
+      "overallScore": 76,
+      "tthmsLevel": 72,
+      "bacterialCompliance": 95
+    },
+    {
+      "year": 2020,
+      "overallScore": 76,
+      "tthmsLevel": 70,
+      "bacterialCompliance": 96
+    },
+    {
+      "year": 2021,
+      "overallScore": 74,
+      "tthmsLevel": 71,
+      "bacterialCompliance": 94
+    },
+    {
+      "year": 2022,
+      "overallScore": 77,
+      "tthmsLevel": 69,
+      "bacterialCompliance": 96
+    },
+    {
+      "year": 2023,
+      "overallScore": 78,
+      "tthmsLevel": 68,
+      "bacterialCompliance": 96
+    }
+  ],
+
+  "nearbyUtilities": ["Sugar Land, TX", "Pasadena, TX", "Pearland, TX", "The Woodlands, TX"],
+
+  "faq": [
+    {
+      "question": "Is Houston tap water safe to drink?",
+      "answer": "Yes, Houston's tap water meets all federal and state drinking water standards. The city operates multiple treatment plants and conducts thousands of water quality tests monthly to ensure safety."
+    },
+    {
+      "question": "Why does Houston water taste different sometimes?",
+      "answer": "Houston draws water from multiple surface water sources (lakes and rivers) which can vary in taste depending on seasonal factors, rainfall, and which plant serves your area. All sources are treated to meet quality standards."
+    },
+    {
+      "question": "What are disinfection byproducts and should I be concerned?",
+      "answer": "Disinfection byproducts (TTHMs and HAA5) form when chlorine reacts with organic matter in water. Houston's levels are below federal limits. The city uses optimized treatment processes to minimize these compounds while maintaining necessary disinfection."
+    },
+    {
+      "question": "How did Hurricane Harvey affect Houston's water?",
+      "answer": "While some areas experienced temporary boil water notices, Houston's water system proved resilient. The city has since invested in infrastructure improvements and emergency preparedness to better handle extreme weather events."
+    },
+    {
+      "question": "Should I filter my Houston tap water?",
+      "answer": "Houston tap water is safe to drink as-is. However, some residents use filters to improve taste or reduce chlorine. If filtering, use NSF-certified filters and maintain them according to manufacturer instructions."
+    }
+  ],
+
+  "additionalInfo": {
+    "waterUtility": "Houston Public Works",
+    "annualWaterReport": "https://www.publicworks.houstontx.gov/water-quality",
+    "customerServicePhone": "832-395-2700",
+    "emergencyPhone": "311",
+    "conservationPrograms": [
+      "Leak Repair Rebate Program",
+      "High-Efficiency Toilet Rebates",
+      "Rain Barrel Program",
+      "Smart Irrigation Controller Rebates",
+      "Water Wise Landscape Program"
+    ]
+  }
+}

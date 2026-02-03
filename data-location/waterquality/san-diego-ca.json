@@ -1,0 +1,204 @@
+{
+  "city": "San Diego",
+  "state": "California",
+  "stateCode": "CA",
+  "slug": "san-diego-ca",
+  "population": 1386932,
+  "waterGrade": "B",
+  "overallScore": 80,
+  "lastUpdated": "2024-01-15",
+
+  "waterSources": [
+    {
+      "name": "Colorado River (via Metropolitan Water District)",
+      "percentage": 50,
+      "type": "Surface Water",
+      "description": "Imported water from the Colorado River via aqueduct system"
+    },
+    {
+      "name": "State Water Project (Northern California)",
+      "percentage": 35,
+      "type": "Surface Water",
+      "description": "Water from Northern California reservoirs via the California Aqueduct"
+    },
+    {
+      "name": "Local Sources (Reservoirs & Groundwater)",
+      "percentage": 15,
+      "type": "Mixed",
+      "description": "Local reservoirs in San Diego County and groundwater sources"
+    }
+  ],
+
+  "qualityMetrics": {
+    "leadCompliance": 96,
+    "bacterialCompliance": 97,
+    "chemicalCompliance": 87,
+    "turbidity": 0.16,
+    "pH": 8.0,
+    "hardness": 155,
+    "chlorineLevel": 1.4
+  },
+
+  "contaminants": [
+    {
+      "name": "Chromium-6",
+      "level": 2.1,
+      "unit": "ppb",
+      "legalLimit": 10,
+      "healthGoal": 0.02,
+      "status": "Above Health Goal",
+      "trend": "stable"
+    },
+    {
+      "name": "Total Trihalomethanes (TTHMs)",
+      "level": 56,
+      "unit": "ppb",
+      "legalLimit": 80,
+      "healthGoal": 0,
+      "status": "Below Legal Limit",
+      "trend": "stable"
+    },
+    {
+      "name": "Lead",
+      "level": 3.9,
+      "unit": "ppb",
+      "legalLimit": 15,
+      "healthGoal": 0,
+      "status": "Below Legal Limit",
+      "trend": "stable"
+    },
+    {
+      "name": "Arsenic",
+      "level": 1.8,
+      "unit": "ppb",
+      "legalLimit": 10,
+      "healthGoal": 0.004,
+      "status": "Above Health Goal",
+      "trend": "stable"
+    },
+    {
+      "name": "1,2,3-Trichloropropane",
+      "level": 0.008,
+      "unit": "ppb",
+      "legalLimit": 0.005,
+      "healthGoal": 0.0007,
+      "status": "Above Legal Limit",
+      "trend": "improving"
+    }
+  ],
+
+  "contaminationHistory": [
+    {
+      "year": 2018,
+      "incident": "1,2,3-TCP Exceedance",
+      "description": "Toxic solvent 1,2,3-trichloropropane exceeded state limit in some groundwater wells",
+      "resolution": "Affected wells taken offline, treatment systems installed, blending strategies implemented"
+    },
+    {
+      "year": 2020,
+      "incident": "PFAS Detection",
+      "description": "Per- and polyfluoroalkyl substances detected in some local groundwater sources",
+      "resolution": "Enhanced monitoring, wellhead treatment systems planned, increased reliance on imported water"
+    }
+  ],
+
+  "treatmentFacilities": [
+    {
+      "name": "Alvarado Water Treatment Plant",
+      "location": "La Mesa",
+      "capacity": "215 million gallons/day",
+      "technology": "Conventional treatment, ozonation, biological filtration"
+    },
+    {
+      "name": "Miramar Water Treatment Plant",
+      "location": "Scripps Ranch",
+      "capacity": "140 million gallons/day",
+      "technology": "Conventional filtration, ozonation, advanced oxidation"
+    },
+    {
+      "name": "Otay Water Treatment Plant",
+      "location": "Chula Vista",
+      "capacity": "106 million gallons/day",
+      "technology": "Conventional treatment, membrane filtration"
+    }
+  ],
+
+  "stateAverages": {
+    "leadCompliance": 94,
+    "bacterialCompliance": 97,
+    "chemicalCompliance": 89,
+    "overallScore": 80
+  },
+
+  "trends": [
+    {
+      "year": 2019,
+      "overallScore": 77,
+      "chromium6Level": 2.6,
+      "bacterialCompliance": 96
+    },
+    {
+      "year": 2020,
+      "overallScore": 78,
+      "chromium6Level": 2.4,
+      "bacterialCompliance": 97
+    },
+    {
+      "year": 2021,
+      "overallScore": 79,
+      "chromium6Level": 2.3,
+      "bacterialCompliance": 97
+    },
+    {
+      "year": 2022,
+      "overallScore": 79,
+      "chromium6Level": 2.2,
+      "bacterialCompliance": 97
+    },
+    {
+      "year": 2023,
+      "overallScore": 80,
+      "chromium6Level": 2.1,
+      "bacterialCompliance": 97
+    }
+  ],
+
+  "nearbyUtilities": ["Chula Vista, CA", "Oceanside, CA", "Carlsbad, CA", "El Cajon, CA"],
+
+  "faq": [
+    {
+      "question": "Is San Diego tap water safe to drink?",
+      "answer": "Yes, San Diego's tap water meets all federal and state drinking water standards. The City of San Diego conducts over 120,000 water quality tests annually and operates multiple advanced treatment facilities."
+    },
+    {
+      "question": "Why is San Diego water hard?",
+      "answer": "San Diego's water hardness (averaging 155 mg/L) comes from natural minerals in the Colorado River and State Water Project sources. Hard water is safe to drink and provides beneficial minerals, though it may cause mineral deposits."
+    },
+    {
+      "question": "What is 1,2,3-TCP and should I be concerned?",
+      "answer": "1,2,3-TCP is a toxic solvent that contaminated some local groundwater. San Diego has taken affected wells offline and installed treatment systems. Most residents receive blended water that meets state limits. The city is working to fully eliminate this contaminant."
+    },
+    {
+      "question": "Where does San Diego get its water?",
+      "answer": "San Diego imports about 85% of its water from the Colorado River and Northern California via large aqueduct systems. About 15% comes from local sources including reservoirs and groundwater. The city is investing in water recycling and desalination for future reliability."
+    },
+    {
+      "question": "Is San Diego building a desalination plant?",
+      "answer": "The Carlsbad Desalination Plant (opened 2015) provides about 10% of San Diego County's water supply. This seawater desalination facility produces drought-proof water and represents one of the region's diverse water supply strategies."
+    }
+  ],
+
+  "additionalInfo": {
+    "waterUtility": "City of San Diego Public Utilities Department",
+    "annualWaterReport": "https://www.sandiego.gov/water/quality/reports",
+    "customerServicePhone": "619-515-3500",
+    "emergencyPhone": "619-515-3525",
+    "conservationPrograms": [
+      "Turf Replacement Rebates",
+      "High-Efficiency Toilet Rebates",
+      "Smart Irrigation Controller Rebates",
+      "Rainwater Catchment System Rebates",
+      "Pure Water San Diego (water recycling)"
+    ]
+  }
+}

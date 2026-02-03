@@ -1,0 +1,182 @@
+{
+  "city": "New York",
+  "state": "New York",
+  "stateCode": "NY",
+  "slug": "new-york-ny",
+  "population": 8336817,
+  "waterGrade": "A-",
+  "overallScore": 88,
+  "lastUpdated": "2024-01-15",
+
+  "waterSources": [
+    {
+      "name": "Catskill/Delaware Watershed",
+      "percentage": 90,
+      "type": "Surface Water",
+      "description": "Pristine mountain watershed located in the Catskill Mountains, providing naturally filtered water"
+    },
+    {
+      "name": "Croton Watershed",
+      "percentage": 10,
+      "type": "Surface Water",
+      "description": "Supplementary water source from reservoirs in Westchester and Putnam counties"
+    }
+  ],
+
+  "qualityMetrics": {
+    "leadCompliance": 98,
+    "bacterialCompliance": 99,
+    "chemicalCompliance": 95,
+    "turbidity": 0.12,
+    "pH": 7.2,
+    "hardness": 65,
+    "chlorineLevel": 0.8
+  },
+
+  "contaminants": [
+    {
+      "name": "Lead",
+      "level": 3.2,
+      "unit": "ppb",
+      "legalLimit": 15,
+      "healthGoal": 0,
+      "status": "Below Legal Limit",
+      "trend": "improving"
+    },
+    {
+      "name": "Total Trihalomethanes (TTHMs)",
+      "level": 42,
+      "unit": "ppb",
+      "legalLimit": 80,
+      "healthGoal": 0,
+      "status": "Below Legal Limit",
+      "trend": "stable"
+    },
+    {
+      "name": "Haloacetic Acids (HAA5)",
+      "level": 28,
+      "unit": "ppb",
+      "legalLimit": 60,
+      "healthGoal": 0,
+      "status": "Below Legal Limit",
+      "trend": "stable"
+    },
+    {
+      "name": "Nitrate",
+      "level": 0.8,
+      "unit": "ppm",
+      "legalLimit": 10,
+      "healthGoal": 0.14,
+      "status": "Below Legal Limit",
+      "trend": "stable"
+    }
+  ],
+
+  "contaminationHistory": [
+    {
+      "year": 2018,
+      "incident": "Lead in Schools",
+      "description": "Elevated lead levels detected in some NYC school water fountains, leading to widespread testing program",
+      "resolution": "Citywide school water testing implemented, fixtures replaced where needed"
+    },
+    {
+      "year": 2020,
+      "incident": "Turbidity Spike",
+      "description": "Temporary increase in water cloudiness due to heavy rainfall affecting Catskill watershed",
+      "resolution": "Additional filtration processes activated, water quality restored within 48 hours"
+    }
+  ],
+
+  "treatmentFacilities": [
+    {
+      "name": "Catskill/Delaware UV Disinfection Plant",
+      "location": "Westchester County",
+      "capacity": "2.2 billion gallons/day",
+      "technology": "UV disinfection, chlorination"
+    },
+    {
+      "name": "Croton Water Filtration Plant",
+      "location": "Bronx",
+      "capacity": "290 million gallons/day",
+      "technology": "Filtration, UV disinfection, fluoridation"
+    }
+  ],
+
+  "stateAverages": {
+    "leadCompliance": 92,
+    "bacterialCompliance": 96,
+    "chemicalCompliance": 93,
+    "overallScore": 82
+  },
+
+  "trends": [
+    {
+      "year": 2019,
+      "overallScore": 84,
+      "leadLevel": 4.8,
+      "bacterialCompliance": 98
+    },
+    {
+      "year": 2020,
+      "overallScore": 85,
+      "leadLevel": 4.2,
+      "bacterialCompliance": 98
+    },
+    {
+      "year": 2021,
+      "overallScore": 86,
+      "leadLevel": 3.8,
+      "bacterialCompliance": 99
+    },
+    {
+      "year": 2022,
+      "overallScore": 87,
+      "leadLevel": 3.5,
+      "bacterialCompliance": 99
+    },
+    {
+      "year": 2023,
+      "overallScore": 88,
+      "leadLevel": 3.2,
+      "bacterialCompliance": 99
+    }
+  ],
+
+  "nearbyUtilities": ["Jersey City, NJ", "Newark, NJ", "Yonkers, NY", "White Plains, NY"],
+
+  "faq": [
+    {
+      "question": "Is New York City tap water safe to drink?",
+      "answer": "Yes, NYC tap water is among the highest quality in the nation. The city's water supply comes from pristine Catskill Mountain watersheds and undergoes rigorous testing. Over 1 billion gallons are tested daily for quality assurance."
+    },
+    {
+      "question": "Why does NYC water taste so good?",
+      "answer": "NYC water is naturally soft and filtered through the Catskill Mountain watershed. Unlike many cities, 90% of NYC's water is naturally filtered and doesn't require extensive chemical treatment, resulting in its notably fresh taste."
+    },
+    {
+      "question": "Should I worry about lead in NYC water?",
+      "answer": "The water supplied by NYC is lead-free. However, lead can enter drinking water through old pipes and fixtures in buildings. The city has implemented extensive testing in schools and offers free testing for homes built before 1987."
+    },
+    {
+      "question": "Does NYC add fluoride to the water?",
+      "answer": "Yes, NYC has fluoridated its water supply since 1965 to promote dental health. The fluoride level is maintained at 0.7 mg/L, the level recommended by the U.S. Public Health Service."
+    },
+    {
+      "question": "How does NYC water compare to bottled water?",
+      "answer": "NYC tap water meets or exceeds all federal and state drinking water standards and is tested more frequently than bottled water. It's also more environmentally friendly and costs less than a penny per gallon compared to bottled water."
+    }
+  ],
+
+  "additionalInfo": {
+    "waterUtility": "New York City Department of Environmental Protection",
+    "annualWaterReport": "https://www.nyc.gov/site/dep/water/drinking-water-report.page",
+    "customerServicePhone": "311",
+    "emergencyPhone": "311",
+    "conservationPrograms": [
+      "Water Meter Installation Program",
+      "Leak Detection and Repair",
+      "Green Infrastructure Program",
+      "WaterSense Rebate Program"
+    ]
+  }
+}

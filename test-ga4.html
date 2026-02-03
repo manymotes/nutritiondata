@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GA4 Test - Baby Names Scout</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-361QWD4MK0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-361QWD4MK0', {
+      page_path: window.location.pathname,
+      send_page_view: true
+    });
+
+    // Log to console for debugging
+    console.log('GA4 initialized with ID: G-361QWD4MK0');
+    console.log('dataLayer:', window.dataLayer);
+  </script>
+</head>
+<body>
+  <h1>GA4 Test Page</h1>
+  <p>This is a test page to verify GA4 tracking is working.</p>
+
+  <button onclick="testEvent()">Test Event</button>
+
+  <script>
+    function testEvent() {
+      gtag('event', 'test_button_click', {
+        event_category: 'engagement',
+        event_label: 'Test Button'
+      });
+      console.log('Test event sent');
+      alert('Test event sent! Check GA4 Realtime report.');
+    }
+
+    // Log page view
+    setTimeout(() => {
+      console.log('dataLayer after 2 seconds:', window.dataLayer);
+    }, 2000);
+  </script>
+</body>
+</html>

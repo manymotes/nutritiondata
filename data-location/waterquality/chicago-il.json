@@ -1,0 +1,177 @@
+{
+  "city": "Chicago",
+  "state": "Illinois",
+  "stateCode": "IL",
+  "slug": "chicago-il",
+  "population": 2746388,
+  "waterGrade": "A",
+  "overallScore": 90,
+  "lastUpdated": "2024-01-15",
+
+  "waterSources": [
+    {
+      "name": "Lake Michigan",
+      "percentage": 100,
+      "type": "Surface Water",
+      "description": "Pristine Lake Michigan water drawn from intake cribs 2 miles offshore at depths of 20-30 feet"
+    }
+  ],
+
+  "qualityMetrics": {
+    "leadCompliance": 97,
+    "bacterialCompliance": 99,
+    "chemicalCompliance": 96,
+    "turbidity": 0.08,
+    "pH": 7.6,
+    "hardness": 135,
+    "chlorineLevel": 0.9
+  },
+
+  "contaminants": [
+    {
+      "name": "Lead",
+      "level": 3.8,
+      "unit": "ppb",
+      "legalLimit": 15,
+      "healthGoal": 0,
+      "status": "Below Legal Limit",
+      "trend": "improving"
+    },
+    {
+      "name": "Total Trihalomethanes (TTHMs)",
+      "level": 38,
+      "unit": "ppb",
+      "legalLimit": 80,
+      "healthGoal": 0,
+      "status": "Below Legal Limit",
+      "trend": "stable"
+    },
+    {
+      "name": "Haloacetic Acids (HAA5)",
+      "level": 22,
+      "unit": "ppb",
+      "legalLimit": 60,
+      "healthGoal": 0,
+      "status": "Below Legal Limit",
+      "trend": "stable"
+    },
+    {
+      "name": "Chlorine",
+      "level": 0.9,
+      "unit": "ppm",
+      "legalLimit": 4,
+      "healthGoal": 4,
+      "status": "Optimal",
+      "trend": "stable"
+    }
+  ],
+
+  "contaminationHistory": [
+    {
+      "year": 2016,
+      "incident": "Lead Service Line Concerns",
+      "description": "Growing awareness of lead service lines throughout Chicago, estimated 400,000+ homes affected",
+      "resolution": "Launched lead service line replacement program, free water testing for residents, corrosion control optimization"
+    },
+    {
+      "year": 2020,
+      "incident": "Microplastics Detection",
+      "description": "Study found microplastics in Lake Michigan, Chicago's water source",
+      "resolution": "Enhanced filtration systems proven effective at removing microplastics, ongoing monitoring program established"
+    }
+  ],
+
+  "treatmentFacilities": [
+    {
+      "name": "Jardine Water Purification Plant",
+      "location": "Chicago (Near Navy Pier)",
+      "capacity": "1 billion gallons/day",
+      "technology": "Rapid sand filtration, ozonation, chlorination, fluoridation"
+    },
+    {
+      "name": "South Water Purification Plant",
+      "location": "South Chicago",
+      "capacity": "260 million gallons/day",
+      "technology": "Conventional filtration, ozonation, chlorination, corrosion control"
+    }
+  ],
+
+  "stateAverages": {
+    "leadCompliance": 93,
+    "bacterialCompliance": 97,
+    "chemicalCompliance": 94,
+    "overallScore": 84
+  },
+
+  "trends": [
+    {
+      "year": 2019,
+      "overallScore": 87,
+      "leadLevel": 5.2,
+      "bacterialCompliance": 98
+    },
+    {
+      "year": 2020,
+      "overallScore": 88,
+      "leadLevel": 4.8,
+      "bacterialCompliance": 99
+    },
+    {
+      "year": 2021,
+      "overallScore": 89,
+      "leadLevel": 4.3,
+      "bacterialCompliance": 99
+    },
+    {
+      "year": 2022,
+      "overallScore": 89,
+      "leadLevel": 4.0,
+      "bacterialCompliance": 99
+    },
+    {
+      "year": 2023,
+      "overallScore": 90,
+      "leadLevel": 3.8,
+      "bacterialCompliance": 99
+    }
+  ],
+
+  "nearbyUtilities": ["Evanston, IL", "Oak Park, IL", "Cicero, IL", "Naperville, IL"],
+
+  "faq": [
+    {
+      "question": "Is Chicago tap water safe to drink?",
+      "answer": "Yes, Chicago's tap water is among the best in the country. Lake Michigan provides an excellent source, and the city operates two world-class treatment plants that process over 1 billion gallons daily. The water meets or exceeds all federal and state standards."
+    },
+    {
+      "question": "Does Chicago have a lead problem in its water?",
+      "answer": "The water leaving Chicago's treatment plants contains no lead. However, Chicago has approximately 400,000 lead service lines connecting homes to the water mains. The city adds orthophosphate for corrosion control and offers free water testing. A gradual replacement program is underway."
+    },
+    {
+      "question": "Why does my Chicago tap water sometimes taste like chlorine?",
+      "answer": "Chicago uses chlorine for disinfection to ensure water safety throughout its distribution system. Chlorine levels are carefully monitored and kept at safe levels (0.5-1.2 ppm). If taste is a concern, refrigerating water or using a carbon filter can reduce chlorine taste."
+    },
+    {
+      "question": "How does Chicago protect Lake Michigan water quality?",
+      "answer": "Chicago draws water from intake cribs located 2 miles offshore and 20-30 feet deep, away from shoreline pollution. The city also invests heavily in green infrastructure to reduce stormwater runoff and participates in Great Lakes protection initiatives."
+    },
+    {
+      "question": "Is Chicago water hard or soft?",
+      "answer": "Chicago water is moderately hard at about 135 mg/L. This hardness comes from natural minerals in Lake Michigan and is safe to drink. Hard water may leave mineral deposits on fixtures but provides beneficial calcium and magnesium."
+    }
+  ],
+
+  "additionalInfo": {
+    "waterUtility": "Chicago Department of Water Management",
+    "annualWaterReport": "https://www.chicago.gov/city/en/depts/water/supp_info/water_quality_resultsandreports.html",
+    "customerServicePhone": "312-744-4420",
+    "emergencyPhone": "311",
+    "conservationPrograms": [
+      "Rain Barrel Giveaway Program",
+      "Toilet Rebate Program",
+      "Green Permit Program",
+      "Water Meter Upgrade Program",
+      "Lead Service Line Replacement Program"
+    ]
+  }
+}
