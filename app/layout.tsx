@@ -9,7 +9,12 @@ import { RouteTracker } from '@/components/analytics/RouteTracker'
 import { SITE_NAME, SITE_DESCRIPTION, SITE_URL } from '@/lib/constants'
 import { siteConfig } from '@/lib/config'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+  preload: true,
+})
 
 export const metadata: Metadata = {
   title: {
@@ -48,7 +53,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased bg-gray-50`}>
+      <body className={`${inter.variable} font-sans antialiased bg-gray-50`}>
         <GoogleAnalytics />
         <RouteTracker />
         {/* AdSense Script */}

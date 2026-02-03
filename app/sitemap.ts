@@ -103,13 +103,71 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }))
 
-  // Category pages
+  // Category pages (food type categories)
   const categoryPages: MetadataRoute.Sitemap = FOOD_CATEGORIES.map((category) => ({
     url: `${baseUrl}/category/${category.slug}`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
     priority: 0.7,
   }))
+
+  // Nutrition category pages
+  const nutritionCategoryPages: MetadataRoute.Sitemap = [
+    {
+      url: `${baseUrl}/categories`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/categories/high-protein-foods`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/categories/low-calorie-foods`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/categories/high-fiber-foods`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/categories/low-carb-foods`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/categories/healthy-fats`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/categories/vitamin-c-foods`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/categories/iron-rich-foods`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/categories/calcium-foods`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+  ]
 
   // Comparison pages (strategic comparisons - 1,000+ pages)
   // Uses getStrategicComparisons which generates within-category and cross-category comparisons
@@ -152,5 +210,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }))
 
-  return [...staticPages, ...foodPages, ...categoryPages, ...listPages, ...blogPages, ...calculatorPages, ...comparisonPages, ...waterQualityPages]
+  return [...staticPages, ...foodPages, ...categoryPages, ...nutritionCategoryPages, ...listPages, ...blogPages, ...calculatorPages, ...comparisonPages, ...waterQualityPages]
 }

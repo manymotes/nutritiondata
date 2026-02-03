@@ -210,6 +210,81 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Food Categories */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Browse by Nutrition Profile
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+            <Link
+              href="/categories/high-protein-foods"
+              className="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow text-center"
+            >
+              <div className="text-3xl mb-2">💪</div>
+              <h3 className="font-semibold text-gray-900">High Protein</h3>
+            </Link>
+            <Link
+              href="/categories/low-calorie-foods"
+              className="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow text-center"
+            >
+              <div className="text-3xl mb-2">🥬</div>
+              <h3 className="font-semibold text-gray-900">Low Calorie</h3>
+            </Link>
+            <Link
+              href="/categories/high-fiber-foods"
+              className="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow text-center"
+            >
+              <div className="text-3xl mb-2">🌾</div>
+              <h3 className="font-semibold text-gray-900">High Fiber</h3>
+            </Link>
+            <Link
+              href="/categories/low-carb-foods"
+              className="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow text-center"
+            >
+              <div className="text-3xl mb-2">🥑</div>
+              <h3 className="font-semibold text-gray-900">Low Carb</h3>
+            </Link>
+            <Link
+              href="/categories/healthy-fats"
+              className="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow text-center"
+            >
+              <div className="text-3xl mb-2">🐟</div>
+              <h3 className="font-semibold text-gray-900">Healthy Fats</h3>
+            </Link>
+            <Link
+              href="/categories/vitamin-c-foods"
+              className="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow text-center"
+            >
+              <div className="text-3xl mb-2">🍊</div>
+              <h3 className="font-semibold text-gray-900">Vitamin C</h3>
+            </Link>
+            <Link
+              href="/categories/iron-rich-foods"
+              className="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow text-center"
+            >
+              <div className="text-3xl mb-2">🩸</div>
+              <h3 className="font-semibold text-gray-900">Iron Rich</h3>
+            </Link>
+            <Link
+              href="/categories/calcium-foods"
+              className="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow text-center"
+            >
+              <div className="text-3xl mb-2">🦴</div>
+              <h3 className="font-semibold text-gray-900">Calcium</h3>
+            </Link>
+          </div>
+          <div className="text-center">
+            <Link
+              href="/categories"
+              className="text-primary-600 hover:text-primary-700 font-medium"
+            >
+              View all nutrition categories →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Food Lists */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
