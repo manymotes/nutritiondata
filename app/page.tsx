@@ -293,8 +293,69 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Food Categories */}
+      {/* Meal Prep Guides */}
       <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Meal Prep Guides
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <Link
+              href="/meal-prep/beginners-guide"
+              className="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow text-center"
+            >
+              <div className="text-3xl mb-2">📚</div>
+              <h3 className="font-semibold text-gray-900">Beginner's Guide</h3>
+            </Link>
+            <Link
+              href="/meal-prep/sunday-meal-prep"
+              className="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow text-center"
+            >
+              <div className="text-3xl mb-2">📅</div>
+              <h3 className="font-semibold text-gray-900">Sunday Meal Prep</h3>
+            </Link>
+            <Link
+              href="/meal-prep/budget-meal-prep"
+              className="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow text-center"
+            >
+              <div className="text-3xl mb-2">💰</div>
+              <h3 className="font-semibold text-gray-900">Budget Meal Prep</h3>
+            </Link>
+            <Link
+              href="/meal-prep/high-protein"
+              className="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow text-center"
+            >
+              <div className="text-3xl mb-2">💪</div>
+              <h3 className="font-semibold text-gray-900">High-Protein</h3>
+            </Link>
+            <Link
+              href="/meal-prep/weight-loss"
+              className="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow text-center"
+            >
+              <div className="text-3xl mb-2">⚖️</div>
+              <h3 className="font-semibold text-gray-900">Weight Loss</h3>
+            </Link>
+            <Link
+              href="/meal-prep/family-meal-prep"
+              className="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow text-center"
+            >
+              <div className="text-3xl mb-2">👨‍👩‍👧‍👦</div>
+              <h3 className="font-semibold text-gray-900">Family Meal Prep</h3>
+            </Link>
+          </div>
+          <div className="text-center">
+            <Link
+              href="/meal-prep"
+              className="text-primary-600 hover:text-primary-700 font-medium"
+            >
+              View all meal prep guides →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Food Categories */}
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
             Browse by Nutrition Profile
