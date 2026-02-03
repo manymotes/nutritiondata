@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function CalculatorsPage() {
   const calculators = [
     {
-      slug: 'bmi',
+      slug: 'bmi-calculator',
       title: 'BMI Calculator',
       description: 'Calculate your Body Mass Index (BMI) and find your weight category. Free, accurate calculator with imperial and metric units.',
       icon: '⚖️',
@@ -22,15 +22,15 @@ export default function CalculatorsPage() {
       available: true,
     },
     {
-      slug: 'tdee',
-      title: 'TDEE Calculator',
-      description: 'Calculate Total Daily Energy Expenditure and BMR. Get personalized calorie targets for weight loss, maintenance, or muscle gain.',
+      slug: 'calorie-calculator',
+      title: 'Calorie Calculator',
+      description: 'Calculate Total Daily Energy Expenditure (TDEE) and BMR. Get personalized calorie targets for weight loss, maintenance, or muscle gain.',
       icon: '🔥',
       features: ['BMR calculation', 'Activity level adjustment', 'Goal-based recommendations'],
       available: true,
     },
     {
-      slug: 'macros',
+      slug: 'macro-calculator',
       title: 'Macro Calculator',
       description: 'Calculate ideal protein, carbs, and fat intake. Customized macro targets for your fitness goals.',
       icon: '🥗',
@@ -38,12 +38,12 @@ export default function CalculatorsPage() {
       available: true,
     },
     {
-      slug: null,
-      title: 'Calorie Counter',
-      description: 'Track daily calorie intake and monitor your nutrition goals with our food diary.',
-      icon: '📊',
-      features: ['Food logging', 'Daily tracking', 'Progress charts'],
-      available: false,
+      slug: 'meal-planner',
+      title: 'Meal Planner',
+      description: 'Plan meals to hit your calorie and macro targets. Select foods and see real-time totals.',
+      icon: '📋',
+      features: ['Select foods', 'Track totals', 'Save meal plans'],
+      available: true,
     },
   ]
 

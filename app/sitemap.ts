@@ -83,6 +83,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'bmi',
     'tdee',
     'macros',
+    'bmi-calculator',
+    'calorie-calculator',
+    'macro-calculator',
+    'meal-planner',
   ].map((slug) => ({
     url: `${baseUrl}/calculators/${slug}`,
     lastModified: new Date(),

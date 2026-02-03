@@ -159,8 +159,59 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Food Lists */}
+      {/* Nutrition Calculators */}
       <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Nutrition Calculators
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+            <Link
+              href="/calculators/calorie-calculator"
+              className="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow text-center"
+            >
+              <div className="text-3xl mb-2">🔥</div>
+              <h3 className="font-semibold text-gray-900">Calorie Calculator</h3>
+              <p className="text-sm text-gray-600 mt-1">TDEE & BMR</p>
+            </Link>
+            <Link
+              href="/calculators/macro-calculator"
+              className="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow text-center"
+            >
+              <div className="text-3xl mb-2">🥗</div>
+              <h3 className="font-semibold text-gray-900">Macro Calculator</h3>
+              <p className="text-sm text-gray-600 mt-1">Protein, Carbs, Fat</p>
+            </Link>
+            <Link
+              href="/calculators/bmi-calculator"
+              className="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow text-center"
+            >
+              <div className="text-3xl mb-2">⚖️</div>
+              <h3 className="font-semibold text-gray-900">BMI Calculator</h3>
+              <p className="text-sm text-gray-600 mt-1">Body Mass Index</p>
+            </Link>
+            <Link
+              href="/calculators/meal-planner"
+              className="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow text-center"
+            >
+              <div className="text-3xl mb-2">📋</div>
+              <h3 className="font-semibold text-gray-900">Meal Planner</h3>
+              <p className="text-sm text-gray-600 mt-1">Plan Your Meals</p>
+            </Link>
+          </div>
+          <div className="text-center">
+            <Link
+              href="/calculators"
+              className="text-primary-600 hover:text-primary-700 font-medium"
+            >
+              View all calculators →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Food Lists */}
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
             Curated Food Lists
