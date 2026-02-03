@@ -210,5 +210,63 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }))
 
-  return [...staticPages, ...foodPages, ...categoryPages, ...nutritionCategoryPages, ...listPages, ...blogPages, ...calculatorPages, ...comparisonPages, ...waterQualityPages]
+  // Recipe pages (8 categories + landing page)
+  const recipePages: MetadataRoute.Sitemap = [
+    {
+      url: `${baseUrl}/recipes`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/recipes/high-protein`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/recipes/low-calorie`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/recipes/keto`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/recipes/vegan`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/recipes/breakfast`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/recipes/lunch`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/recipes/dinner`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/recipes/snacks`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.85,
+    },
+  ]
+
+  return [...staticPages, ...foodPages, ...categoryPages, ...nutritionCategoryPages, ...listPages, ...blogPages, ...calculatorPages, ...comparisonPages, ...waterQualityPages, ...recipePages]
 }

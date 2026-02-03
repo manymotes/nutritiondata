@@ -210,6 +210,89 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Popular Recipes */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Popular Recipes
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+            <Link
+              href="/recipes/high-protein"
+              className="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow text-center"
+            >
+              <div className="text-3xl mb-2">💪</div>
+              <h3 className="font-semibold text-gray-900">High-Protein</h3>
+              <p className="text-sm text-gray-600 mt-1">15 Recipes</p>
+            </Link>
+            <Link
+              href="/recipes/low-calorie"
+              className="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow text-center"
+            >
+              <div className="text-3xl mb-2">🥬</div>
+              <h3 className="font-semibold text-gray-900">Low-Calorie</h3>
+              <p className="text-sm text-gray-600 mt-1">15 Recipes</p>
+            </Link>
+            <Link
+              href="/recipes/keto"
+              className="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow text-center"
+            >
+              <div className="text-3xl mb-2">🥑</div>
+              <h3 className="font-semibold text-gray-900">Keto</h3>
+              <p className="text-sm text-gray-600 mt-1">15 Recipes</p>
+            </Link>
+            <Link
+              href="/recipes/vegan"
+              className="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow text-center"
+            >
+              <div className="text-3xl mb-2">🌱</div>
+              <h3 className="font-semibold text-gray-900">Vegan</h3>
+              <p className="text-sm text-gray-600 mt-1">15 Recipes</p>
+            </Link>
+            <Link
+              href="/recipes/breakfast"
+              className="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow text-center"
+            >
+              <div className="text-3xl mb-2">🍳</div>
+              <h3 className="font-semibold text-gray-900">Breakfast</h3>
+              <p className="text-sm text-gray-600 mt-1">15 Recipes</p>
+            </Link>
+            <Link
+              href="/recipes/lunch"
+              className="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow text-center"
+            >
+              <div className="text-3xl mb-2">🥗</div>
+              <h3 className="font-semibold text-gray-900">Lunch</h3>
+              <p className="text-sm text-gray-600 mt-1">15 Recipes</p>
+            </Link>
+            <Link
+              href="/recipes/dinner"
+              className="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow text-center"
+            >
+              <div className="text-3xl mb-2">🍽️</div>
+              <h3 className="font-semibold text-gray-900">Dinner</h3>
+              <p className="text-sm text-gray-600 mt-1">15 Recipes</p>
+            </Link>
+            <Link
+              href="/recipes/snacks"
+              className="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow text-center"
+            >
+              <div className="text-3xl mb-2">🍪</div>
+              <h3 className="font-semibold text-gray-900">Snacks</h3>
+              <p className="text-sm text-gray-600 mt-1">15 Recipes</p>
+            </Link>
+          </div>
+          <div className="text-center">
+            <Link
+              href="/recipes"
+              className="text-primary-600 hover:text-primary-700 font-medium"
+            >
+              View all recipes →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Food Categories */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
