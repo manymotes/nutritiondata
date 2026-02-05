@@ -415,54 +415,96 @@ export function getStrategicComparisons(): Array<[string, string]> {
 
   const comparisons: Array<[string, string]> = []
 
-  // Within each category, create pairwise comparisons
-  // Prioritize featured foods, then sort by protein
+  // 1. Within-category comparisons: Compare foods in the same category
+  // This generates comparisons like "apple vs banana", "chicken-breast vs salmon"
   for (const category in byCategory) {
     const featured = byCategory[category].filter(f => featuredSlugs.has(f.slug as any))
     const others = byCategory[category]
       .filter(f => !featuredSlugs.has(f.slug as any))
       .sort((a, b) => b.nutritionPer100g.protein - a.nutritionPer100g.protein)
-      .slice(0, 10)
+      .slice(0, 15)
 
-    const foods = [...featured, ...others].slice(0, 20)
+    const foods = [...featured, ...others]
 
-    // Create comparisons between these foods (reduced to save disk space)
+    // Compare each food with the next 6 foods in the category (more comprehensive)
     for (let i = 0; i < foods.length; i++) {
-      for (let j = i + 1; j < Math.min(i + 4, foods.length); j++) {
+      for (let j = i + 1; j < Math.min(i + 7, foods.length); j++) {
         comparisons.push([foods[i].slug, foods[j].slug])
       }
     }
   }
 
-  // Cross-category comparisons: prioritize featured foods
+  // 2. Cross-category comparisons: Compare popular foods across different categories
+  // This generates comparisons like "banana vs egg", "broccoli vs chicken-breast"
   const categories = Object.keys(byCategory)
   for (let i = 0; i < categories.length; i++) {
     for (let j = i + 1; j < categories.length; j++) {
-      // Get featured foods first, then fill with high-protein foods
+      // Get top foods from each category (prioritize featured foods)
       const cat1Featured = byCategory[categories[i]].filter(f => featuredSlugs.has(f.slug as any))
       const cat1Others = byCategory[categories[i]]
         .filter(f => !featuredSlugs.has(f.slug as any))
         .sort((a, b) => b.nutritionPer100g.protein - a.nutritionPer100g.protein)
-        .slice(0, 5)
-      const cat1Foods = [...cat1Featured, ...cat1Others].slice(0, 12)
+        .slice(0, 8)
+      const cat1Foods = [...cat1Featured, ...cat1Others].slice(0, 15)
 
       const cat2Featured = byCategory[categories[j]].filter(f => featuredSlugs.has(f.slug as any))
       const cat2Others = byCategory[categories[j]]
         .filter(f => !featuredSlugs.has(f.slug as any))
         .sort((a, b) => b.nutritionPer100g.protein - a.nutritionPer100g.protein)
-        .slice(0, 5)
-      const cat2Foods = [...cat2Featured, ...cat2Others].slice(0, 12)
+        .slice(0, 8)
+      const cat2Foods = [...cat2Featured, ...cat2Others].slice(0, 15)
 
-      // Compare foods from different categories (reduced to save disk space)
-      for (let a = 0; a < Math.min(6, cat1Foods.length); a++) {
-        for (let b = 0; b < Math.min(6, cat2Foods.length); b++) {
+      // Compare foods from different categories (increased from 6x6 to 10x10)
+      for (let a = 0; a < Math.min(10, cat1Foods.length); a++) {
+        for (let b = 0; b < Math.min(10, cat2Foods.length); b++) {
           comparisons.push([cat1Foods[a].slug, cat2Foods[b].slug])
         }
       }
     }
   }
 
-  // Remove duplicates
+  // 3. Calorie-based comparisons: Compare foods with similar calorie counts
+  // This generates comparisons like "apple vs carrot" (both low-cal)
+  const lowCalFoods = allFoods.filter(f => f.nutritionPer100g.calories <= 50).slice(0, 25)
+  const medCalFoods = allFoods.filter(f => f.nutritionPer100g.calories > 50 && f.nutritionPer100g.calories <= 200).slice(0, 30)
+  const highCalFoods = allFoods.filter(f => f.nutritionPer100g.calories > 200).slice(0, 30)
+
+  // Compare within calorie bands
+  for (const group of [lowCalFoods, medCalFoods, highCalFoods]) {
+    for (let i = 0; i < Math.min(15, group.length); i++) {
+      for (let j = i + 1; j < Math.min(i + 5, group.length); j++) {
+        comparisons.push([group[i].slug, group[j].slug])
+      }
+    }
+  }
+
+  // 4. Protein-based comparisons: Compare high-protein foods
+  // This generates comparisons like "chicken-breast vs tuna", "egg vs greek-yogurt"
+  const highProteinFoods = allFoods
+    .filter(f => f.nutritionPer100g.protein >= 15)
+    .sort((a, b) => b.nutritionPer100g.protein - a.nutritionPer100g.protein)
+    .slice(0, 30)
+
+  for (let i = 0; i < Math.min(20, highProteinFoods.length); i++) {
+    for (let j = i + 1; j < Math.min(i + 6, highProteinFoods.length); j++) {
+      comparisons.push([highProteinFoods[i].slug, highProteinFoods[j].slug])
+    }
+  }
+
+  // 5. Healthy vs unhealthy comparisons: Compare healthier alternatives
+  // This generates comparisons like "sweet-potato vs french-fries", "water vs soda"
+  const healthyFoods = ['banana', 'apple', 'broccoli', 'spinach', 'chicken-breast', 'salmon', 'sweet-potato', 'oatmeal', 'greek-yogurt', 'almonds', 'quinoa', 'egg', 'avocado', 'strawberry', 'blueberry', 'grape']
+  const indulgentFoods = ['pizza', 'hamburger', 'french-fries', 'ice-cream', 'donut', 'chocolate', 'cake', 'cookie', 'soda', 'potato-chips', 'bacon', 'cheeseburger', 'hot-dog', 'candy']
+
+  for (const healthy of healthyFoods) {
+    for (const indulgent of indulgentFoods) {
+      if (allFoods.find(f => f.slug === healthy) && allFoods.find(f => f.slug === indulgent)) {
+        comparisons.push([healthy, indulgent])
+      }
+    }
+  }
+
+  // Remove duplicates and normalize (ensure a < b alphabetically)
   const seen = new Set<string>()
   return comparisons.filter(([a, b]) => {
     const key = a < b ? `${a}-${b}` : `${b}-${a}`

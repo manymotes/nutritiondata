@@ -1,0 +1,28 @@
+{
+  "fdcId": "1000031",
+  "slug": "rice",
+  "name": "White Rice",
+  "category": "grains",
+  "description": "White Rice - high in nutrients",
+  "servingSizes": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "grams": 100,
+      "label": "100 grams"
+    }
+  ],
+  "nutritionPer100g": {
+    "calories": 130,
+    "protein": 2.7,
+    "carbs": 28,
+    "fat": 0.3,
+    "fiber": 0.4,
+    "sugar": 0.1,
+    "sodium": 1,
+    "cholesterol": 0,
+    "saturatedFat": 0.1
+  },
+  "source": "usda",
+  "updatedAt": "2026-02-01T20:43:38.599Z"
+}
