@@ -31,22 +31,51 @@ export async function generateStaticParams() {
       }
     }
 
-    // Combine both sets and remove duplicates
+    // Combine strategic and popular comparisons
     const allComps = [...strategicComps, ...popularComps]
+
+    // Add high-priority comparisons that must be included (indexed by Google)
+    const priorityComps: Array<[string, string]> = [
+      ['french-fries', 'pizza'],
+      ['french-fries', 'blueberry'],
+      ['french-fries', 'avocado'],
+      ['french-fries', 'grape'],
+    ]
+
     const seen = new Set<string>()
     const comparisons: { comparison: string }[] = []
 
-    for (const [food1, food2] of allComps) {
+    // First, add priority comparisons
+    for (const [food1, food2] of priorityComps) {
       const key = food1 < food2 ? `${food1}-${food2}` : `${food2}-${food1}`
       if (!seen.has(key)) {
         seen.add(key)
+        // Generate both orders to handle legacy URLs indexed by Google
         comparisons.push({
-          comparison: key.includes('-vs-') ? key : `${food1}-vs-${food2}`,
+          comparison: `${food1}-vs-${food2}`,
+        })
+        comparisons.push({
+          comparison: `${food2}-vs-${food1}`,
         })
       }
     }
 
-    return comparisons.slice(0, 3000) // Limit to ~3000 comparisons for build performance
+    // Then add the rest
+    for (const [food1, food2] of allComps) {
+      const key = food1 < food2 ? `${food1}-${food2}` : `${food2}-${food1}`
+      if (!seen.has(key)) {
+        seen.add(key)
+        // Generate both orders to handle legacy URLs indexed by Google
+        comparisons.push({
+          comparison: `${food1}-vs-${food2}`,
+        })
+        comparisons.push({
+          comparison: `${food2}-vs-${food1}`,
+        })
+      }
+    }
+
+    return comparisons.slice(0, 8000) // Limit to 8000 comparisons (4000 pairs × 2 orders)
   } catch (error) {
     console.error('Error generating comparison params:', error)
     // Fallback to popular foods only
@@ -152,6 +181,47 @@ export default function ComparisonPage({ params }: PageProps) {
     'snacks': ['Between meals', 'Movie nights', 'Parties', 'Travel food'],
     'desserts': ['Treats', 'Celebrations', 'Comfort food', 'Social occasions'],
   }
+
+  // Diet compatibility function
+  const getDietCompatibility = (food: typeof food1): string[] => {
+    const diets: string[] = []
+    const n = food.nutritionPer100g
+
+    // Keto: Low carb (<=5g), high fat (>=10g)
+    if (n.carbs <= 5 && n.fat >= 10) diets.push('Keto')
+
+    // Low-carb: <=10g carbs
+    if (n.carbs <= 10) diets.push('Low-Carb')
+
+    // High-protein: >=15g protein
+    if (n.protein >= 15) diets.push('High-Protein')
+
+    // Low-calorie: <=100 cal
+    if (n.calories <= 100) diets.push('Low-Calorie')
+
+    // Vegan: Exclude meat, dairy, eggs
+    if (!['proteins', 'dairy', 'fast-food'].includes(food.category) || food.slug === 'tofu') {
+      diets.push('Vegan')
+    }
+
+    // Vegetarian: Exclude meat but allow dairy/eggs
+    if (!['proteins', 'fast-food'].includes(food.category) || ['egg', 'tofu'].includes(food.slug) || food.category === 'dairy') {
+      diets.push('Vegetarian')
+    }
+
+    // Paleo: Whole foods (fruits, vegetables, proteins, nuts)
+    if (['fruits', 'vegetables', 'proteins', 'nuts-seeds'].includes(food.category)) {
+      diets.push('Paleo')
+    }
+
+    // Low-sodium: <=200mg sodium
+    if (n.sodium <= 200) diets.push('Low-Sodium')
+
+    return diets
+  }
+
+  const food1Diets = getDietCompatibility(food1)
+  const food2Diets = getDietCompatibility(food2)
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -475,6 +545,41 @@ export default function ComparisonPage({ params }: PageProps) {
                 <span className="text-gray-600">Per serving (85g):</span>
                 <span className="font-medium text-gray-900">{Math.round(n2.calories * 0.85)} calories</span>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Diet Compatibility */}
+      <div className="bg-white rounded-lg border border-gray-200 p-6 mb-8">
+        <h2 className="text-xl font-semibold text-gray-900 mb-4">Diet Compatibility</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <div>
+            <h3 className="font-semibold text-gray-900 mb-3">{food1.name}</h3>
+            <div className="flex flex-wrap gap-2">
+              {food1Diets.length > 0 ? (
+                food1Diets.map((diet) => (
+                  <span key={diet} className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full font-medium">
+                    {diet}
+                  </span>
+                ))
+              ) : (
+                <span className="text-gray-500 text-sm">No specific diet tags</span>
+              )}
+            </div>
+          </div>
+          <div>
+            <h3 className="font-semibold text-gray-900 mb-3">{food2.name}</h3>
+            <div className="flex flex-wrap gap-2">
+              {food2Diets.length > 0 ? (
+                food2Diets.map((diet) => (
+                  <span key={diet} className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full font-medium">
+                    {diet}
+                  </span>
+                ))
+              ) : (
+                <span className="text-gray-500 text-sm">No specific diet tags</span>
+              )}
             </div>
           </div>
         </div>
