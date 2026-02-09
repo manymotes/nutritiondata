@@ -169,36 +169,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]
 
-  // Comparison pages (strategic comparisons - 1,000+ pages)
-  // Uses getStrategicComparisons which generates within-category and cross-category comparisons
+  // Comparison pages (strategic comparisons - 5,000+ pages)
+  // Uses getStrategicComparisons which generates:
+  // - Within-category comparisons (apple vs banana)
+  // - Cross-category comparisons (chicken vs salmon)
+  // - Calorie-based comparisons (similar calorie foods)
+  // - Protein-based comparisons (high-protein foods)
+  // - Healthy vs unhealthy alternatives (sweet-potato vs fries)
   const strategicComps = getStrategicComparisons()
   const comparisonPages: MetadataRoute.Sitemap = []
 
-  // Add strategic comparisons (high-value SEO comparisons)
+  // Add all strategic comparisons (optimized algorithm generates 5,800+ comparisons)
+  // Featured foods get higher priority automatically since they appear in more comparisons
   for (const [food1, food2] of strategicComps) {
     const slug = `${food1}-vs-${food2}`
+
+    // Check if this involves featured foods for priority boost
+    const isFeatured = FEATURED_FOODS.some(f => f.slug === food1 || f.slug === food2)
+
     comparisonPages.push({
       url: `${baseUrl}/compare/${slug}`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
-      priority: 0.6,
+      priority: isFeatured ? 0.7 : 0.6,
     })
-  }
-
-  // Also add featured food comparisons for high-traffic terms
-  for (let i = 0; i < Math.min(50, FEATURED_FOODS.length); i++) {
-    for (let j = i + 1; j < Math.min(i + 10, FEATURED_FOODS.length); j++) {
-      const slug = `${FEATURED_FOODS[i].slug}-vs-${FEATURED_FOODS[j].slug}`
-      // Only add if not already in strategic comparisons
-      if (!comparisonPages.find(p => p.url.endsWith(slug))) {
-        comparisonPages.push({
-          url: `${baseUrl}/compare/${slug}`,
-          lastModified: new Date(),
-          changeFrequency: 'monthly' as const,
-          priority: 0.7, // Higher priority for featured foods
-        })
-      }
-    }
   }
 
   // Water Quality pages (all cities)

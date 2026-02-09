@@ -6,6 +6,8 @@ import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { GoogleAnalytics } from '@/components/analytics/GoogleAnalytics'
 import { RouteTracker } from '@/components/analytics/RouteTracker'
+import ReadingProgress from '@/components/ReadingProgress'
+import BackToTop from '@/components/BackToTop'
 import { SITE_NAME, SITE_DESCRIPTION, SITE_URL } from '@/lib/constants'
 import { siteConfig } from '@/lib/config'
 
@@ -65,9 +67,11 @@ export default function RootLayout({
             strategy="lazyOnload"
           />
         )}
+        <ReadingProgress />
         <div className="min-h-screen flex flex-col">
           <Header />
           <main className="flex-1">{children}</main>
+          <BackToTop />
           <Footer />
         </div>
       </body>

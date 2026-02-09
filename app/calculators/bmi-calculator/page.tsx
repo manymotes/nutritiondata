@@ -3,6 +3,10 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { SITE_NAME } from '@/lib/constants'
+import EmailCapture from '@/components/EmailCapture'
+import WhatNext from '@/components/WhatNext'
+import RelatedTools from '@/components/RelatedTools'
+import QuickActions from '@/components/QuickActions'
 
 export default function BMICalculatorPage() {
   const [unit, setUnit] = useState<'imperial' | 'metric'>('imperial')
@@ -346,6 +350,97 @@ export default function BMICalculatorPage() {
                 </p>
               )}
             </div>
+
+            {/* Email Capture */}
+            <div className="border-t border-gray-200 pt-4 mt-4">
+              <EmailCapture
+                title="Track Your Progress"
+                description="Get your BMI results emailed plus weekly health and nutrition tips."
+                buttonText="Email My Results"
+                source="bmi_calculator"
+                resultData={{
+                  bmi,
+                  category,
+                  weight,
+                  unit,
+                }}
+                variant="inline"
+              />
+            </div>
+
+            {/* What's Next - Personalized recommendations based on BMI category */}
+            <WhatNext
+              title="What's Next?"
+              description="Take action based on your results"
+              variant="highlight"
+              suggestions={
+                category === 'Normal weight'
+                  ? [
+                      {
+                        title: 'Calculate Calories to Maintain',
+                        description: 'Find your daily calorie needs',
+                        href: '/calculators/calorie-calculator',
+                        emoji: '🔥',
+                        highlight: true,
+                      },
+                      {
+                        title: 'Optimize Your Macros',
+                        description: 'Get protein, carbs & fat targets',
+                        href: '/calculators/macro-calculator',
+                        emoji: '🥗',
+                      },
+                      {
+                        title: 'Take the Diet Quiz',
+                        description: 'Find the best eating approach for you',
+                        href: '/quiz/diet-personality',
+                        emoji: '🎯',
+                      },
+                    ]
+                  : category === 'Overweight' || category === 'Obese'
+                  ? [
+                      {
+                        title: 'Calculate Calories for Weight Loss',
+                        description: 'Find your optimal calorie deficit',
+                        href: '/calculators/calorie-calculator',
+                        emoji: '🔥',
+                        highlight: true,
+                      },
+                      {
+                        title: 'Browse Low-Calorie Foods',
+                        description: 'Great options for losing weight',
+                        href: '/lists/low-calorie-foods',
+                        emoji: '🥬',
+                      },
+                      {
+                        title: 'Take the Diet Quiz',
+                        description: 'Find a sustainable approach',
+                        href: '/quiz/diet-personality',
+                        emoji: '🎯',
+                      },
+                    ]
+                  : [
+                      {
+                        title: 'Calculate Calories to Gain Weight',
+                        description: 'Find your optimal calorie surplus',
+                        href: '/calculators/calorie-calculator',
+                        emoji: '🔥',
+                        highlight: true,
+                      },
+                      {
+                        title: 'Browse High-Protein Foods',
+                        description: 'Best foods for healthy weight gain',
+                        href: '/lists/high-protein-foods',
+                        emoji: '💪',
+                      },
+                      {
+                        title: 'Calculate Your Macros',
+                        description: 'Optimize for muscle building',
+                        href: '/calculators/macro-calculator',
+                        emoji: '🥗',
+                      },
+                    ]
+              }
+            />
           </div>
         )}
       </div>
@@ -424,50 +519,14 @@ export default function BMICalculatorPage() {
         </p>
       </div>
 
-      {/* CTA Section */}
-      <div className="bg-primary-50 rounded-lg p-6 mb-8">
-        <h3 className="text-xl font-semibold text-gray-900 mb-3">
-          Calculate Your Calorie Needs
-        </h3>
-        <p className="text-gray-700 mb-4">
-          Now that you know your BMI, use our calorie calculator to determine how many calories you
-          need per day to reach your goals.
-        </p>
-        <Link
-          href="/calculators/calorie-calculator"
-          className="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-primary-700 transition-colors"
-        >
-          Calculate Calories
-        </Link>
-      </div>
+      {/* Quick Actions for easy navigation */}
+      <QuickActions />
 
-      {/* Related Calculators */}
-      <div className="border-t border-gray-200 pt-8">
-        <h3 className="text-xl font-semibold text-gray-900 mb-4">Other Calculators</h3>
-        <div className="grid md:grid-cols-3 gap-4">
-          <Link
-            href="/calculators/calorie-calculator"
-            className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-md transition-shadow"
-          >
-            <h4 className="text-lg font-semibold text-gray-900 mb-2">Calorie Calculator</h4>
-            <p className="text-sm text-gray-600">Calculate your TDEE and BMR</p>
-          </Link>
-          <Link
-            href="/calculators/macro-calculator"
-            className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-md transition-shadow"
-          >
-            <h4 className="text-lg font-semibold text-gray-900 mb-2">Macro Calculator</h4>
-            <p className="text-sm text-gray-600">Calculate protein, carbs, and fat targets</p>
-          </Link>
-          <Link
-            href="/calculators/meal-planner"
-            className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-md transition-shadow"
-          >
-            <h4 className="text-lg font-semibold text-gray-900 mb-2">Meal Planner</h4>
-            <p className="text-sm text-gray-600">Plan meals to hit your targets</p>
-          </Link>
-        </div>
-      </div>
+      {/* Related Tools - Smart recommendations */}
+      <RelatedTools current="bmi" title="Continue Your Journey" />
+
+      {/* Sticky Mobile Navigation */}
+      <QuickActions variant="sticky" />
     </div>
   )
 }

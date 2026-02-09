@@ -210,6 +210,29 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Diet Personality Quiz CTA */}
+      <section className="py-16 bg-gradient-to-br from-primary-600 to-primary-800">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="text-5xl mb-4">🎯</div>
+          <h2 className="text-3xl font-bold text-white mb-4">
+            What's Your Diet Personality?
+          </h2>
+          <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
+            Take our free 2-minute quiz to discover your unique nutrition style
+            and get personalized recommendations for your health goals.
+          </p>
+          <Link
+            href="/quiz/diet-personality"
+            className="inline-block bg-white text-primary-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary-50 transition-colors shadow-lg"
+          >
+            Take the Free Quiz →
+          </Link>
+          <p className="text-primary-200 mt-4 text-sm">
+            8 questions - No signup required
+          </p>
+        </div>
+      </section>
+
       {/* Popular Recipes */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

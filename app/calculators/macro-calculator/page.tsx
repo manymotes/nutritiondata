@@ -3,6 +3,10 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { SITE_NAME } from '@/lib/constants'
+import EmailCapture from '@/components/EmailCapture'
+import WhatNext from '@/components/WhatNext'
+import RelatedTools from '@/components/RelatedTools'
+import QuickActions from '@/components/QuickActions'
 
 export default function MacroCalculatorPage() {
   const [weight, setWeight] = useState('')
@@ -440,6 +444,52 @@ export default function MacroCalculatorPage() {
                 <li>Focus on whole, minimally processed foods for better satiety and nutrition</li>
               </ul>
             </div>
+
+            {/* Email Capture */}
+            <div className="border-t border-gray-200 pt-6">
+              <EmailCapture
+                title="Save Your Macro Targets"
+                description="Get your personalized macros emailed to you, plus weekly meal planning tips."
+                buttonText="Email My Macros"
+                source="macro_calculator"
+                resultData={{
+                  protein: results.protein,
+                  carbs: results.carbs,
+                  fat: results.fat,
+                  totalCalories: calories,
+                  goal,
+                  dietType,
+                }}
+              />
+            </div>
+
+            {/* What's Next - Personalized recommendations */}
+            <WhatNext
+              title="What's Next?"
+              description="Put your macros into action"
+              variant="highlight"
+              suggestions={[
+                {
+                  title: 'Plan Your Meals',
+                  description: 'Build meals that hit your macro targets',
+                  href: '/calculators/meal-planner',
+                  emoji: '📋',
+                  highlight: true,
+                },
+                {
+                  title: 'High-Protein Foods',
+                  description: 'Best foods to reach your protein goals',
+                  href: '/lists/high-protein-foods',
+                  emoji: '💪',
+                },
+                {
+                  title: 'Take the Diet Quiz',
+                  description: 'Find the best eating style for you',
+                  href: '/quiz/diet-personality',
+                  emoji: '🎯',
+                },
+              ]}
+            />
           </div>
         )}
       </div>
@@ -505,49 +555,14 @@ export default function MacroCalculatorPage() {
         </p>
       </div>
 
-      {/* CTA Section */}
-      <div className="bg-primary-50 rounded-lg p-6 mb-8">
-        <h3 className="text-xl font-semibold text-gray-900 mb-3">
-          Plan Your Meals
-        </h3>
-        <p className="text-gray-700 mb-4">
-          Use our meal planner to select foods and build meals that hit your macro targets.
-        </p>
-        <Link
-          href="/calculators/meal-planner"
-          className="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-primary-700 transition-colors"
-        >
-          Plan Your Meals
-        </Link>
-      </div>
+      {/* Quick Actions for easy navigation */}
+      <QuickActions />
 
-      {/* Related Calculators */}
-      <div className="border-t border-gray-200 pt-8">
-        <h3 className="text-xl font-semibold text-gray-900 mb-4">Other Calculators</h3>
-        <div className="grid md:grid-cols-3 gap-4">
-          <Link
-            href="/calculators/calorie-calculator"
-            className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-md transition-shadow"
-          >
-            <h4 className="text-lg font-semibold text-gray-900 mb-2">Calorie Calculator</h4>
-            <p className="text-sm text-gray-600">Calculate your TDEE and BMR</p>
-          </Link>
-          <Link
-            href="/calculators/bmi-calculator"
-            className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-md transition-shadow"
-          >
-            <h4 className="text-lg font-semibold text-gray-900 mb-2">BMI Calculator</h4>
-            <p className="text-sm text-gray-600">Calculate your Body Mass Index</p>
-          </Link>
-          <Link
-            href="/calculators/meal-planner"
-            className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-md transition-shadow"
-          >
-            <h4 className="text-lg font-semibold text-gray-900 mb-2">Meal Planner</h4>
-            <p className="text-sm text-gray-600">Plan meals to hit your targets</p>
-          </Link>
-        </div>
-      </div>
+      {/* Related Tools - Smart recommendations */}
+      <RelatedTools current="macro" title="Continue Your Journey" />
+
+      {/* Sticky Mobile Navigation */}
+      <QuickActions variant="sticky" />
     </div>
   )
 }
