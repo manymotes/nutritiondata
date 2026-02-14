@@ -1,3 +1,5 @@
-# Force HTTPS redirect
-http://caloriedata.org/* https://caloriedata.org/:splat 301!
-http://www.caloriedata.org/* https://www.caloriedata.org/:splat 301!
+# US Water Grade - Redirect www to non-www (HTTPS only, HTTP is auto-upgraded by Cloudflare)
+https://www.uswatergrade.com/* https://uswatergrade.com/:splat 301!
+
+# CalorieData - Redirect www to non-www (if needed)
+https://www.caloriedata.org/* https://caloriedata.org/:splat 301!

@@ -5,10 +5,14 @@ import { getAllWaterQualityData, getGradeColor, getGradeBackgroundColor } from '
 export const metadata: Metadata = {
   title: 'US Water Quality by City - 2024 Water Grades & Safety Reports',
   description: 'Comprehensive water quality reports for major US cities. View water grades, contamination levels, sources, and safety information for your city.',
+  alternates: {
+    canonical: 'https://uswatergrade.com/water-quality/',
+  },
   openGraph: {
     title: 'US Water Quality Reports by City',
     description: 'Detailed water quality grades and reports for major US cities. Find out how safe your tap water is.',
     type: 'website',
+    url: 'https://uswatergrade.com/water-quality/',
   },
 }
 

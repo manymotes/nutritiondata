@@ -35,14 +35,19 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const title = `${data.city}, ${data.stateCode} Water Quality Report ${new Date().getFullYear()} | Grade: ${data.waterGrade}`
   const description = `Comprehensive water quality report for ${data.city}, ${data.state}. Grade: ${data.waterGrade}. Detailed analysis of water sources, contaminants, treatment facilities, and safety information.`
+  const canonicalUrl = `https://uswatergrade.com/water-quality/${params.city}/`
 
   return {
     title,
     description,
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
       title,
       description,
       type: 'article',
+      url: canonicalUrl,
     },
   }
 }

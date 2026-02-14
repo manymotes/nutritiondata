@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { compareFoods, getFoodData, getStrategicComparisons, getRelatedComparisons } from '@/lib/data'
 import { POPULAR_FOODS } from '@/lib/constants'
+import { getComparisonContent, hasCustomComparisonContent } from '@/lib/comparison-content'
 
 interface PageProps {
   params: {
@@ -106,11 +107,16 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const diff = Math.abs(cal1 - cal2)
   const lower = cal1 < cal2 ? food1.name : food2.name
 
+  // Normalize canonical URL to alphabetical order to avoid duplicate content
+  const canonicalSlug = parsed.food1 < parsed.food2
+    ? `${parsed.food1}-vs-${parsed.food2}`
+    : `${parsed.food2}-vs-${parsed.food1}`
+
   return {
     title: `${food1.name} vs ${food2.name} - Calories & Nutrition Comparison`,
     description: `Compare ${food1.name} (${cal1} cal) vs ${food2.name} (${cal2} cal). ${lower} has ${diff} fewer calories per 100g. See which is healthier with full nutrition comparison.`,
     alternates: {
-      canonical: `https://caloriedata.org/compare/${params.comparison}`,
+      canonical: `https://caloriedata.org/compare/${canonicalSlug}`,
     },
     openGraph: {
       title: `${food1.name} vs ${food2.name} Nutrition`,
@@ -135,6 +141,10 @@ export default function ComparisonPage({ params }: PageProps) {
   const { food1, food2, winners, healthScore } = comparison
   const n1 = food1.nutritionPer100g
   const n2 = food2.nutritionPer100g
+
+  // Get custom comparison content (FAQs, etc.)
+  const comparisonContent = getComparisonContent(food1.slug, food2.slug)
+  const hasCustomContent = hasCustomComparisonContent(food1.slug, food2.slug)
 
   // Get related comparisons
   const relatedComps = getRelatedComparisons(food1.slug, food2.slug, 6)
@@ -708,6 +718,27 @@ export default function ComparisonPage({ params }: PageProps) {
         </div>
       </div>
 
+      {/* FAQ Section */}
+      {comparisonContent.faqs.length > 0 && (
+        <div className="bg-white rounded-lg border border-gray-200 p-6 mb-8">
+          <h2 className="text-xl font-semibold text-gray-900 mb-6">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-6">
+            {comparisonContent.faqs.map((faq, index) => (
+              <div key={index} className="border-b border-gray-100 pb-6 last:border-0 last:pb-0">
+                <h3 className="text-lg font-medium text-gray-900 mb-2">
+                  {faq.question}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {faq.answer}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
       {/* Related Comparisons */}
       <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
         <h3 className="text-xl font-semibold text-gray-900 mb-4">Related Comparisons</h3>
@@ -746,6 +777,27 @@ export default function ComparisonPage({ params }: PageProps) {
           }),
         }}
       />
+
+      {/* FAQ Schema.org structured data */}
+      {comparisonContent.faqs.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: comparisonContent.faqs.map((faq) => ({
+                '@type': 'Question',
+                name: faq.question,
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: faq.answer,
+                },
+              })),
+            }),
+          }}
+        />
+      )}
     </div>
   )
 }

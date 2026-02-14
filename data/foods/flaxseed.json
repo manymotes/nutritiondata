@@ -1,9 +1,9 @@
 {
   "fdcId": "1000056",
-  "slug": "flaxseeds",
-  "name": "Flaxseeds",
+  "slug": "flaxseed",
+  "name": "Flaxseed",
   "category": "nuts-seeds",
-  "description": "Flaxseeds are tiny nutritional powerhouses, rich in omega-3 fatty acids, fiber, and lignans. One of the best plant sources of ALA omega-3s.",
+  "description": "Flaxseed is a tiny nutritional powerhouse, rich in omega-3 fatty acids, fiber, and lignans. One of the best plant sources of ALA omega-3s.",
   "servingSizes": [
     {
       "amount": 100,
@@ -48,5 +48,5 @@
     "saturatedFat": 3.7
   },
   "source": "usda",
-  "updatedAt": "2026-02-01T20:43:38.601Z"
+  "updatedAt": "2026-02-10T00:00:00.000Z"
 }

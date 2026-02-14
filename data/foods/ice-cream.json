@@ -3,13 +3,37 @@
   "slug": "ice-cream",
   "name": "Ice Cream",
   "category": "desserts",
-  "description": "Ice Cream - high in nutrients",
+  "description": "Ice cream is a frozen dairy dessert made from milk, cream, and sugar. Available in countless flavors, it's one of the world's favorite treats.",
   "servingSizes": [
     {
       "amount": 100,
       "unit": "g",
       "grams": 100,
       "label": "100 grams"
+    },
+    {
+      "amount": 0.5,
+      "unit": "cup",
+      "grams": 66,
+      "label": "1/2 cup serving (66g)"
+    },
+    {
+      "amount": 1,
+      "unit": "scoop",
+      "grams": 68,
+      "label": "1 scoop (68g)"
+    },
+    {
+      "amount": 1,
+      "unit": "cup",
+      "grams": 132,
+      "label": "1 cup (132g)"
+    },
+    {
+      "amount": 1,
+      "unit": "pint",
+      "grams": 473,
+      "label": "1 pint (473g)"
     }
   ],
   "nutritionPer100g": {
