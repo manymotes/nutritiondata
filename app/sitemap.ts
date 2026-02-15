@@ -191,6 +191,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ['french-fries', 'blueberry'],
     ['french-fries', 'avocado'],
     ['french-fries', 'grape'],
+    ['kale', 'apple'],
   ]
 
   const seen = new Set<string>()
