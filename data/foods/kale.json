@@ -3,13 +3,43 @@
   "slug": "kale",
   "name": "Kale",
   "category": "vegetables",
-  "description": "Kale - high in nutrients",
+  "description": "Kale is a nutrient-dense leafy green vegetable and superfood. Exceptionally high in vitamins K, A, and C with powerful antioxidants.",
   "servingSizes": [
     {
       "amount": 100,
       "unit": "g",
       "grams": 100,
       "label": "100 grams"
+    },
+    {
+      "amount": 1,
+      "unit": "cup chopped",
+      "grams": 67,
+      "label": "1 cup chopped (67g)"
+    },
+    {
+      "amount": 1,
+      "unit": "cup packed",
+      "grams": 130,
+      "label": "1 cup packed (130g)"
+    },
+    {
+      "amount": 1,
+      "unit": "leaf",
+      "grams": 8,
+      "label": "1 leaf (8g)"
+    },
+    {
+      "amount": 1,
+      "unit": "bunch",
+      "grams": 170,
+      "label": "1 bunch (170g)"
+    },
+    {
+      "amount": 1,
+      "unit": "oz",
+      "grams": 28,
+      "label": "1 ounce (28g)"
     }
   ],
   "nutritionPer100g": {
@@ -21,8 +51,12 @@
     "sugar": 0,
     "sodium": 28,
     "cholesterol": 0,
-    "saturatedFat": 0.1
+    "saturatedFat": 0.1,
+    "potassium": 491,
+    "vitaminK": 817,
+    "vitaminA": 15376,
+    "vitaminC": 120
   },
   "source": "usda",
-  "updatedAt": "2026-02-01T20:43:38.611Z"
+  "updatedAt": "2026-02-14T00:00:00.000Z"
 }

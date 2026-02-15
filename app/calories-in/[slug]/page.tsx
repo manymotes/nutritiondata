@@ -20,7 +20,7 @@ export async function generateStaticParams() {
   }))
 }
 
-// Generate metadata with SEO-optimized titles and descriptions
+// Generate metadata with SEO-optimized titles and descriptions for maximum CTR
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const food = getFoodData(params.slug)
   if (!food) {
@@ -30,30 +30,79 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { nutritionPer100g: nutrition } = food
   const calories = nutrition.calories
 
-  // Generate compelling, keyword-rich title
+  // Generate compelling, keyword-rich title (front-load primary search term, under 60 chars)
+  // Primary keyword: "Calories in [Food]" - matches exact search intent
   const getOptimizedTitle = () => {
+    // High-priority pages with custom titles for better CTR
+    const customTitles: Record<string, string> = {
+      'flaxseed': `Flaxseed: ${calories} Calories per 100g | USDA Nutrition Data`,
+      'orange': `Orange: ${calories} Calories per 100g | USDA Nutrition Data`,
+      'ice-cream': `Ice Cream: ${calories} Calories per 100g | USDA Nutrition Data`,
+      'popcorn': `Popcorn: ${calories} Calories per 100g | USDA Nutrition Data`,
+      'pineapple': `Pineapple: ${calories} Calories per 100g | USDA Nutrition Data`,
+      'kale': `Kale: ${calories} Calories per 100g | USDA Nutrition Data`,
+      'rice': `Rice: ${calories} Calories per 100g | USDA Nutrition Data`,
+      'steak': `Steak: ${calories} Calories per 100g | USDA Nutrition Data`,
+    }
+
+    if (customTitles[params.slug]) {
+      return customTitles[params.slug]
+    }
+
+    // Dynamic titles based on nutritional highlights
+    if (nutrition.protein >= 20) {
+      return `Calories in ${food.name}: ${calories} | ${nutrition.protein}g Protein`
+    }
     if (nutrition.protein >= 15) {
-      return `${food.name} Calories: ${calories} per 100g | High Protein (${nutrition.protein}g)`
+      return `Calories in ${food.name}: ${calories} Cal | High Protein`
+    }
+    if (nutrition.fiber >= 10) {
+      return `Calories in ${food.name}: ${calories} Cal | High Fiber`
     }
     if (nutrition.fiber >= 5) {
-      return `${food.name} Calories: ${calories} per 100g | High Fiber (${nutrition.fiber}g)`
+      return `Calories in ${food.name}: ${calories} Cal | Fiber-Rich`
+    }
+    if (calories < 30) {
+      return `Calories in ${food.name}: Only ${calories} Cal | Very Low Cal`
     }
     if (calories < 50) {
-      return `${food.name} Calories: Only ${calories} per 100g | Low Calorie Facts`
+      return `Calories in ${food.name}: ${calories} Cal | Low Calorie`
     }
-    return `${food.name} Calories: ${calories} per 100g | Full Nutrition Facts`
+    if (calories > 400) {
+      return `Calories in ${food.name}: ${calories} | Nutrition Guide`
+    }
+    return `Calories in ${food.name}: ${calories} Cal | Nutrition Facts`
   }
 
-  // Generate CTA-focused description
+  // Generate CTA-focused description (under 160 chars, with action words)
   const getOptimizedDescription = () => {
+    // High-priority pages with custom descriptions for better CTR
+    const customDescriptions: Record<string, string> = {
+      'flaxseed': `USDA: Flaxseed has ${calories} calories per 100g with ${nutrition.fiber}g fiber, ${nutrition.protein}g protein & ${nutrition.fat}g fat. Complete nutrition facts & omega-3 benefits.`,
+      'orange': `USDA: Orange has ${calories} calories per 100g with ${nutrition.carbs}g carbs & ${nutrition.fiber}g fiber. Complete nutrition facts, vitamin C content & serving sizes.`,
+      'ice-cream': `USDA: Ice cream has ${calories} calories per 100g with ${nutrition.fat}g fat, ${nutrition.sugar}g sugar & ${nutrition.protein}g protein. Complete nutrition facts & serving sizes.`,
+      'popcorn': `USDA: Popcorn has ${calories} calories per 100g with ${nutrition.fiber}g fiber & ${nutrition.carbs}g carbs. Complete nutrition facts, serving sizes & healthy snacking tips.`,
+      'pineapple': `USDA: Pineapple has ${calories} calories per 100g with ${nutrition.carbs}g carbs & ${nutrition.fiber}g fiber. Complete nutrition facts, vitamin C & serving sizes.`,
+      'kale': `USDA: Kale has ${calories} calories per 100g with ${nutrition.fiber}g fiber, ${nutrition.protein}g protein & ${nutrition.carbs}g carbs. Complete superfood nutrition facts.`,
+      'rice': `USDA: Rice has ${calories} calories per 100g with ${nutrition.carbs}g carbs, ${nutrition.protein}g protein & ${nutrition.fiber}g fiber. Complete nutrition facts & serving sizes.`,
+      'steak': `USDA: Steak has ${calories} calories per 100g with ${nutrition.protein}g protein, ${nutrition.fat}g fat & ${nutrition.cholesterol || 0}mg cholesterol. Complete nutrition facts.`,
+    }
+
+    if (customDescriptions[params.slug]) {
+      return customDescriptions[params.slug]
+    }
+
+    // Dynamic descriptions based on nutritional profile
     const highlights: string[] = []
-    if (nutrition.protein >= 10) highlights.push(`${nutrition.protein}g protein`)
-    if (nutrition.fiber >= 3) highlights.push(`${nutrition.fiber}g fiber`)
+    if (nutrition.protein >= 15) highlights.push(`${nutrition.protein}g protein`)
+    else if (nutrition.protein >= 10) highlights.push(`${nutrition.protein}g protein`)
+    if (nutrition.fiber >= 5) highlights.push(`${nutrition.fiber}g fiber`)
     if (calories < 100) highlights.push('low calorie')
+    if (nutrition.fat < 2) highlights.push('low fat')
 
-    const highlightText = highlights.length > 0 ? ` Rich in ${highlights.join(' & ')}.` : ''
+    const highlightText = highlights.length > 0 ? ` with ${highlights.slice(0, 2).join(' & ')}` : ''
 
-    return `How many calories in ${food.name.toLowerCase()}? ${calories} calories per 100g.${highlightText} View complete nutrition breakdown, macros, serving sizes & compare with similar foods. Free nutrition database.`
+    return `${food.name} has ${calories} calories per 100g${highlightText}. Get complete nutrition facts, macros, serving sizes & compare foods. Free nutrition database!`
   }
 
   return {
@@ -63,14 +112,16 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       canonical: `https://caloriedata.org/calories-in/${params.slug}`,
     },
     openGraph: {
-      title: `${food.name} Nutrition Facts - ${calories} Calories per 100g`,
-      description: `Complete nutrition info for ${food.name}: ${calories} cal, ${nutrition.protein}g protein, ${nutrition.carbs}g carbs, ${nutrition.fat}g fat. Compare with similar foods.`,
+      title: `Calories in ${food.name}: ${calories} per 100g | Free Nutrition Facts`,
+      description: `How many calories in ${food.name.toLowerCase()}? ${calories} cal/100g with ${nutrition.protein}g protein, ${nutrition.carbs}g carbs, ${nutrition.fat}g fat. Free nutrition database!`,
       type: 'article',
+      url: `https://caloriedata.org/calories-in/${params.slug}`,
+      siteName: SITE_NAME,
     },
     twitter: {
-      card: 'summary',
-      title: `${food.name}: ${calories} Calories per 100g`,
-      description: `Full nutrition facts for ${food.name}. Protein: ${nutrition.protein}g | Carbs: ${nutrition.carbs}g | Fat: ${nutrition.fat}g`,
+      card: 'summary_large_image',
+      title: `Calories in ${food.name}: ${calories} Cal | Nutrition Facts`,
+      description: `${food.name}: ${calories} cal | ${nutrition.protein}g protein | ${nutrition.carbs}g carbs | ${nutrition.fat}g fat. Free nutrition database!`,
     },
   }
 }
@@ -395,9 +446,17 @@ export default function FoodPage({ params }: PageProps) {
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
             Calories in {food.name}
           </h1>
-          <p className="text-lg text-gray-600 mb-8">
-            {food.name} contains <strong>{nutrition.calories} calories</strong> per 100 grams.
-            Here&apos;s the complete nutrition breakdown.
+          <p className="text-lg text-gray-600 mb-4">
+            <strong>{food.name} contains {nutrition.calories} calories per 100g</strong>
+            {food.servingSizes[1] && (
+              <> ({Math.round((nutrition.calories * food.servingSizes[1].grams) / 100)} cal per {food.servingSizes[1].label.replace(/\s*\([^)]*\)/, '')})</>
+            )}.
+            {nutrition.protein >= 15 && ` High in protein with ${nutrition.protein}g per 100g.`}
+            {nutrition.fiber >= 5 && ` Excellent source of fiber with ${nutrition.fiber}g per 100g.`}
+            {nutrition.calories < 50 && ` A very low-calorie food perfect for weight management.`}
+          </p>
+          <p className="text-base text-gray-500 mb-8">
+            Get the complete nutrition breakdown, macros, serving sizes, and health benefits below.
           </p>
 
           {/* Nutritional Highlights */}
@@ -595,6 +654,59 @@ export default function FoodPage({ params }: PageProps) {
               </div>
             </div>
           )}
+
+          {/* Related Diet & Nutrient Lists - Internal linking for SEO */}
+          <div className="bg-gray-50 rounded-lg border border-gray-200 p-6 mb-8">
+            <h2 className="text-xl font-bold text-gray-900 mb-4">
+              Explore More Nutrition Lists
+            </h2>
+            <div className="flex flex-wrap gap-3">
+              {nutrition.protein >= 15 && (
+                <Link
+                  href="/nutrients/high-protein"
+                  className="inline-flex items-center px-4 py-2 bg-red-100 text-red-800 rounded-full text-sm font-medium hover:bg-red-200 transition-colors"
+                >
+                  High Protein Foods
+                </Link>
+              )}
+              {nutrition.fiber >= 3 && (
+                <Link
+                  href="/nutrients/high-fiber"
+                  className="inline-flex items-center px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium hover:bg-green-200 transition-colors"
+                >
+                  High Fiber Foods
+                </Link>
+              )}
+              {nutrition.calories < 100 && (
+                <Link
+                  href="/nutrients/low-calorie"
+                  className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium hover:bg-blue-200 transition-colors"
+                >
+                  Low Calorie Foods
+                </Link>
+              )}
+              {nutrition.carbs < 10 && (
+                <Link
+                  href="/nutrients/low-carb"
+                  className="inline-flex items-center px-4 py-2 bg-purple-100 text-purple-800 rounded-full text-sm font-medium hover:bg-purple-200 transition-colors"
+                >
+                  Low Carb Foods
+                </Link>
+              )}
+              <Link
+                href={`/category/${food.category}`}
+                className="inline-flex items-center px-4 py-2 bg-gray-200 text-gray-800 rounded-full text-sm font-medium hover:bg-gray-300 transition-colors"
+              >
+                All {category?.name || food.category}
+              </Link>
+              <Link
+                href="/category"
+                className="inline-flex items-center px-4 py-2 bg-primary-100 text-primary-800 rounded-full text-sm font-medium hover:bg-primary-200 transition-colors"
+              >
+                Browse All Foods
+              </Link>
+            </div>
+          </div>
 
           {/* About Section */}
           <div className="prose max-w-none">
