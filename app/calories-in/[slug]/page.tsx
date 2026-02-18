@@ -31,68 +31,83 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const calories = nutrition.calories
 
   // Generate compelling, keyword-rich title (front-load primary search term, under 60 chars)
-  // Primary keyword: "Calories in [Food]" - matches exact search intent
+  // Optimized for CTR: Dollar/number first pattern, year for freshness
   const getOptimizedTitle = () => {
-    // High-priority pages with custom titles for better CTR
+    // High-priority striking distance pages with CTR-optimized titles
     const customTitles: Record<string, string> = {
-      'flaxseed': `Flaxseed: ${calories} Calories per 100g | USDA Nutrition Data`,
-      'orange': `Orange: ${calories} Calories per 100g | USDA Nutrition Data`,
-      'ice-cream': `Ice Cream: ${calories} Calories per 100g | USDA Nutrition Data`,
-      'popcorn': `Popcorn: ${calories} Calories per 100g | USDA Nutrition Data`,
-      'pineapple': `Pineapple: ${calories} Calories per 100g | USDA Nutrition Data`,
-      'kale': `Kale: ${calories} Calories per 100g | USDA Nutrition Data`,
-      'rice': `Rice: ${calories} Calories per 100g | USDA Nutrition Data`,
-      'steak': `Steak: ${calories} Calories per 100g | USDA Nutrition Data`,
+      'flaxseed': `Flaxseed Calories: ${calories}/100g + ${nutrition.fiber}g Fiber | 2026`,
+      'orange': `Orange Calories: ${calories}/100g + Vitamin C Facts | 2026`,
+      'ice-cream': `Ice Cream Calories: ${calories}/100g | Fat & Sugar Info`,
+      'popcorn': `Popcorn Calories: ${calories}/100g | Is It Healthy? 2026`,
+      'pineapple': `Pineapple Calories: ${calories}/100g | Vitamins + Benefits`,
+      'kale': `Kale: Only ${calories} Calories/100g | Superfood Facts 2026`,
+      'cashews': `Cashews: ${calories} Calories/100g | Protein & Healthy Fats`,
+      'rice': `Rice Calories: ${calories}/100g | Carbs & Nutrition 2026`,
+      'steak': `Steak Calories: ${calories}/100g | ${nutrition.protein}g Protein`,
+      'cherry': `Cherry Calories: ${calories}/100g | Vitamins & Benefits`,
+      'hot-dog': `Hot Dog Calories: ${calories}/100g | Fat & Sodium Facts`,
+      'quinoa': `Quinoa Calories: ${calories}/100g | Complete Protein 2026`,
+      'onion': `Onion Calories: Only ${calories}/100g | Low-Cal Nutrition`,
+      'french-fries': `French Fries: ${calories} Calories/100g | Fat Content`,
+      'coffee': `Coffee Calories: ${calories}/100g | Caffeine & Nutrition`,
+      'taco': `Taco Calories: ${calories}/100g | Full Nutrition Facts`,
+      'protein-bar': `Protein Bar: ${calories} Cal/100g | ${nutrition.protein}g Protein`,
     }
 
     if (customTitles[params.slug]) {
       return customTitles[params.slug]
     }
 
-    // Dynamic titles based on nutritional highlights
+    // Dynamic titles based on nutritional highlights - optimized for CTR
     if (nutrition.protein >= 20) {
-      return `Calories in ${food.name}: ${calories} | ${nutrition.protein}g Protein`
+      return `${food.name}: ${calories} Cal + ${nutrition.protein}g Protein | 2026`
     }
     if (nutrition.protein >= 15) {
-      return `Calories in ${food.name}: ${calories} Cal | High Protein`
+      return `${food.name} Calories: ${calories}/100g | High Protein 2026`
     }
     if (nutrition.fiber >= 10) {
-      return `Calories in ${food.name}: ${calories} Cal | High Fiber`
+      return `${food.name}: ${calories} Cal + ${nutrition.fiber}g Fiber | 2026`
     }
     if (nutrition.fiber >= 5) {
-      return `Calories in ${food.name}: ${calories} Cal | Fiber-Rich`
+      return `${food.name} Calories: ${calories}/100g | Fiber-Rich 2026`
     }
     if (calories < 30) {
-      return `Calories in ${food.name}: Only ${calories} Cal | Very Low Cal`
+      return `${food.name}: Only ${calories} Calories/100g | Diet-Friendly`
     }
     if (calories < 50) {
-      return `Calories in ${food.name}: ${calories} Cal | Low Calorie`
+      return `${food.name}: ${calories} Calories/100g | Low-Cal Food 2026`
     }
     if (calories > 400) {
-      return `Calories in ${food.name}: ${calories} | Nutrition Guide`
+      return `${food.name}: ${calories} Calories/100g | Full Nutrition`
     }
-    return `Calories in ${food.name}: ${calories} Cal | Nutrition Facts`
+    return `${food.name} Calories: ${calories}/100g | Free Facts 2026`
   }
 
-  // Generate CTA-focused description (under 160 chars, with action words)
+  // Generate CTA-focused description (under 155 chars, question format + action words)
   const getOptimizedDescription = () => {
-    // High-priority pages with custom descriptions for better CTR
+    // High-priority striking distance pages with CTR-optimized descriptions
     const customDescriptions: Record<string, string> = {
-      'flaxseed': `USDA: Flaxseed has ${calories} calories per 100g with ${nutrition.fiber}g fiber, ${nutrition.protein}g protein & ${nutrition.fat}g fat. Complete nutrition facts & omega-3 benefits.`,
-      'orange': `USDA: Orange has ${calories} calories per 100g with ${nutrition.carbs}g carbs & ${nutrition.fiber}g fiber. Complete nutrition facts, vitamin C content & serving sizes.`,
-      'ice-cream': `USDA: Ice cream has ${calories} calories per 100g with ${nutrition.fat}g fat, ${nutrition.sugar}g sugar & ${nutrition.protein}g protein. Complete nutrition facts & serving sizes.`,
-      'popcorn': `USDA: Popcorn has ${calories} calories per 100g with ${nutrition.fiber}g fiber & ${nutrition.carbs}g carbs. Complete nutrition facts, serving sizes & healthy snacking tips.`,
-      'pineapple': `USDA: Pineapple has ${calories} calories per 100g with ${nutrition.carbs}g carbs & ${nutrition.fiber}g fiber. Complete nutrition facts, vitamin C & serving sizes.`,
-      'kale': `USDA: Kale has ${calories} calories per 100g with ${nutrition.fiber}g fiber, ${nutrition.protein}g protein & ${nutrition.carbs}g carbs. Complete superfood nutrition facts.`,
-      'rice': `USDA: Rice has ${calories} calories per 100g with ${nutrition.carbs}g carbs, ${nutrition.protein}g protein & ${nutrition.fiber}g fiber. Complete nutrition facts & serving sizes.`,
-      'steak': `USDA: Steak has ${calories} calories per 100g with ${nutrition.protein}g protein, ${nutrition.fat}g fat & ${nutrition.cholesterol || 0}mg cholesterol. Complete nutrition facts.`,
+      'flaxseed': `How many calories in flaxseed? ${calories}/100g with ${nutrition.fiber}g fiber & omega-3s. See serving sizes, macros & health benefits. Free USDA data!`,
+      'orange': `How many calories in an orange? ${calories}/100g with vitamin C & ${nutrition.fiber}g fiber. Instant macros, serving sizes & benefits. Free nutrition facts!`,
+      'ice-cream': `Ice cream calories: ${calories}/100g with ${nutrition.fat}g fat & ${nutrition.sugar}g sugar. See if it fits your diet. Free serving size calculator!`,
+      'popcorn': `How many calories in popcorn? ${calories}/100g with ${nutrition.fiber}g fiber. Is it healthy? See full macros & serving sizes. Free nutrition data!`,
+      'pineapple': `Pineapple calories: ${calories}/100g with vitamin C & ${nutrition.fiber}g fiber. Instant macros & health benefits. Free USDA nutrition facts!`,
+      'kale': `Kale: only ${calories} calories/100g! ${nutrition.fiber}g fiber, ${nutrition.protein}g protein. Why it's a superfood. Free instant nutrition facts!`,
+      'cashews': `Cashews: ${calories} cal/100g with ${nutrition.protein}g protein & healthy fats. Serving sizes & benefits. Free USDA nutrition data!`,
+      'rice': `Rice calories: ${calories}/100g with ${nutrition.carbs}g carbs. White vs brown rice? See full nutrition comparison. Free instant facts!`,
+      'steak': `Steak calories: ${calories}/100g with ${nutrition.protein}g protein. See fat content by cut & serving sizes. Free USDA nutrition data!`,
+      'cherry': `Cherry calories: ${calories}/100g with antioxidants & vitamins. See serving sizes & health benefits. Free nutrition facts!`,
+      'hot-dog': `Hot dog calories: ${calories}/100g with ${nutrition.fat}g fat & sodium info. Is it unhealthy? Free full nutrition breakdown!`,
+      'quinoa': `Quinoa: ${calories} cal/100g with complete protein! See why it's a superfood. Free macros & serving sizes!`,
+      'french-fries': `French fries: ${calories} calories/100g with ${nutrition.fat}g fat. See healthier alternatives. Free nutrition comparison!`,
+      'coffee': `Coffee calories: ${calories}/100g. Black vs with cream? See caffeine content & nutrition facts. Free instant data!`,
     }
 
     if (customDescriptions[params.slug]) {
       return customDescriptions[params.slug]
     }
 
-    // Dynamic descriptions based on nutritional profile
+    // Dynamic descriptions with question format for better CTR
     const highlights: string[] = []
     if (nutrition.protein >= 15) highlights.push(`${nutrition.protein}g protein`)
     else if (nutrition.protein >= 10) highlights.push(`${nutrition.protein}g protein`)
@@ -102,7 +117,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
     const highlightText = highlights.length > 0 ? ` with ${highlights.slice(0, 2).join(' & ')}` : ''
 
-    return `${food.name} has ${calories} calories per 100g${highlightText}. Get complete nutrition facts, macros, serving sizes & compare foods. Free nutrition database!`
+    return `How many calories in ${food.name.toLowerCase()}? ${calories}/100g${highlightText}. Instant macros, serving sizes & health benefits. Free USDA data!`
   }
 
   return {

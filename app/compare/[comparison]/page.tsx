@@ -107,15 +107,23 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const cal2 = food2.nutritionPer100g.calories
   const diff = Math.abs(cal1 - cal2)
   const lower = cal1 < cal2 ? food1.name : food2.name
+  const higher = cal1 < cal2 ? food2.name : food1.name
+  const lowerCal = Math.min(cal1, cal2)
+  const higherCal = Math.max(cal1, cal2)
 
   // Normalize canonical URL to alphabetical order to avoid duplicate content
   const canonicalSlug = parsed.food1 < parsed.food2
     ? `${parsed.food1}-vs-${parsed.food2}`
     : `${parsed.food2}-vs-${parsed.food1}`
 
+  // CTR-optimized title showing the winner immediately
+  const title = diff > 50
+    ? `${food1.name} vs ${food2.name}: ${lower} Wins (${lowerCal} vs ${higherCal} Cal)`
+    : `${food1.name} vs ${food2.name}: ${cal1} vs ${cal2} Calories | 2026`
+
   return {
-    title: `${food1.name} vs ${food2.name} - Calories & Nutrition Comparison`,
-    description: `Compare ${food1.name} (${cal1} cal) vs ${food2.name} (${cal2} cal). ${lower} has ${diff} fewer calories per 100g. See which is healthier with full nutrition comparison.`,
+    title,
+    description: `${food1.name} vs ${food2.name}: Which is healthier? ${lower} has ${diff} fewer calories. Compare protein, carbs, fat & more. Free instant comparison!`,
     alternates: {
       canonical: `https://caloriedata.org/compare/${canonicalSlug}`,
     },
