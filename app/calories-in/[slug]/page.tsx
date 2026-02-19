@@ -124,13 +124,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: getOptimizedTitle(),
     description: getOptimizedDescription(),
     alternates: {
-      canonical: `https://caloriedata.org/calories-in/${params.slug}`,
+      canonical: `https://caloriedata.org/calories-in/${params.slug}/`,
     },
     openGraph: {
       title: `Calories in ${food.name}: ${calories} per 100g | Free Nutrition Facts`,
       description: `How many calories in ${food.name.toLowerCase()}? ${calories} cal/100g with ${nutrition.protein}g protein, ${nutrition.carbs}g carbs, ${nutrition.fat}g fat. Free nutrition database!`,
       type: 'article',
-      url: `https://caloriedata.org/calories-in/${params.slug}`,
+      url: `https://caloriedata.org/calories-in/${params.slug}/`,
       siteName: SITE_NAME,
     },
     twitter: {

@@ -8,8 +8,9 @@ import * as path from 'path';
 
 const SITE_URL = 'https://caloriedata.org';
 
-// Fixed 404 pages
+// All URLs needing reindexing (404s, duplicates, canonical issues)
 const URLS_TO_INDEX = [
+  // Fixed 404 pages (now exist or redirect)
   '/compare/orange-juice-vs-soda/',
   '/compare/kale-vs-apple/',
   '/compare/french-fries-vs-pizza/',
@@ -18,6 +19,25 @@ const URLS_TO_INDEX = [
   '/compare/french-fries-vs-grape/',
   '/compare/potato-chips-vs-trail-mix/',
   '/compare/',  // redirect target for invalid comparisons
+
+  // Duplicate without user-selected canonical (fixed canonicals)
+  '/blog/',
+  '/compare/chicken-breast-vs-egg/',
+  '/calories-in/cherry/',
+  '/calories-in/orange/',
+  '/calories-in/taco/',
+  '/calories-in/steak/',
+  '/compare/rice-vs-brown-rice/',
+  '/calories-in/flaxseed/',
+  '/calories-in/ice-cream/',
+  '/compare/apple-vs-avocado/',
+
+  // Alternate page with proper canonical tag (fixed canonicals)
+  '/calories-in/kale/',
+  '/compare/french-fries-vs-hot-dog/',
+  '/compare/banana-vs-blueberry/',
+  '/compare/yogurt-vs-cheese/',
+  '/calories-in/hot-dog/',
 ];
 
 async function requestIndexing() {

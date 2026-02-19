@@ -4,6 +4,9 @@ https://www.uswatergrade.com/* https://uswatergrade.com/:splat 301!
 # CalorieData - Redirect www to non-www (if needed)
 https://www.caloriedata.org/* https://caloriedata.org/:splat 301!
 
+# CalorieData - Force HTTP to HTTPS (Google indexed some HTTP URLs)
+http://caloriedata.org/* https://caloriedata.org/:splat 301!
+
 # Fix 404 compare pages with invalid food slugs
 /compare/ruffles-potato-chips-vs-trail-mix /compare/potato-chips-vs-trail-mix/ 301
 /compare/ruffles-potato-chips-vs-trail-mix/ /compare/potato-chips-vs-trail-mix/ 301

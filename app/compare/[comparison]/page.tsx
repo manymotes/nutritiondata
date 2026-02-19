@@ -127,7 +127,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title,
     description: `${food1.name} vs ${food2.name}: Which is healthier? ${lower} has ${diff} fewer calories. Compare protein, carbs, fat & more. Free instant comparison!`,
     alternates: {
-      canonical: `https://caloriedata.org/compare/${canonicalSlug}`,
+      canonical: `https://caloriedata.org/compare/${canonicalSlug}/`,
     },
     openGraph: {
       title: `${food1.name} vs ${food2.name} Nutrition`,
