@@ -42,6 +42,8 @@ export async function generateStaticParams() {
       ['french-fries', 'avocado'],
       ['french-fries', 'grape'],
       ['kale', 'apple'],
+      ['orange-juice', 'soda'],
+      ['potato-chips', 'trail-mix'],
     ]
 
     const seen = new Set<string>()

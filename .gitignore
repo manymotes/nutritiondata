@@ -36,3 +36,6 @@ next-env.d.ts
 
 # cloudflare
 .wrangler
+
+# Google Service Account credentials
+google-service-account.json
