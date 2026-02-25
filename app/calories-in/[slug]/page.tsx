@@ -35,20 +35,20 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const getOptimizedTitle = () => {
     // High-priority striking distance pages with CTR-optimized titles
     const customTitles: Record<string, string> = {
-      'flaxseed': `Flaxseed Calories: ${calories}/100g + ${nutrition.fiber}g Fiber | 2026`,
-      'orange': `Orange Calories: ${calories}/100g + Vitamin C Facts | 2026`,
-      'ice-cream': `Ice Cream Calories: ${calories}/100g | Fat & Sugar Info`,
-      'popcorn': `Popcorn Calories: ${calories}/100g | Is It Healthy? 2026`,
-      'pineapple': `Pineapple Calories: ${calories}/100g | Vitamins + Benefits`,
-      'kale': `Kale: Only ${calories} Calories/100g | Superfood Facts 2026`,
-      'cashews': `Cashews: ${calories} Calories/100g | Protein & Healthy Fats`,
+      'flaxseed': `Flaxseed Calories: ${calories} per 100g | 2026 Guide`,
+      'orange': `Orange Calories: ${calories} kcal per 100g | 2026 Facts`,
+      'ice-cream': `Ice Cream Calories: ${calories} per 100g | 2026 Data`,
+      'popcorn': `Popcorn Calories: ${calories} per 100g | 2026 Guide`,
+      'pineapple': `Pineapple: ${calories} kcal per 100g | 2026 Nutrition`,
+      'kale': `Kale Calories: Only ${calories} per 100g | 2026 Facts`,
+      'cashews': `Cashews Calories: ${calories}/100g | 2026 Nutrition`,
       'rice': `Rice Calories: ${calories}/100g | Carbs & Nutrition 2026`,
       'steak': `Steak Calories: ${calories}/100g | ${nutrition.protein}g Protein`,
-      'cherry': `Cherry Calories: ${calories}/100g | Vitamins & Benefits`,
-      'hot-dog': `Hot Dog Calories: ${calories}/100g | Fat & Sodium Facts`,
+      'cherry': `Cherry Calories: ${calories}/100g | 2026 Nutrition`,
+      'hot-dog': `Hot Dog Calories: ${calories} per 100g | 2026 Facts`,
       'quinoa': `Quinoa Calories: ${calories}/100g | Complete Protein 2026`,
       'onion': `Onion Calories: Only ${calories}/100g | Low-Cal Nutrition`,
-      'french-fries': `French Fries: ${calories} Calories/100g | Fat Content`,
+      'french-fries': `French Fries Calories: ${calories} per 100g | 2026`,
       'coffee': `Coffee Calories: ${calories}/100g | Caffeine & Nutrition`,
       'taco': `Taco Calories: ${calories}/100g | Full Nutrition Facts`,
       'protein-bar': `Protein Bar: ${calories} Cal/100g | ${nutrition.protein}g Protein`,
@@ -87,19 +87,19 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const getOptimizedDescription = () => {
     // High-priority striking distance pages with CTR-optimized descriptions
     const customDescriptions: Record<string, string> = {
-      'flaxseed': `How many calories in flaxseed? ${calories}/100g with ${nutrition.fiber}g fiber & omega-3s. See serving sizes, macros & health benefits. Free USDA data!`,
-      'orange': `How many calories in an orange? ${calories}/100g with vitamin C & ${nutrition.fiber}g fiber. Instant macros, serving sizes & benefits. Free nutrition facts!`,
-      'ice-cream': `Ice cream calories: ${calories}/100g with ${nutrition.fat}g fat & ${nutrition.sugar}g sugar. See if it fits your diet. Free serving size calculator!`,
-      'popcorn': `How many calories in popcorn? ${calories}/100g with ${nutrition.fiber}g fiber. Is it healthy? See full macros & serving sizes. Free nutrition data!`,
-      'pineapple': `Pineapple calories: ${calories}/100g with vitamin C & ${nutrition.fiber}g fiber. Instant macros & health benefits. Free USDA nutrition facts!`,
-      'kale': `Kale: only ${calories} calories/100g! ${nutrition.fiber}g fiber, ${nutrition.protein}g protein. Why it's a superfood. Free instant nutrition facts!`,
-      'cashews': `Cashews: ${calories} cal/100g with ${nutrition.protein}g protein & healthy fats. Serving sizes & benefits. Free USDA nutrition data!`,
+      'flaxseed': `Flaxseed calories: ${calories} per 100g with ${nutrition.fiber}g fiber & omega-3s. Complete 2026 nutrition data with serving sizes & macros. Free USDA facts!`,
+      'orange': `Orange calories: ${calories} kcal per 100g. Get exact orange nutrition facts for 2026 including vitamin C, fiber & serving sizes. Free instant data!`,
+      'ice-cream': `Ice cream calories: ${calories} per 100g with ${nutrition.fat}g fat & ${nutrition.sugar}g sugar. 2026 nutrition breakdown by serving size. Free data!`,
+      'popcorn': `Popcorn calories: ${calories} per 100g with ${nutrition.fiber}g fiber. Is it healthy? 2026 nutrition guide with serving sizes. Free instant facts!`,
+      'pineapple': `Pineapple: ${calories} kcal per 100g with vitamin C & ${nutrition.fiber}g fiber. Complete 2026 nutrition facts & health benefits. Free data!`,
+      'kale': `Kale calories: only ${calories} per 100g! ${nutrition.fiber}g fiber, ${nutrition.protein}g protein. 2026 superfood nutrition guide. Free instant facts!`,
+      'cashews': `Cashews calories: ${calories}/100g with ${nutrition.protein}g protein & healthy fats. Complete 2026 nutrition data & serving sizes. Free USDA facts!`,
       'rice': `Rice calories: ${calories}/100g with ${nutrition.carbs}g carbs. White vs brown rice? See full nutrition comparison. Free instant facts!`,
       'steak': `Steak calories: ${calories}/100g with ${nutrition.protein}g protein. See fat content by cut & serving sizes. Free USDA nutrition data!`,
-      'cherry': `Cherry calories: ${calories}/100g with antioxidants & vitamins. See serving sizes & health benefits. Free nutrition facts!`,
-      'hot-dog': `Hot dog calories: ${calories}/100g with ${nutrition.fat}g fat & sodium info. Is it unhealthy? Free full nutrition breakdown!`,
+      'cherry': `Cherry calories: ${calories}/100g with antioxidants & vitamins. Complete 2026 nutrition guide with serving sizes. Free instant facts!`,
+      'hot-dog': `Hot dog calories: ${calories} per 100g with ${nutrition.fat}g fat & ${nutrition.sodium}mg sodium. 2026 nutrition facts breakdown. Free data!`,
       'quinoa': `Quinoa: ${calories} cal/100g with complete protein! See why it's a superfood. Free macros & serving sizes!`,
-      'french-fries': `French fries: ${calories} calories/100g with ${nutrition.fat}g fat. See healthier alternatives. Free nutrition comparison!`,
+      'french-fries': `French fries calories: ${calories} per 100g with ${nutrition.fat}g fat. 2026 nutrition facts & healthier alternatives. Free comparison!`,
       'coffee': `Coffee calories: ${calories}/100g. Black vs with cream? See caffeine content & nutrition facts. Free instant data!`,
     }
 
@@ -763,22 +763,19 @@ export default function FoodPage({ params }: PageProps) {
             <h2 className="text-2xl font-bold text-gray-900 mb-6">
               Frequently Asked Questions About {food.name}
             </h2>
-            <div className="space-y-4" itemScope itemType="https://schema.org/FAQPage">
+            <div className="space-y-4">
               {foodContent.faqs && foodContent.faqs.length > 0 ? (
                 // Render custom FAQs for high-priority pages
                 foodContent.faqs.map((faq, index) => (
                   <div
                     key={index}
                     className="bg-white rounded-lg border border-gray-200 p-6"
-                    itemScope
-                    itemProp="mainEntity"
-                    itemType="https://schema.org/Question"
                   >
-                    <h3 className="font-semibold text-gray-900 mb-2" itemProp="name">
+                    <h3 className="font-semibold text-gray-900 mb-2">
                       {faq.question}
                     </h3>
-                    <div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
-                      <p className="text-gray-700" itemProp="text">
+                    <div>
+                      <p className="text-gray-700">
                         {faq.answer}
                       </p>
                     </div>
