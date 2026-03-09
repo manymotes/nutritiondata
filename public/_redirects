@@ -12,3 +12,25 @@ http://caloriedata.org/* https://caloriedata.org/:splat 301!
 /compare/ruffles-potato-chips-vs-trail-mix/ /compare/potato-chips-vs-trail-mix/ 301
 /compare/amaranth-vs-starbucks-via-latte-speciality-coffee-beverage-caramel-caramel /compare/ 301
 /compare/amaranth-vs-starbucks-via-latte-speciality-coffee-beverage-caramel-caramel/ /compare/ 301
+
+# Redirect monster cookie/candy comparison pages to main compare (these foods don't exist)
+/compare/*monster-cookie* /compare/ 301
+/compare/*monster-energy* /compare/ 301
+/compare/*candy-monster* /compare/ 301
+
+# Redirect overly long branded product comparisons
+/compare/*starbucks-via-latte* /compare/ 301
+/compare/*quest-peanut-butter* /compare/ 301
+/compare/*amys-soy-cheeze* /compare/ 301
+/compare/*amys-mushroom* /compare/ 301
+
+# Redirect brand misspellings and variations
+/compare/*wheaties-protein* /compare/ 301
+/compare/*oreo-cones* /compare/ 301
+
+# Common invalid patterns
+/compare/*-vs-beer/ /compare/ 301
+/compare/*-vs-beer /compare/ 301
+
+# Generic trailing slash removal for all paths (404 fix for Google indexing)
+/:path*/ /:path* 301
